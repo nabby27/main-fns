@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  use_js:
+    image: 'node:14-alpine'
+    container_name: 'use_js'
+    working_dir: '/usr/src/app'
+    volumes:
+      - ./:/usr/src/app:rw,Z
+    tty: true
