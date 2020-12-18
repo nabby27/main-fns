@@ -1,0 +1,17 @@
+{
+    "plugins": [],
+    "source": {
+        "include": ["dist"],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules|docs)" 
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "template": "node_modules/docdash",
+        "recurse": true,
+        "destination": "./docs/usejs"
+    }
+}

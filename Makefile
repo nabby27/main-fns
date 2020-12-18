@@ -12,6 +12,10 @@ build: up
 	@docker-compose exec $(CONTAINER_NAME) npm run build || $(MAKE) stop
 	${MAKE} stop
 
+docs: up
+	@docker-compose exec $(CONTAINER_NAME) npm run docs || $(MAKE) stop
+	${MAKE} stop
+
 install: up
 	@docker-compose exec $(CONTAINER_NAME) npm install $(ARGS) || $(MAKE) stop
 	${MAKE} stop
