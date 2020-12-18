@@ -1,7 +1,8 @@
 /**
  * String to format date.
  *
- * @typedef {('YYYY-MM-DD'|'DD-MM-YYYY')} DateStringFormat
+ * @memberof Dates
+ * @alias DateStringFormat
  */
 export type DateStringFormat =
   | 'YYYY-MM-DD'

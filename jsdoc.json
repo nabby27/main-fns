@@ -1,17 +1,38 @@
 {
-    "plugins": [],
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "plugins": [
+        "node_modules/better-docs/typescript",
+        "node_modules/better-docs/typedef-import",
+        "node_modules/better-docs/category"
+    ],
     "source": {
-        "include": ["dist"],
-        "includePattern": ".js$",
+        "include": ["src/app"],
+        "includePattern": ".ts$",
         "excludePattern": "(node_modules|docs)" 
     },
     "templates": {
         "cleverLinks": true,
-        "monospaceLinks": false
+        "monospaceLinks": false,
+        "better-docs": {
+            "name": "UseJS Documentation",
+            "title": "UseJS Docs - ",
+            "hideGenerator": false,
+            "navLinks": [
+                {
+                    "label": "Github",
+                    "href": "https://github.com/nabby27/UseJS"
+                }
+            ]
+        }
     },
     "opts": {
-        "template": "node_modules/docdash",
+        "encoding": "utf8",
+        "readme": "README.md",
+        "template": "node_modules/better-docs",
         "recurse": true,
+        "verbose": true,
         "destination": "./docs/usejs"
     }
 }
