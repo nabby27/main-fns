@@ -21,6 +21,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: make install
+      run: npm install
     - name: Run test and linter
-      run: make test-all
+      run: npm test:all
