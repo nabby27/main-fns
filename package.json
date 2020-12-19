@@ -21,7 +21,7 @@
     "test:watch": "jest --watchAll",
     "test:watch:coverage": "jest --watchAll --coverage",
     "test:coverage": "jest --coverage",
-    "test:all": "npm run eslint:fix && npm run test:coverage",
+    "test:all": "npm run eslint:check && npm run test:coverage",
     "upload": "npm run test:all && npm run docs && npm run build && npm publish"
   },
   "files": [
