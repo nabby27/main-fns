@@ -13,7 +13,7 @@ const expectsDates: {
 }[] = [
   {
     numberOfDaysToAdd: 3,
-    expect: new Date(currentYearMock, currentMonthMock, currentDayMock + 4)
+    expect: new Date(currentYearMock, currentMonthMock, currentDayMock + 3)
   },
   {
     numberOfDaysToAdd: 3,
