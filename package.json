@@ -5,6 +5,18 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "nabby27",
+  "keywords": [
+    "fns",
+    "functions",
+    "javascript",
+    "js",
+    "libraries",
+    "libs",
+    "ts",
+    "typescript",
+    "utilities",
+    "utils"
+  ],
   "license": "MIT",
   "private": false,
   "homepage": "https://github.com/nabby27/main-fns",
