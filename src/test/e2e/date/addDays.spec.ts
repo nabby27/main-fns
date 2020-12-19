@@ -1,10 +1,20 @@
 import { addDays } from '../../../app';
+import { mockDate } from './mocks/currentDateMock';
+
+const currentDayMock = 10;
+const currentMonthMock = 5;
+const currentYearMock = 2020;
+const currentDateMock = new Date(currentYearMock, currentMonthMock, currentDayMock);
 
 const expectsDates: {
   numberOfDaysToAdd: number;
   date?: Date;
   expect: Date;
 }[] = [
+  {
+    numberOfDaysToAdd: 3,
+    expect: new Date(currentYearMock, currentMonthMock, currentDayMock + 3)
+  },
   {
     numberOfDaysToAdd: 3,
     date: new Date(2020, 10, 13),
@@ -18,6 +28,10 @@ const expectsDates: {
 ];
 
 describe('Get date with added days', () => {
+  beforeAll(() => {
+    mockDate(currentDateMock);
+  });
+
   expectsDates.forEach((expectDate) => {
     test('should return date with added days', () => {
       const result = addDays(expectDate.numberOfDaysToAdd, expectDate.date);
