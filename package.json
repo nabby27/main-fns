@@ -1,5 +1,5 @@
 {
-  "name": "use-js",
+  "name": "main-fns",
   "version": "0.0.1",
   "description": "Javascript utility library created with TypeScript",
   "main": "dist/index.js",
@@ -7,10 +7,10 @@
   "author": "nabby27",
   "license": "MIT",
   "private": false,
-  "homepage": "https://github.com/nabby27/UseJS",
+  "homepage": "https://github.com/nabby27/main-fns",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nabby27/UseJS"
+    "url": "https://github.com/nabby27/main-fns"
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc",

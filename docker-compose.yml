@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  use_js:
+  main-fns:
     image: 'node:14-alpine'
-    container_name: 'use_js'
+    container_name: 'main-fns'
     working_dir: '/usr/src/app'
     volumes:
       - ./:/usr/src/app:rw,Z

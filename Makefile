@@ -1,6 +1,6 @@
 .PHONY: up stop build install test test-watch test-watch-coverage test-coverage test-all eslint-check eslint-fix
 
-CONTAINER_NAME=use_js
+CONTAINER_NAME=main-fns
 
 up:
 	@docker-compose up -d

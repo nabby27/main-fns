@@ -16,13 +16,13 @@
         "cleverLinks": false,
         "monospaceLinks": false,
         "better-docs": {
-            "name": "UseJS Documentation",
-            "title": "UseJS Docs - ",
+            "name": "main-fns",
+            "title": "main-fns - ",
             "hideGenerator": false,
             "navLinks": [
                 {
                     "label": "Github",
-                    "href": "https://github.com/nabby27/UseJS"
+                    "href": "https://github.com/nabby27/main-fns"
                 }
             ]
         }

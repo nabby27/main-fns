@@ -1,4 +1,4 @@
-# UseJS
+# main-fns
 
 ## Requirements for development
 
@@ -33,7 +33,7 @@ make test
 
 ```sh
 docker-compose up -d
-docker-compose exec use_js npm run test
+docker-compose exec main-fns npm run test
 dokcer-compose down
 ```
 
