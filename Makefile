@@ -41,7 +41,7 @@ test-coverage: up
 	$(MAKE) stop
 
 test-all: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test:all
+	@docker-compose exec $(CONTAINER_NAME) npm run test:all || $(MAKE) stop
 	$(MAKE) stop
 
 eslint-check: up

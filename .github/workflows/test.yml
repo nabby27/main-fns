@@ -23,4 +23,4 @@ jobs:
     - name: Install dependencies
       run: make install
     - name: Run test and linter
-      run: make test-all
+      run: export COMPOSE_INTERACTIVE_NO_CLI=1 && make test-all
