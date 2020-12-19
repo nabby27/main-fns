@@ -10,10 +10,12 @@ stop:
 
 build: up
 	@docker-compose exec $(CONTAINER_NAME) npm run build || $(MAKE) stop
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node dist
 	${MAKE} stop
 
 docs: up
 	@docker-compose exec $(CONTAINER_NAME) npm run docs || $(MAKE) stop
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node docs
 	${MAKE} stop
 
 install: up
@@ -30,6 +32,7 @@ test-watch: up
 
 test-watch-coverage: up
 	@docker-compose exec $(CONTAINER_NAME) npm run test:watch:coverage || $(MAKE) stop
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node coverage
 	$(MAKE) stop
 
 test-coverage: up
@@ -47,4 +50,8 @@ eslint-check: up
 	
 eslint-fix: up
 	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
+	${MAKE} stop
+
+publish: up
+	@docker-compose exec $(CONTAINER_NAME) npm run upload || $(MAKE) stop
 	${MAKE} stop

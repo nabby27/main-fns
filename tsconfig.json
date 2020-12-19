@@ -18,5 +18,9 @@
   "exclude": [
     "./src/test",
     "./dist"
-  ]
+  ],
+  "typedocOptions": {
+      "mode": "modules",
+      "out": "docs"
+  }
 }

@@ -1,0 +1,12 @@
+{
+    "inputFiles": ["./src/app"],
+    "mode": "modules",
+    "out": "docs",
+    "theme": "minimal",
+    "readme": "README.md",  
+    "exclude": [
+        "index.ts",
+        "**/util/**",
+        "**/impl/**"
+    ]
+}
