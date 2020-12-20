@@ -2,9 +2,9 @@
  * String to format date.
  *
  * @name DateStringFormat
- * @typedef {'YYYY-MM-DD' | 'DD-MM-YYYY'} DateStringFormat
+ * @typedef {'yyyy-MM-dd' | 'dd-MM-yyyy'} DateStringFormat
  * @alias DateStringFormat
  */
 export type DateStringFormat =
-  | 'YYYY-MM-DD'
-  | 'DD-MM-YYYY';
+  | 'yyyy-MM-dd'
+  | 'dd-MM-yyyy';

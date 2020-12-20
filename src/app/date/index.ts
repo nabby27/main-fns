@@ -1,4 +1,4 @@
-import { DateUtilMoment } from './impl/dateUtilMoment';
+import { DateUtilDateFns } from './impl/dateUtilDateFns';
 import { DateStringFormat } from './types/dateStringFormat';
 import { DateFunctions } from './util/date.function';
 
@@ -17,7 +17,7 @@ import { DateFunctions } from './util/date.function';
  * @returns {Date} The date with the days added
  */
 export function addDays(daysToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).addDays(daysToAdd, date);
+  return new DateFunctions(new DateUtilDateFns()).addDays(daysToAdd, date);
 }
 
 /**
@@ -29,7 +29,7 @@ export function addDays(daysToAdd: number, date: Date = new Date()): Date {
  * @returns {Date} The date with the months added
  */
 export function addMonths(monthsToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).addMonths(monthsToAdd, date);
+  return new DateFunctions(new DateUtilDateFns()).addMonths(monthsToAdd, date);
 }
 
 /**
@@ -41,7 +41,7 @@ export function addMonths(monthsToAdd: number, date: Date = new Date()): Date {
  * @returns {Date} The date with the years added
  */
 export function addYears(yearsToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).addYears(yearsToAdd, date);
+  return new DateFunctions(new DateUtilDateFns()).addYears(yearsToAdd, date);
 }
 
 /**
@@ -58,7 +58,7 @@ export function dateToString(
   stringFormat: DateStringFormat,
   date: Date = new Date()
 ): string {
-  return new DateFunctions(new DateUtilMoment()).dateToString(
+  return new DateFunctions(new DateUtilDateFns()).dateToString(
     stringFormat,
     date
   );
@@ -76,7 +76,7 @@ export function isAfter(
   date: Date,
   dateToCompare: Date
 ): boolean {
-  return new DateFunctions(new DateUtilMoment()).isAfter(
+  return new DateFunctions(new DateUtilDateFns()).isAfter(
     date,
     dateToCompare
   );
@@ -94,7 +94,7 @@ export function isBefore(
   date: Date,
   dateToCompare: Date
 ): boolean {
-  return new DateFunctions(new DateUtilMoment()).isBefore(
+  return new DateFunctions(new DateUtilDateFns()).isBefore(
     date,
     dateToCompare
   );
@@ -108,7 +108,7 @@ export function isBefore(
  * @returns {!Date} - The date with end time
  */
 export function setEndTime(date: Date): Date {
-  return new DateFunctions(new DateUtilMoment()).setEndTime(date);
+  return new DateFunctions(new DateUtilDateFns()).setEndTime(date);
 }
 
 /**
@@ -119,7 +119,7 @@ export function setEndTime(date: Date): Date {
  * @returns {!Date} - The date with init time
  */
 export function setInitTime(date: Date): Date {
-  return new DateFunctions(new DateUtilMoment()).setInitTime(date);
+  return new DateFunctions(new DateUtilDateFns()).setInitTime(date);
 }
 
 /**
@@ -131,7 +131,7 @@ export function setInitTime(date: Date): Date {
  * @returns {Date} The date with subtracted days
  */
 export function subtractDays(daysToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).subtractDays(daysToSubtract, date);
+  return new DateFunctions(new DateUtilDateFns()).subtractDays(daysToSubtract, date);
 }
 
 /**
@@ -143,7 +143,7 @@ export function subtractDays(daysToSubtract: number, date: Date = new Date()): D
  * @returns {Date} The date with subtracted months
  */
 export function subtractMonths(monthsToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).subtractMonths(
+  return new DateFunctions(new DateUtilDateFns()).subtractMonths(
     monthsToSubtract,
     date
   );
@@ -158,7 +158,7 @@ export function subtractMonths(monthsToSubtract: number, date: Date = new Date()
  * @returns {Date} The date with subtracted years
  */
 export function subtractYears(yearsToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilMoment()).subtractYears(
+  return new DateFunctions(new DateUtilDateFns()).subtractYears(
     yearsToSubtract,
     date
   );

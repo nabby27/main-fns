@@ -14,22 +14,22 @@ export class DateToStringTest {
     expect: string;
   }[] = [
     {
-      stringFormat: 'YYYY-MM-DD',
+      stringFormat: 'yyyy-MM-dd',
       date: new Date(),
       expect: `${this.currentYear}-${this.currentMonth + 1}-${this.currentDay}`
     },
     {
-      stringFormat: 'YYYY-MM-DD',
+      stringFormat: 'yyyy-MM-dd',
       date: new Date(2020, 10, 13),
       expect: '2020-11-13'
     },
     {
-      stringFormat: 'DD-MM-YYYY',
+      stringFormat: 'dd-MM-yyyy',
       date: new Date(),
       expect: `${this.currentDay}-${this.currentMonth + 1}-${this.currentYear}`
     },
     {
-      stringFormat: 'DD-MM-YYYY',
+      stringFormat: 'dd-MM-yyyy',
       date: new Date(2020, 10, 13),
       expect: '13-11-2020'
     }

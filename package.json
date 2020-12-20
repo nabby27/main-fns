@@ -44,8 +44,7 @@
   },
   "dependencies": {
     "date-fns": "^2.16.1",
-    "moment": "^2.29.1",
-    "npm-cli-login": "^0.1.1"
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",

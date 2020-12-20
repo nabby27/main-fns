@@ -11,20 +11,20 @@ const expectsDatesToString: {
   expect: string;
 }[] = [
   {
-    stringFormat: 'YYYY-MM-DD',
+    stringFormat: 'yyyy-MM-dd',
     expect: `${currentYear}-${currentMonth + 1}-${currentDay}`
   },
   {
-    stringFormat: 'YYYY-MM-DD',
+    stringFormat: 'yyyy-MM-dd',
     date: new Date(2020, 10, 13),
     expect: '2020-11-13'
   },
   {
-    stringFormat: 'DD-MM-YYYY',
+    stringFormat: 'dd-MM-yyyy',
     expect: `${currentDay}-${currentMonth + 1}-${currentYear}`
   },
   {
-    stringFormat: 'DD-MM-YYYY',
+    stringFormat: 'dd-MM-yyyy',
     date: new Date(2020, 10, 13),
     expect: '13-11-2020'
   }
