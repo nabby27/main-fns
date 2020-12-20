@@ -1,6 +1,6 @@
 {
   "name": "main-fns",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Javascript utility library created with TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
