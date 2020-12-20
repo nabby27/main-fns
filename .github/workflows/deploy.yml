@@ -1,28 +1,43 @@
-name: Check test and lint
+#name: Deploy
 
-on: 
+#on:
+#  on:
+#  release:
+#    types: [published]
+
+#jobs:
+#  test:
+#    runs-on: ubuntu-18.04
+
+#    steps:
+#    - uses: actions/checkout@v2
+#    - name: Use Node.js ${{ matrix.node-version }}
+#      uses: actions/setup-node@v1
+#      with:
+#        node-version: ${{ matrix.node-version }}
+#    - name: Install dependencies
+#      run: npm install
+#    - env:
+#        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#    - name: Run upload
+#      run: npm run publish
+
+
+
+name: Deploy
+on:
   push:
-    tags:
-      - '*'
-
+    branches:
+      - main
 jobs:
-  test:
-    
-    runs-on: ubuntu-18.04
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-
+  npm-publish:
+    name: npm-publish
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: npm install
-    - env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - name: Run upload
-      run: npm run publish
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Publish if version has been updated
+      uses: pascalgn/npm-publish-action@1.3.6
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
