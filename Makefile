@@ -52,6 +52,3 @@ eslint-fix: up
 	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
 	${MAKE} stop
 
-publish: up
-	@docker-compose exec $(CONTAINER_NAME) npm run upload || $(MAKE) stop
-	${MAKE} stop

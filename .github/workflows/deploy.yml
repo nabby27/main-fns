@@ -2,8 +2,8 @@ name: Check test and lint
 
 on: 
   push:
-    branches:
-      - '**'
+    tags:
+      - '*'
 
 jobs:
   test:
@@ -22,5 +22,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: npm install
-    - name: Run test and linter
-      run: npm run test:all
+    - env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Run upload
+      run: npm run publish
