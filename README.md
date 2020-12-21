@@ -25,9 +25,9 @@ npm i main-fns
 ```ts
 import { addDays, dateToString } from 'main-fns'
 
-addDays(1, new Date(2014, 1, 11)) // '2014-02-12'
+addDays(1, new Date(1996, 5, 26)) // new Date(1996, 5, 27)
 
-dateToString(new Date(2014, 1, 11), 'yyyy-MM-dd') // '2014-02-11'
+dateToString('yyyy-MM-dd', new Date(1996, 5, 27)) // '1996-06-27'
 ```
 
 Feel free to investigate the [main-fns API](https://nabby27.github.io/main-fns/), it is structured by modules and created using JSDoc.
