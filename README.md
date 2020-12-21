@@ -10,7 +10,7 @@ Javascript utility library created with TypeScript
 Documentation on [https://nabby27.github.io/main-fns/](https://nabby27.github.io/main-fns/)
 
 ## Why main-fns?
-It is quite tedious to be aware of all the dependencies and keep their changes, the idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the most current libraries of the moment and will be up to date for you.
+It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the most current libraries of the moment and it will be updated for you.
 
 ## Installation
 
