@@ -27,8 +27,8 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc",
     "docs": "jsdoc -c jsdoc.json",
-    "eslint:check": "eslint './src/**'",
-    "eslint:fix": "eslint './src/**' --fix",
+    "eslint:check": "npx eslint './src/**'",
+    "eslint:fix": "npx eslint './src/**' --fix",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:watch:coverage": "jest --watchAll --coverage",
@@ -50,7 +50,7 @@
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^12.12.38",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^2.26.0",
     "better-docs": "^2.3.2",
     "eslint": "^6.8.0",
