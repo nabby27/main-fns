@@ -1,4 +1,4 @@
-.PHONY: up stop build install test test-watch test-watch-coverage test-coverage test-all eslint-check eslint-fix
+.PHONY: up stop build install test test-watch test-watch-coverage test-coverage test-all eslint-check eslint-fix version-patch version-minor version-major
 
 CONTAINER_NAME=main-fns
 
@@ -50,5 +50,17 @@ eslint-check: up
 	
 eslint-fix: up
 	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
+	${MAKE} stop
+
+version-patch: up
+	@docker-compose exec $(CONTAINER_NAME) npm run version:patch || $(MAKE) stop
+	${MAKE} stop
+
+version-minor: up
+	@docker-compose exec $(CONTAINER_NAME) npm run version:minor || $(MAKE) stop
+	${MAKE} stop
+
+version-major: up
+	@docker-compose exec $(CONTAINER_NAME) npm run version:major || $(MAKE) stop
 	${MAKE} stop
 

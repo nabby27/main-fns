@@ -34,7 +34,9 @@
     "test:watch:coverage": "jest --watchAll --coverage",
     "test:coverage": "jest --coverage",
     "test:all": "npm run eslint:check && npm run test:coverage",
-    "upload": "npm run build && npm publish"
+    "version:patch": "npm run build && npm run docs && npm version patch",
+    "version:minor": "npm run build && npm run docs && npm version minor",
+    "version:major": "npm run build && npm run docs && npm version major"
   },
   "files": [
     "dist"
