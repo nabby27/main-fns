@@ -2,7 +2,7 @@ version: '3'
 
 services:
   main-fns:
-    image: 'node:14-alpine'
+    build: .
     container_name: 'main-fns'
     working_dir: '/usr/src/app'
     volumes:
