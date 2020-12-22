@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Update CHANGELOG
 ### Deprecated
 ### Removed
 ### Fixed
@@ -16,34 +17,87 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.11](https://github.com/nabby27/main-fns/releases/tag/v0.0.11) - 2020-12-21
 
+### Added
+- CHANGELOG
+- Git on docker container
+
 ## [0.0.10](https://github.com/nabby27/main-fns/releases/tag/v0.0.10) - 2020-12-21
+
+### Changed
+- Update dev dependencies
+- Update README
+- Update docs with JSDocs
+### Fixed
+- Run test on pull request
 
 ## [0.0.9](https://github.com/nabby27/main-fns/releases/tag/v0.0.9) - 2020-12-21
 
+### Changed
+- Update docs with JSDocs
+- Update README
+- Update dev dependencies
+### Fixed
+- Run test on npm update version
+- Eslint commands
+
 ## [0.0.8](https://github.com/nabby27/main-fns/releases/tag/v0.0.8) - 2020-12-21
+
+### Changed
+- Update docs with JSDocs
+- Update make commands to develop
+### Removed
+- Unnecessary dev dependencies
 
 ## [0.0.7](https://github.com/nabby27/main-fns/releases/tag/v0.0.7) - 2020-12-21
 
+### Added
+- LICENSE file
+### Changed
+- Github Actions workflow to deploy
+- Update README
+
 ## [0.0.6](https://github.com/nabby27/main-fns/releases/tag/v0.0.6) - 2020-12-20
+
+### Added
+- Tags
+- Deploy on npm when change version
 
 ## [0.0.5](https://github.com/nabby27/main-fns/releases/tag/v0.0.5) - 2020-12-20
 
+### Removed
+- moment dependence
+
 ## [0.0.4](https://github.com/nabby27/main-fns/releases/tag/v0.0.4) - 2020-12-20
+
+### Changed
+- Update docs with JSDocs
+- Update dependencies
 
 ## [0.0.3](https://github.com/nabby27/main-fns/releases/tag/v0.0.3) - 2020-12-20
 
+### Changed
+- Dates implementation with date-fns
+
 ## [0.0.2](https://github.com/nabby27/main-fns/releases/tag/v0.0.2) - 2020-12-20
+
+### Added
+- Some dates functions to test with moment
+- JSDoc to documentation on Github Pages
+- Implement all test
+- CI with Github Actions
+### Changed
+- Rename project
 
 ## [0.0.1](https://github.com/nabby27/main-fns/releases/tag/v0.0.1) - 2020-12-17
 
 ### Added
 - Create base project with:
   - TypeScript
-  - eslint
+  - Eslint
   - Jest
   - Docker Compose
   - Make
-- Some dates functions to test
+- Some dates functions to test with moment
 - JSDoc to documentation on Github Pages
 - Implement all test
 - CI with Github Actions
