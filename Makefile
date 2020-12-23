@@ -8,6 +8,10 @@ up:
 stop:
 	@docker-compose down
 
+install: up
+	@docker-compose exec $(CONTAINER_NAME) npm install $(ARGS) || $(MAKE) stop
+	${MAKE} stop
+
 build: up
 	@docker-compose exec $(CONTAINER_NAME) npm run build || $(MAKE) stop
 	@docker-compose exec $(CONTAINER_NAME) chown -R node:node dist
@@ -18,8 +22,12 @@ docs: up
 	@docker-compose exec $(CONTAINER_NAME) chown -R node:node docs
 	${MAKE} stop
 
-install: up
-	@docker-compose exec $(CONTAINER_NAME) npm install $(ARGS) || $(MAKE) stop
+eslint-check: up
+	@docker-compose exec $(CONTAINER_NAME) npm run eslint:check || $(MAKE) stop
+	${MAKE} stop
+	
+eslint-fix: up
+	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
 	${MAKE} stop
 
 test: up
@@ -43,14 +51,6 @@ test-coverage: up
 test-all: up
 	@docker-compose exec $(CONTAINER_NAME) npm run test:all || $(MAKE) stop
 	$(MAKE) stop
-
-eslint-check: up
-	@docker-compose exec $(CONTAINER_NAME) npm run eslint:check || $(MAKE) stop
-	${MAKE} stop
-	
-eslint-fix: up
-	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
-	${MAKE} stop
 
 version-patch: up
 	@docker-compose exec $(CONTAINER_NAME) npm run version:patch || $(MAKE) stop
