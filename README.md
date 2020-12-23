@@ -31,3 +31,7 @@ dateToString('yyyy-MM-dd', new Date(1996, 5, 27)) // '1996-06-27'
 ```
 
 Feel free to investigate the [main-fns API](https://nabby27.github.io/main-fns/), it is structured by modules and created using JSDoc.
+
+## How to contribute
+
+See de [CONTRIBUTING](./.github/CONTRIBUTING.md) page
