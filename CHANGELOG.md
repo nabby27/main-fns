@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Code of conduct page
 ### Changed
 - Update README
+- Update docs with JSDocs
 
 ## [0.0.11](https://github.com/nabby27/main-fns/releases/tag/v0.0.11) - 2020-12-21
 
