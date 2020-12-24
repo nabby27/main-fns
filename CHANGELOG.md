@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.0.14](https://github.com/nabby27/main-fns/releases/tag/v0.0.14) - 2020-12-24
 
 ### Fixed
-- deploy build adn deploy project on npm
+- deploy build and deploy project on npm
 
 ## [v0.0.13](https://github.com/nabby27/main-fns/releases/tag/v0.0.13) - 2020-12-24
 
