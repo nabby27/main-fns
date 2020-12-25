@@ -5,6 +5,8 @@
   },
   "testRegex": "(/test/).*\\.spec.ts$",
   "moduleFileExtensions": ["ts", "js", "json", "node"],
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
   "coverageThreshold": {
     "global": {
       "branches": 100,
@@ -13,7 +15,6 @@
       "statements": 100
     }
   },
-  "coverageDirectory": "coverage",
   "collectCoverageFrom": [
     "!**/test/**"
   ]

@@ -23,6 +23,8 @@ jobs:
       run: npm install
     - name: Run test and linter
       run: npm run test:all
+    - name: Upload coverage to codecov
+      run: npx codecov --token=${{ secrets.CODECOV_TOKEN }}
 
   deploy:
     needs: test
