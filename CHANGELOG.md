@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.0.13...HEAD)
 
 ### Added
+- Build project to esm (e.s. modules) and cjs (commonjs)
+
 ### Changed
 ### Deprecated
 ### Removed
@@ -17,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.0.14](https://github.com/nabby27/main-fns/releases/tag/v0.0.14) - 2020-12-24
 
 ### Fixed
-- deploy build and deploy project on npm
+- Deploy build and deploy project on npm
 
 ## [v0.0.13](https://github.com/nabby27/main-fns/releases/tag/v0.0.13) - 2020-12-24
 
