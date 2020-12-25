@@ -9,8 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Build project to esm (e.s. modules) and cjs (commonjs)
+- Codecov
 
 ### Changed
+- Update README
+- Update docs with JSDocs
+
 ### Deprecated
 ### Removed
 ### Fixed
