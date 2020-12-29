@@ -2,8 +2,8 @@
   "name": "main-fns",
   "version": "0.1.0",
   "description": "Javascript utility library created with TypeScript",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "nabby27",
   "keywords": [
@@ -26,7 +26,7 @@
     "url": "https://github.com/nabby27/main-fns"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc --p tsconfig.server.json && tsc --p tsconfig.browser.json",
+    "build": "rm -rf ./dist && tsc --p tsconfig.browser.json",
     "docs": "jsdoc -c jsdoc.json",
     "eslint:check": "npx eslint './src/**'",
     "eslint:fix": "npx eslint './src/**' --fix",
@@ -56,8 +56,6 @@
     "@types/lodash": "^4.14.166",
     "@types/mathjs": "^6.0.9",
     "@types/node": "^12.19.11",
-    "@typescript-eslint/eslint-plugin": "^4.11.0",
-    "@typescript-eslint/parser": "^2.26.0",
     "better-docs": "^2.3.2",
     "codecov": "^3.8.1",
     "eslint": "^6.8.0",
