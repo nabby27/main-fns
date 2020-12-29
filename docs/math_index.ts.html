@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>main-fns -  Home</title>
+  <title>main-fns -  math/index.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -86,61 +88,36 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>math/index.ts</h1>
                 </header>
                 
 
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>main-fns</h1>
-<p><a href="https://github.com/nabby27/main-fns/blob/main/LICENSE"><img src="https://img.shields.io/apm/l/atomic-design-ui.svg?" alt="MIT License"></a>
-<a href="https://www.npmjs.com/package/main-fns"><img src="https://img.shields.io/npm/v/main-fns.svg?style=flat&amp;label=version" alt="Version"></a>
-<a href="https://github.com/nabby27/main-fns/actions?query=workflow%3A%22Test+lint+and+deploy%22"><img src="https://img.shields.io/github/workflow/status/nabby27/main-fns/Test%20lint%20and%20deploy/main?label=test" alt="Build Status"></a>
-<a href="https://codecov.io/gh/nabby27/main-fns/branch/main"><img src="https://img.shields.io/codecov/c/github/nabby27/main-fns/main" alt="Codecov branch"></a>
-<img src="https://img.shields.io/npm/dw/main-fns" alt="npm">
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=M57SG9J5RQ6DJ&amp;currency_code=EUR&amp;source=url"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal"></a></p>
-<p>Javascript utility library created with TypeScript</p>
-<p>Documentation on <a href="https://nabby27.github.io/main-fns/">https://nabby27.github.io/main-fns/</a></p>
-<h2>Why main-fns?</h2>
-<p>It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the most current libraries of the moment and it will be updated for you.</p>
-<h2>Installation</h2>
-<p>Using npm:</p>
-<pre class="prettyprint source lang-sh"><code>npm i main-fns
-</code></pre>
-<h2>Some examples</h2>
-<pre class="prettyprint source lang-ts"><code>import { addDays, dateToString } from 'main-fns'
+        <article>
+            <pre class="prettyprint source linenums"><code>import { MathUtilMathJs } from './impl/mathUtilMathJs';
+import { MathFunctions } from './util/math.function';
 
-addDays(1, new Date(1996, 5, 26)) // new Date(1996, 5, 27)
+/**
+ * @module Math
+ */
 
-dateToString('yyyy-MM-dd', new Date(1996, 5, 27)) // '1996-06-27'
+/**
+ *
+ * Returns the smallest number in the array
+ *
+ * @param {!number[]} numbers - The array of numbers
+ * @returns {number} The smallest number
+ */
+export function min(...numbers: number[]): number {
+  return new MathFunctions(new MathUtilMathJs()).min(numbers);
+}
 </code></pre>
-<p>Feel free to investigate the <a href="https://nabby27.github.io/main-fns/">main-fns API</a>, it is structured by modules and created using JSDoc.</p>
-<h2>How to contribute</h2>
-<p>See de <a href="./.github/CONTRIBUTING.md">CONTRIBUTING</a> page</p></article>
+        </article>
     </section>
-
-
 
 
 
