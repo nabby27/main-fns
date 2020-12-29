@@ -5,22 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.0.15...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.1.1...HEAD)
+
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## [v0.1.1](https://github.com/nabby27/main-fns/releases/tag/v0.1.1) - 2020-12-29
 
 ### Added
 - Math module
 
-### Changed
-### Deprecated
 ### Removed
 - build to cjs
 
 ### Fixed
 - Unused vars on eslint interfaces
 
-### Security
-
-## [v0.0.15](https://github.com/nabby27/main-fns/releases/tag/v0.0.15) - 2020-12-29
+## [v0.1.0](https://github.com/nabby27/main-fns/releases/tag/v0.1.0) - 2020-12-29
 
 ### Added
 - Build project to esm (e.s. modules) and cjs (commonjs)
