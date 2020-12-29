@@ -13,7 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Deprecated
 ### Removed
+- build to cjs
+
 ### Fixed
+- Unused vars on eslint interfaces
+
 ### Security
 
 ## [v0.0.15](https://github.com/nabby27/main-fns/releases/tag/v0.0.15) - 2020-12-29
