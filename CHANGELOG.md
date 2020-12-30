@@ -8,7 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.1.1...HEAD)
 
 ### Added
+- Functions for math module
+
 ### Changed
+- Math implementation with compute.io
+
 ### Deprecated
 ### Removed
 ### Fixed
