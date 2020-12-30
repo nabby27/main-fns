@@ -7,10 +7,10 @@ import { MathFunctions } from './util/math.function';
 
 /**
  *
- * Returns the smallest number from numbers
+ * Returns the biggest number from numbers
  *
  * @param {!number[]} numbers - The numbers
- * @returns {number} The smallest number
+ * @returns {number} The biggest number
  */
 export function max(...numbers: number[]): number {
   return new MathFunctions(new MathUtilComputeIo()).max(numbers);
