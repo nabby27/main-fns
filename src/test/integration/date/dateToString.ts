@@ -16,7 +16,7 @@ export class DateToStringTest {
     {
       stringFormat: 'yyyy-MM-dd',
       date: new Date(),
-      expect: `${this.currentYear}-${("0" + (this.currentMonth + 1)).slice(-2)}-${("0" + this.currentDay).slice(-2)}`
+      expect: `${this.currentYear}-${('0' + (this.currentMonth + 1)).slice(-2)}-${('0' + this.currentDay).slice(-2)}`
     },
     {
       stringFormat: 'yyyy-MM-dd',
@@ -26,7 +26,7 @@ export class DateToStringTest {
     {
       stringFormat: 'dd-MM-yyyy',
       date: new Date(),
-      expect: `${("0" + this.currentDay).slice(-2)}-${("0" + (this.currentMonth + 1)).slice(-2)}-${this.currentYear}`
+      expect: `${('0' + this.currentDay).slice(-2)}-${('0' + (this.currentMonth + 1)).slice(-2)}-${this.currentYear}`
     },
     {
       stringFormat: 'dd-MM-yyyy',
