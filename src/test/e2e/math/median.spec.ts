@@ -15,8 +15,7 @@ const data: {
 ];
 
 describe('Get median from numbers', () => {
-  data.forEach((item
-    ) => {
+  data.forEach((item) => {
     test('should return median from numbers', () => {
       const result = median(...item.array);
 
