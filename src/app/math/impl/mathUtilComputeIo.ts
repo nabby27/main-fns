@@ -3,6 +3,10 @@ import { MathUtil } from '../util/math.util.interface';
 
 export class MathUtilComputeIo implements MathUtil {
 
+  median(numbers: number[]): number {
+    return compute.median(numbers) as number;
+  }
+
   max(numbers: number[]): number {
     return compute.max(numbers) as number;
   }

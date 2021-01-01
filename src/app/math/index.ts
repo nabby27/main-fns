@@ -7,6 +7,17 @@ import { MathFunctions } from './util/math.function';
 
 /**
  *
+ * Returns the median number from numbers
+ *
+ * @param {!number[]} numbers - The numbers
+ * @returns {number} The median
+ */
+export function median(...numbers: number[]): number {
+  return new MathFunctions(new MathUtilComputeIo()).median(numbers);
+}
+
+/**
+ *
  * Returns the biggest number from numbers
  *
  * @param {!number[]} numbers - The numbers

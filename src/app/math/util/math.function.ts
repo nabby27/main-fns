@@ -4,6 +4,10 @@ export class MathFunctions {
 
   constructor(private mathUtilImpl: MathUtil) { }
 
+  median(numbers: number[]): number {
+    return this.mathUtilImpl.median(numbers);
+  }
+
   max(numbers: number[]): number {
     return this.mathUtilImpl.max(numbers);
   }
