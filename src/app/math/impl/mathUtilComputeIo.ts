@@ -11,6 +11,10 @@ export class MathUtilComputeIo implements MathUtil {
     return compute.min(numbers) as number;
   }
 
+  multiply(numbers: number[]): number {
+    return compute.prod(numbers) as number;
+  }
+
   sum(numbers: number[]): number {
     return compute.sum(numbers) as number;
   }

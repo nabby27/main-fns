@@ -29,6 +29,17 @@ export function min(...numbers: number[]): number {
 
 /**
  *
+ * Returns the product from numbers
+ *
+ * @param {!number[]} numbers - The numbers
+ * @returns {number} The product
+ */
+export function multiply(...numbers: number[]): number {
+  return new MathFunctions(new MathUtilComputeIo()).multiply(numbers);
+}
+
+/**
+ *
  * Returns the sum from numbers
  *
  * @param {!number[]} numbers - The numbers

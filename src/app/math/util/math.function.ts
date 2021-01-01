@@ -12,6 +12,10 @@ export class MathFunctions {
     return this.mathUtilImpl.min(numbers);
   }
 
+  multiply(numbers: number[]): number {
+    return this.mathUtilImpl.multiply(numbers);
+  }
+
   sum(numbers: number[]): number {
     return this.mathUtilImpl.sum(numbers);
   }
