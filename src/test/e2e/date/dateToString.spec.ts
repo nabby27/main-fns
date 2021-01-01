@@ -12,7 +12,7 @@ const expectsDatesToString: {
 }[] = [
   {
     stringFormat: 'yyyy-MM-dd',
-    expect: `${currentYear}-${currentMonth + 1}-${currentDay}`
+    expect: `${currentYear}-${("0" + (currentMonth + 1)).slice(-2)}-${("0" + currentDay).slice(-2)}`
   },
   {
     stringFormat: 'yyyy-MM-dd',
@@ -21,7 +21,7 @@ const expectsDatesToString: {
   },
   {
     stringFormat: 'dd-MM-yyyy',
-    expect: `${currentDay}-${currentMonth + 1}-${currentYear}`
+    expect: `${("0" + currentDay).slice(-2)}-${("0" + (currentMonth + 1)).slice(-2)}-${currentYear}`
   },
   {
     stringFormat: 'dd-MM-yyyy',
