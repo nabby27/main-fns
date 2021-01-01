@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.1.2...HEAD)
 
 ### Added
+- Multiply function on math module
+
 ### Changed
 ### Deprecated
 ### Removed
