@@ -11,6 +11,10 @@ export class ArrayUtilLodash implements ArrayUtil {
     return lodash.last(array) as T;
   }
 
+  orderBy<T>(key: string, array: T[]): T[] {
+    return lodash.orderBy(array, [key], ['asc']) as T[];
+  }
+
   reverse<T>(array: T[]): T[] {
     return lodash.reverse(array) as T[];
   }

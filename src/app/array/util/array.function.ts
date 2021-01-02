@@ -12,6 +12,10 @@ export class ArrayFunctions {
     return this.arrayUtilImpl.last(array);
   }
 
+  orderBy<T>(key: string, array: T[]): T[] {
+    return this.arrayUtilImpl.orderBy(key, array);
+  }
+
   reverse<T>(array: T[]): T[] {
     return this.arrayUtilImpl.reverse(array);
   }

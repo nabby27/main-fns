@@ -31,6 +31,19 @@ export function last<T>(array: T[]): T {
 
 /**
  *
+ * Returns the the array ordered by key
+ *
+ * @template T
+ * @param {!T[]} array - The array
+ * @param {!string} array - The key
+ * @returns {T[]} The array ordered by key
+ */
+export function orderBy<T>(key: string, array: T[]): T[] {
+  return new ArrayFunctions(new ArrayUtilLodash()).orderBy(key, array);
+}
+
+/**
+ *
  * Returns the array reversed
  *
  * @template T

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Math] median function
 - [Math] mode function
 - [Math] multiply function
+- [Array] orderby function
 
 ### Changed
 - [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation

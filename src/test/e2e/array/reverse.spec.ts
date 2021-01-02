@@ -2,7 +2,7 @@ import { reverse } from '../../../app';
 
 const data: {
   array: unknown[];
-  expect: unknown;
+  expect: unknown[];
 }[] = [
   {
     array: [3, 2, 1],
