@@ -33,7 +33,7 @@ export class MathUtilOwn implements MathUtil {
 
   mode(numbers: number[]): number[] {
     const modes: number[] = [];
-    const count = {};
+    const count: {[number: number]: number} = {};
     let maxRepeat = 0;
 
     numbers.forEach((number: number) => {
