@@ -5,15 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.2.1...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.3.0...HEAD)
 
 ### Added
 ### Changed
 ### Deprecated
 ### Removed
-- Unnecessary dependencies
 ### Fixed
 ### Security
+
+## [v0.3.0](https://github.com/nabby27/main-fns/releases/tag/v0.3.0) - 2021-01-02
+
+### Added
+- [String] module
+- [String] camelCase function
+- [String] capitalize function
+- [String] firstLetters function
+- [String] kebabCase function
+- [String] lastLetters function
+- [String] lowerCase function
+- [String] snakeCase function
+- [String] titleCase function
+- [String] upperCase function
+
+### Changed
+- Update docs
+
+### Removed
+- Unnecessary dependencies
 
 ## [v0.2.1](https://github.com/nabby27/main-fns/releases/tag/v0.2.1) - 2021-01-02
 
@@ -27,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Math] median function
 - [Math] mode function
 - [Math] multiply function
-- [Array] orderby function
+- [Array] orderBy function
 
 ### Changed
 - [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
