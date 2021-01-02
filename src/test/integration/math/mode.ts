@@ -1,33 +1,33 @@
 import { MathFunctions } from '../../../app/math/util/math.function';
 import { MathUtil } from '../../../app/math/util/math.util.interface';
 
-export class MedianTest {
+export class ModeTest {
 
   data: {
     array: number[];
-    expect: number;
+    expect: number[];
   }[] = [
     {
-      array: [],
-      expect: 0
+      array: [3, 1, 1],
+      expect: [1]
     },
     {
-      array: [3, 1, 2],
-      expect: 2
+      array: [4, 2, 2, 5],
+      expect: [2]
     },
     {
-      array: [4, 6, 2, 5],
-      expect: 4.5
+      array: [4, 2, 2, 5, 4, 3, 3],
+      expect: [2, 3, 4]
     }
   ];
 
   constructor(private mathUtilImpl: MathUtil) {}
 
   runTest(): void {
-    describe('Get median from numbers', () => {
+    describe('Get mode from array', () => {
       this.data.forEach((item) => {
-        test('should return median from numbers', () => {
-          const result = new MathFunctions(this.mathUtilImpl).median(item.array);
+        test('should return mode from array', () => {
+          const result = new MathFunctions(this.mathUtilImpl).mode(item.array);
 
           expect(result).toEqual(item.expect);
         });
