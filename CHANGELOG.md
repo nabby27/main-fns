@@ -5,16 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.3.0...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.3.1...HEAD)
 
 ### Added
-- Free side effect on package.json
-
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [v0.3.0](https://github.com/nabby27/main-fns/releases/tag/v0.3.1) - 2021-01-02
+
+### Added
+- Free side effect on package.json
 
 ## [v0.3.0](https://github.com/nabby27/main-fns/releases/tag/v0.3.0) - 2021-01-02
 
