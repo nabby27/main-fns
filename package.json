@@ -20,6 +20,7 @@
   ],
   "license": "MIT",
   "private": false,
+  "sideEffects": false,
   "homepage": "https://nabby27.github.io/main-fns/",
   "repository": {
     "type": "git",

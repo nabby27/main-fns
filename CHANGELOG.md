@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.3.0...HEAD)
 
 ### Added
+- Free side effect on package.json
+
 ### Changed
 ### Deprecated
 ### Removed
