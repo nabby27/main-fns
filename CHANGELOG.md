@@ -5,7 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.1.2...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.2.0...HEAD)
+
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## [v0.2.0](https://github.com/nabby27/main-fns/releases/tag/v0.2.0) - 2021-01-02
 
 ### Added
 - [Math] mean function
@@ -17,12 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
 
-### Deprecated
 ### Removed
 - Unit test folder
-
-### Fixed
-### Security
 
 ## [v0.1.2](https://github.com/nabby27/main-fns/releases/tag/v0.1.2) - 2020-12-30
 
