@@ -8,26 +8,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.1.2...HEAD)
 
 ### Added
-- Multiply function on math module
+- [Math] mean function
+- [Math] median function
+- [Math] mode function
+- [Math] multiply function
 
 ### Changed
+- [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
+
 ### Deprecated
 ### Removed
+- Unit test folder
+
 ### Fixed
 ### Security
 
 ## [v0.1.2](https://github.com/nabby27/main-fns/releases/tag/v0.1.2) - 2020-12-30
 
 ### Added
-- Functions for math module
+- [Math] max function
+- [Math] sum function
 
 ### Changed
-- Math implementation with compute.io
+- [Math] implementation [math.js](https://github.com/josdejong/mathjs) to [compute.io](https://github.com/compute-io/compute.io)
 
 ## [v0.1.1](https://github.com/nabby27/main-fns/releases/tag/v0.1.1) - 2020-12-29
 
 ### Added
-- Math module
+- [Math] module
+- [Math] min function
 
 ### Removed
 - build to cjs
@@ -40,7 +49,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Build project to esm (e.s. modules) and cjs (commonjs)
 - Codecov
-- Array module
+- [Array] module
+- [Array] first function
+- [Array] last function
+- [Array] reverse function
 
 ### Changed
 - Update README
