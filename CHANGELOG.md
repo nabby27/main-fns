@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.2.0...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.2.1...HEAD)
 
 ### Added
 ### Changed
@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 ### Fixed
 ### Security
+
+## [v0.2.1](https://github.com/nabby27/main-fns/releases/tag/v0.2.1) - 2021-01-02
+
+### Changed
+- Update docs
 
 ## [v0.2.0](https://github.com/nabby27/main-fns/releases/tag/v0.2.0) - 2021-01-02
 
@@ -25,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
+- Update docs with JSDocs
 
 ### Removed
 - Unit test folder
