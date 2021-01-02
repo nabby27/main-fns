@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>main-fns -  math/index.ts</title>
+  <title>main-fns -  string/index.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -89,7 +89,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>math/index.ts</h1>
+                    <h1>string/index.ts</h1>
                 </header>
                 
 
@@ -98,88 +98,112 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { MathUtilOwn } from './impl/mathUtilOwn';
-import { MathFunctions } from './util/math.function';
+            <pre class="prettyprint source linenums"><code>import { StringUtilVoca } from './impl/stringUtilVoca';
+import { StringFunctions } from './util/string.function';
 
 /**
- * @module Math
+ * @module String
  */
 
 /**
  *
- * Returns the biggest number from numbers
+ * Returns the camel case text from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The biggest number
+ * @param {!string} text - The text
+ * @returns {strign} The camel case  text
  */
-export function max(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).max(numbers);
+export function camelCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).camelCase(text);
 }
 
 /**
  *
- * Returns the mean from numbers
+ * Returns the capitalized text from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The mean
+ * @param {!string} text - The text
+ * @returns {strign} The capitalized text
  */
-export function mean(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).mean(numbers);
+export function capitalize(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).capitalize(text);
 }
 
 /**
  *
- * Returns the median from numbers
+ * Returns the first letters from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The median
+ * @param {!string} text - The text
+ * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
+ * @returns {strign} The first letters
  */
-export function median(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).median(numbers);
+export function firstLetters(text: string, numberOfLetters = 1): string {
+  return new StringFunctions(new StringUtilVoca()).firstLetters(text, numberOfLetters);
 }
 
 /**
  *
- * Returns the smallest number from numbers
+ * Returns the kebab case text from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The smallest number
+ * @param {!string} text - The text
+ * @returns {strign} The kebab case text
  */
-export function min(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).min(numbers);
+export function kebabCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).kebabCase(text);
 }
 
 /**
  *
- * Returns the mode from numbers
+ * Returns the last letters from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The mode
+ * @param {!string} text - The text
+ * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
+ * @returns {strign} The last letters
  */
-export function mode(...numbers: number[]): number[] {
-  return new MathFunctions(new MathUtilOwn()).mode(numbers);
+export function lastLetters(text: string, numberOfLetters = 1): string {
+  return new StringFunctions(new StringUtilVoca()).lastLetters(text, numberOfLetters);
 }
 
 /**
  *
- * Returns the product from numbers
+ * Returns the lower case text from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The product
+ * @param {!string} text - The text
+ * @returns {strign} The lower case text
  */
-export function multiply(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).multiply(numbers);
+export function lowerCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).lowerCase(text);
 }
 
 /**
  *
- * Returns the sum from numbers
+ * Returns the snake case text from text
  *
- * @param {!number[]} numbers - The numbers
- * @returns {number} The sum
+ * @param {!string} text - The text
+ * @returns {strign} The snake case text
  */
-export function sum(...numbers: number[]): number {
-  return new MathFunctions(new MathUtilOwn()).sum(numbers);
+export function snakeCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).snakeCase(text);
+}
+
+/**
+ *
+ * Returns the title case text from text
+ *
+ * @param {!string} text - The text
+ * @returns {strign} The title case text
+ */
+export function titleCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).titleCase(text);
+}
+
+/**
+ *
+ * Returns the upper case text from text
+ *
+ * @param {!string} text - The text
+ * @returns {strign} The upper case text
+ */
+export function upperCase(text: string): string {
+  return new StringFunctions(new StringUtilVoca()).upperCase(text);
 }
 </code></pre>
         </article>
