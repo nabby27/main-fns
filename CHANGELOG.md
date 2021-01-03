@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - [Array] implementation [lodas](https://github.com/lodash/lodash) to own implementation
 - [Array] divide functions to import only function on use
+- [Math] divide functions to import only function on use
+- [String] divide functions to import only function on use
+- [Date] divide functions to import only function on use
+- [Date] setEndTime to endOfDay (why? By having the name 'set' it implied that there was some side effect)
+- [Date] setInitTime to startOfDay (why? By having the name 'set' it implied that there was some side effect)
 
 ### Deprecated
 ### Removed

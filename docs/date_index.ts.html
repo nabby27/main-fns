@@ -75,7 +75,7 @@
 
     
 
-    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a></li><li id="Dates-nav"><a href="module-Dates.html">Dates</a><ul class='methods'><li data-type="method" id="Dates-addDays-nav"><a href="module-Dates.html#.addDays">addDays</a></li><li data-type="method" id="Dates-addMonths-nav"><a href="module-Dates.html#.addMonths">addMonths</a></li><li data-type="method" id="Dates-addYears-nav"><a href="module-Dates.html#.addYears">addYears</a></li><li data-type="method" id="Dates-dateToString-nav"><a href="module-Dates.html#.dateToString">dateToString</a></li><li data-type="method" id="Dates-isAfter-nav"><a href="module-Dates.html#.isAfter">isAfter</a></li><li data-type="method" id="Dates-isBefore-nav"><a href="module-Dates.html#.isBefore">isBefore</a></li><li data-type="method" id="Dates-setEndTime-nav"><a href="module-Dates.html#.setEndTime">setEndTime</a></li><li data-type="method" id="Dates-setInitTime-nav"><a href="module-Dates.html#.setInitTime">setInitTime</a></li><li data-type="method" id="Dates-subtractDays-nav"><a href="module-Dates.html#.subtractDays">subtractDays</a></li><li data-type="method" id="Dates-subtractMonths-nav"><a href="module-Dates.html#.subtractMonths">subtractMonths</a></li><li data-type="method" id="Dates-subtractYears-nav"><a href="module-Dates.html#.subtractYears">subtractYears</a></li></ul></li><li id="Math-nav"><a href="module-Math.html">Math</a></li><li id="String-nav"><a href="module-String.html">String</a><ul class='methods'><li data-type="method" id="String-camelCase-nav"><a href="module-String.html#.camelCase">camelCase</a></li><li data-type="method" id="String-capitalize-nav"><a href="module-String.html#.capitalize">capitalize</a></li><li data-type="method" id="String-firstLetters-nav"><a href="module-String.html#.firstLetters">firstLetters</a></li><li data-type="method" id="String-kebabCase-nav"><a href="module-String.html#.kebabCase">kebabCase</a></li><li data-type="method" id="String-lastLetters-nav"><a href="module-String.html#.lastLetters">lastLetters</a></li><li data-type="method" id="String-lowerCase-nav"><a href="module-String.html#.lowerCase">lowerCase</a></li><li data-type="method" id="String-snakeCase-nav"><a href="module-String.html#.snakeCase">snakeCase</a></li><li data-type="method" id="String-titleCase-nav"><a href="module-String.html#.titleCase">titleCase</a></li><li data-type="method" id="String-upperCase-nav"><a href="module-String.html#.upperCase">upperCase</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#first">first</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#sum">sum</a></li></ul>
+    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a></li><li id="Dates-nav"><a href="module-Dates.html">Dates</a></li><li id="Math-nav"><a href="module-Math.html">Math</a></li><li id="String-nav"><a href="module-String.html">String</a></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
   </nav>
 
   <div id="main">
@@ -90,171 +90,21 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { DateUtilDateFns } from './impl/dateUtilDateFns';
-import { DateStringFormat } from './types/dateStringFormat';
-import { DateFunctions } from './util/date.function';
-
-/**
+    <pre class="prettyprint source linenums"><code>/**
  * @module Dates
  */
 
-/** @typedef {import('src/app/date/types/dateStringFormat').DateStringFormat} DateStringFormat */
-
-/**
- *
- * Returns the date with the sum of the days, by default the date is `new Date()`
- *
- * @param {!number} daysToAdd - The number of days to increase
- * @param {Date} [date=new Date()] - The date to which days are added, by default is `new Date()`
- * @returns {Date} The date with the days added
- */
-export function addDays(daysToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).addDays(daysToAdd, date);
-}
-
-/**
- *
- * Returns the date with the sum of the months, by default the date is `new Date()`
- *
- * @param {!number} monthsToAdd - The number of months to increase
- * @param {Date} [date=new Date()] - The date to which months are added, by default is `new Date()`
- * @returns {Date} The date with the months added
- */
-export function addMonths(monthsToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).addMonths(monthsToAdd, date);
-}
-
-/**
- *
- * Returns the date with the sum of the years, by default the date is `new Date()`
- *
- * @param {!number} yearsToAdd - The number of years to increase
- * @param {Date} [date=new Date()] - The date to which years are added, by default is `new Date()`
- * @returns {Date} The date with the years added
- */
-export function addYears(yearsToAdd: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).addYears(yearsToAdd, date);
-}
-
-/**
- *
- * Return the date value as string format, by default the date is `new Date()`
- *
- * @param {!DateStringFormat} stringFormat - The format of string for date, {@link DateStringFormat} for more information.
- * @param {Date} [date=new Date()] - The date to transform on string, by default is `new Date()`
- * @returns {string} The date converted on string format
- *
- * @see {@link DateStringFormat}
- */
-export function dateToString(
-  stringFormat: DateStringFormat,
-  date: Date = new Date()
-): string {
-  return new DateFunctions(new DateUtilDateFns()).dateToString(
-    stringFormat,
-    date
-  );
-}
-
-/**
- *
- * Check if the date is after the dateToCompare
- *
- * @param {!Date} date - The date
- * @param {!Date} dateToCompare - The date to compare
- * @returns {boolean} True if date is after the dateToCompare
- */
-export function isAfter(
-  date: Date,
-  dateToCompare: Date
-): boolean {
-  return new DateFunctions(new DateUtilDateFns()).isAfter(
-    date,
-    dateToCompare
-  );
-}
-
-/**
- *
- * Check if the date is before the dateToCompare
- *
- * @param {!Date} date - The date
- * @param {!Date} dateToCompare - The date to compare
- * @returns {boolean} True if date is before the dateToCompare
- */
-export function isBefore(
-  date: Date,
-  dateToCompare: Date
-): boolean {
-  return new DateFunctions(new DateUtilDateFns()).isBefore(
-    date,
-    dateToCompare
-  );
-}
-
-/**
- *
- * Get the date you pass with time to 23:59:59:999.99
- *
- * @param {!Date} date - The date
- * @returns {!Date} - The date with end time
- */
-export function setEndTime(date: Date): Date {
-  return new DateFunctions(new DateUtilDateFns()).setEndTime(date);
-}
-
-/**
- *
- * Get the date you pass with time to 00:00:00:000.00
- *
- * @param {!Date} date - The date
- * @returns {!Date} - The date with init time
- */
-export function setInitTime(date: Date): Date {
-  return new DateFunctions(new DateUtilDateFns()).setInitTime(date);
-}
-
-/**
- *
- * Returns the date with the subtract of the days, by default the date is `new Date()`
- *
- * @param {!number} daysToSubtract - The number of days to subtract
- * @param {Date} [date=new Date()] - The date to which days are subtracted, by default is `new Date()`
- * @returns {Date} The date with subtracted days
- */
-export function subtractDays(daysToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).subtractDays(daysToSubtract, date);
-}
-
-/**
- *
- * Returns the date with the subtract of the months, by default the date is `new Date()`
- *
- * @param {!number} monthsToSubtract - The number of months to subtract
- * @param {Date} [date=new Date()] - The date to which the months are subtracted, by default is `new Date()`
- * @returns {Date} The date with subtracted months
- */
-export function subtractMonths(monthsToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).subtractMonths(
-    monthsToSubtract,
-    date
-  );
-}
-
-/**
- *
- * Returns the date with the subtract of the years, by default the date is `new Date()`
- *
- * @param {!number} yearsToSubtract - The number of years to subtract
- * @param {Date} [date=new Date()] - The date to which the years are subtracted, by default is `new Date()`
- * @returns {Date} The date with subtracted years
- */
-export function subtractYears(yearsToSubtract: number, date: Date = new Date()): Date {
-  return new DateFunctions(new DateUtilDateFns()).subtractYears(
-    yearsToSubtract,
-    date
-  );
-}
+export * from './addDays';
+export * from './addMonths';
+export * from './addYears';
+export * from './dateToString';
+export * from './endOfDay';
+export * from './isAfter';
+export * from './isBefore';
+export * from './startOfDay';
+export * from './subtractDays';
+export * from './subtractMonths';
+export * from './subtractYears';
 </code></pre>
   </article>
 </section>

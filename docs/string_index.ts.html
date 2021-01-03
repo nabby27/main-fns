@@ -75,7 +75,7 @@
 
     
 
-    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a></li><li id="Dates-nav"><a href="module-Dates.html">Dates</a><ul class='methods'><li data-type="method" id="Dates-addDays-nav"><a href="module-Dates.html#.addDays">addDays</a></li><li data-type="method" id="Dates-addMonths-nav"><a href="module-Dates.html#.addMonths">addMonths</a></li><li data-type="method" id="Dates-addYears-nav"><a href="module-Dates.html#.addYears">addYears</a></li><li data-type="method" id="Dates-dateToString-nav"><a href="module-Dates.html#.dateToString">dateToString</a></li><li data-type="method" id="Dates-isAfter-nav"><a href="module-Dates.html#.isAfter">isAfter</a></li><li data-type="method" id="Dates-isBefore-nav"><a href="module-Dates.html#.isBefore">isBefore</a></li><li data-type="method" id="Dates-setEndTime-nav"><a href="module-Dates.html#.setEndTime">setEndTime</a></li><li data-type="method" id="Dates-setInitTime-nav"><a href="module-Dates.html#.setInitTime">setInitTime</a></li><li data-type="method" id="Dates-subtractDays-nav"><a href="module-Dates.html#.subtractDays">subtractDays</a></li><li data-type="method" id="Dates-subtractMonths-nav"><a href="module-Dates.html#.subtractMonths">subtractMonths</a></li><li data-type="method" id="Dates-subtractYears-nav"><a href="module-Dates.html#.subtractYears">subtractYears</a></li></ul></li><li id="Math-nav"><a href="module-Math.html">Math</a></li><li id="String-nav"><a href="module-String.html">String</a><ul class='methods'><li data-type="method" id="String-camelCase-nav"><a href="module-String.html#.camelCase">camelCase</a></li><li data-type="method" id="String-capitalize-nav"><a href="module-String.html#.capitalize">capitalize</a></li><li data-type="method" id="String-firstLetters-nav"><a href="module-String.html#.firstLetters">firstLetters</a></li><li data-type="method" id="String-kebabCase-nav"><a href="module-String.html#.kebabCase">kebabCase</a></li><li data-type="method" id="String-lastLetters-nav"><a href="module-String.html#.lastLetters">lastLetters</a></li><li data-type="method" id="String-lowerCase-nav"><a href="module-String.html#.lowerCase">lowerCase</a></li><li data-type="method" id="String-snakeCase-nav"><a href="module-String.html#.snakeCase">snakeCase</a></li><li data-type="method" id="String-titleCase-nav"><a href="module-String.html#.titleCase">titleCase</a></li><li data-type="method" id="String-upperCase-nav"><a href="module-String.html#.upperCase">upperCase</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#first">first</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#sum">sum</a></li></ul>
+    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a></li><li id="Dates-nav"><a href="module-Dates.html">Dates</a></li><li id="Math-nav"><a href="module-Math.html">Math</a></li><li id="String-nav"><a href="module-String.html">String</a></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
   </nav>
 
   <div id="main">
@@ -90,113 +90,19 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { StringUtilVoca } from './impl/stringUtilVoca';
-import { StringFunctions } from './util/string.function';
-
-/**
+    <pre class="prettyprint source linenums"><code>/**
  * @module String
  */
 
-/**
- *
- * Returns the camel case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The camel case  text
- */
-export function camelCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).camelCase(text);
-}
-
-/**
- *
- * Returns the capitalized text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The capitalized text
- */
-export function capitalize(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).capitalize(text);
-}
-
-/**
- *
- * Returns the first letters from text
- *
- * @param {!string} text - The text
- * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
- * @returns {strign} The first letters
- */
-export function firstLetters(text: string, numberOfLetters = 1): string {
-  return new StringFunctions(new StringUtilVoca()).firstLetters(text, numberOfLetters);
-}
-
-/**
- *
- * Returns the kebab case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The kebab case text
- */
-export function kebabCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).kebabCase(text);
-}
-
-/**
- *
- * Returns the last letters from text
- *
- * @param {!string} text - The text
- * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
- * @returns {strign} The last letters
- */
-export function lastLetters(text: string, numberOfLetters = 1): string {
-  return new StringFunctions(new StringUtilVoca()).lastLetters(text, numberOfLetters);
-}
-
-/**
- *
- * Returns the lower case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The lower case text
- */
-export function lowerCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).lowerCase(text);
-}
-
-/**
- *
- * Returns the snake case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The snake case text
- */
-export function snakeCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).snakeCase(text);
-}
-
-/**
- *
- * Returns the title case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The title case text
- */
-export function titleCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).titleCase(text);
-}
-
-/**
- *
- * Returns the upper case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The upper case text
- */
-export function upperCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).upperCase(text);
-}
+export * from './camelCase';
+export * from './capitalize';
+export * from './firstLetters';
+export * from './kebabCase';
+export * from './lastLetters';
+export * from './lowerCase';
+export * from './snakeCase';
+export * from './titleCase';
+export * from './upperCase';
 </code></pre>
   </article>
 </section>
