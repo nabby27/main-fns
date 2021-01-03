@@ -1,117 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>main-fns -  String</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="./build/entry.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
-  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
-  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
-  <link type="text/css" rel="stylesheet" href="">
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>
+      String - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
 
   
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
 </head>
 
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
 
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
 
-<body class="layout small-header">
-    <div id="stickyNavbarOverlay"></div>
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
     
 
-<div class="top-nav">
-    <div class="inner">
-        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-        <div class="logo">
-            
-             
-                <a href="index.html">
-                    <h1 class="navbar-item">main-fns</h1>
-                </a>
-            
-        </div>
-        <div class="menu">
-            
-            <div class="navigation">
-                <a
-                    href="index.html"
-                    class="link"
-                >
-                    API Documentation
-                </a>
-                
-                 
-                    
-                        <a
-                            class="link user-link "
-                            href="https://github.com/nabby27/main-fns"
-                        >
-                            Github
-                        </a>
-                    
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-    <div id="main">
-        <div
-            class="sidebar "
-            id="sidebarNav"
-        >
-            
-            <nav>
-                
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Modules</h3><ul><li><a href="module-Array.html">Array</a></li><li><a href="module-Dates.html">Dates</a></li><li><a href="module-Math.html">Math</a></li><li><a href="module-String.html">String</a></li></ul><h3>Global</h3><ul><li><a href="global.html#first">first</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li></ul></div>
-                
-            </nav>
-        </div>
-        <div class="core" id="main-content-wrapper">
-            <div class="content">
-                <header class="page-title">
-                    <p>Module</p>
-                    <h1>String</h1>
-                </header>
-                
+    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a></li><li id="Dates-nav"><a href="module-Dates.html">Dates</a><ul class='methods'><li data-type="method" id="Dates-addDays-nav"><a href="module-Dates.html#.addDays">addDays</a></li><li data-type="method" id="Dates-addMonths-nav"><a href="module-Dates.html#.addMonths">addMonths</a></li><li data-type="method" id="Dates-addYears-nav"><a href="module-Dates.html#.addYears">addYears</a></li><li data-type="method" id="Dates-dateToString-nav"><a href="module-Dates.html#.dateToString">dateToString</a></li><li data-type="method" id="Dates-isAfter-nav"><a href="module-Dates.html#.isAfter">isAfter</a></li><li data-type="method" id="Dates-isBefore-nav"><a href="module-Dates.html#.isBefore">isBefore</a></li><li data-type="method" id="Dates-setEndTime-nav"><a href="module-Dates.html#.setEndTime">setEndTime</a></li><li data-type="method" id="Dates-setInitTime-nav"><a href="module-Dates.html#.setInitTime">setInitTime</a></li><li data-type="method" id="Dates-subtractDays-nav"><a href="module-Dates.html#.subtractDays">subtractDays</a></li><li data-type="method" id="Dates-subtractMonths-nav"><a href="module-Dates.html#.subtractMonths">subtractMonths</a></li><li data-type="method" id="Dates-subtractYears-nav"><a href="module-Dates.html#.subtractYears">subtractYears</a></li></ul></li><li id="Math-nav"><a href="module-Math.html">Math</a></li><li id="String-nav"><a href="module-String.html">String</a><ul class='methods'><li data-type="method" id="String-camelCase-nav"><a href="module-String.html#.camelCase">camelCase</a></li><li data-type="method" id="String-capitalize-nav"><a href="module-String.html#.capitalize">capitalize</a></li><li data-type="method" id="String-firstLetters-nav"><a href="module-String.html#.firstLetters">firstLetters</a></li><li data-type="method" id="String-kebabCase-nav"><a href="module-String.html#.kebabCase">kebabCase</a></li><li data-type="method" id="String-lastLetters-nav"><a href="module-String.html#.lastLetters">lastLetters</a></li><li data-type="method" id="String-lowerCase-nav"><a href="module-String.html#.lowerCase">lowerCase</a></li><li data-type="method" id="String-snakeCase-nav"><a href="module-String.html#.snakeCase">snakeCase</a></li><li data-type="method" id="String-titleCase-nav"><a href="module-String.html#.titleCase">titleCase</a></li><li data-type="method" id="String-upperCase-nav"><a href="module-String.html#.upperCase">upperCase</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#first">first</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#sum">sum</a></li></ul>
+  </nav>
 
+  <div id="main">
+    
+      <h1 class="page-title">
+        String
+      </h1>
+    
 
-
+    
 
 <section>
-
-<header>
+  <header>
     
-        
-    
-</header>
+      
+  </header>
 
-<article>
+  <article>
     <div class="container-overview">
-    
+      
         
 
         
-    
+      
     </div>
-    
-    
 
     
 
@@ -119,101 +106,99 @@
 
     
 
-    
+     
 
     
 
     
 
     
-        <div class='vertical-section'>
-            <h1>Methods</h1>
-            <div class="members">
-            
-                <div class="member">
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
 
 
-    
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.camelCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".camelCase">
-        <a class="href-link" href="#.camelCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                camelCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>camelCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the camel case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the camel case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -221,43 +206,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line14">line 14</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line14">line 14</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -273,124 +261,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The camel case  text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.capitalize">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".capitalize">
-        <a class="href-link" href="#.capitalize">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                capitalize<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>capitalize<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the capitalized text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the capitalized text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -398,43 +352,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line24">line 24</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line24">line 24</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -450,181 +407,151 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The capitalized text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.firstLetters">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".firstLetters">
-        <a class="href-link" href="#.firstLetters">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                firstLetters<span class="signature">(text<span class="signature-attributes">non-null</span>, numberOfLetters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>firstLetters<span class="signature">(text<span class="signature-attributes">non-null</span>, numberOfLetters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the first letters from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
     
-
-    
-    
-    <div class="description">
-        Returns the first letters from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-            <th>Attributes</th>
-            
-
-            
-            <th>Default</th>
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <tr>
+        
+          <td class="name"><code>text</code></td>
         
 
+        <td class="type">
+          
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
-  
+    <span class="param-type">
+      string
+    </span>
 
-  <td class="type">
-  
-      
-<span class="param-type">string</span>
+    
 
 
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-      <td class="default">
-      
-      </td>
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
+          <td class="attributes">
+            
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>numberOfLetters</code></td>
-  
 
-  <td class="type">
-  
-      
-<span class="param-type">number</span>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-      <td class="default">
-      
-          1
-      
-      </td>
-  
-
-  <td class="description last">The number of letters, by default is `1`</td>
-</tr>
-
+            
+          </td>
+        
 
         
-        </tbody>
-    </table>
-</div>
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>numberOfLetters</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              1
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of letters, by default is `1`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -632,43 +559,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line35">line 35</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line35">line 35</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -684,124 +614,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The first letters</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.kebabCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".kebabCase">
-        <a class="href-link" href="#.kebabCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                kebabCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>kebabCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the kebab case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the kebab case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -809,43 +705,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line45">line 45</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line45">line 45</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -861,181 +760,151 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The kebab case text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.lastLetters">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".lastLetters">
-        <a class="href-link" href="#.lastLetters">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                lastLetters<span class="signature">(text<span class="signature-attributes">non-null</span>, numberOfLetters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>lastLetters<span class="signature">(text<span class="signature-attributes">non-null</span>, numberOfLetters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the last letters from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
     
-
-    
-    
-    <div class="description">
-        Returns the last letters from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-            <th>Attributes</th>
-            
-
-            
-            <th>Default</th>
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
+      <tr>
+        
+          <td class="name"><code>text</code></td>
         
 
+        <td class="type">
+          
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
-  
+    <span class="param-type">
+      string
+    </span>
 
-  <td class="type">
-  
-      
-<span class="param-type">string</span>
+    
 
 
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-      <td class="default">
-      
-      </td>
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
+          <td class="attributes">
+            
 
             
-<tr class="deep-level-0">
-  
-      <td class="name"><code>numberOfLetters</code></td>
-  
 
-  <td class="type">
-  
-      
-<span class="param-type">number</span>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-      <td class="default">
-      
-          1
-      
-      </td>
-  
-
-  <td class="description last">The number of letters, by default is `1`</td>
-</tr>
-
+            
+          </td>
+        
 
         
-        </tbody>
-    </table>
-</div>
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>numberOfLetters</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              1
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of letters, by default is `1`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -1043,43 +912,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line56">line 56</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line56">line 56</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -1095,124 +967,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The last letters</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.lowerCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".lowerCase">
-        <a class="href-link" href="#.lowerCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                lowerCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>lowerCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the lower case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the lower case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -1220,43 +1058,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line66">line 66</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line66">line 66</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -1272,124 +1113,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The lower case text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.snakeCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".snakeCase">
-        <a class="href-link" href="#.snakeCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                snakeCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>snakeCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the snake case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the snake case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -1397,43 +1204,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line76">line 76</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line76">line 76</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -1449,124 +1259,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The snake case text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.titleCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".titleCase">
-        <a class="href-link" href="#.titleCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                titleCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>titleCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the title case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the title case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -1574,43 +1350,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line86">line 86</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line86">line 86</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -1626,124 +1405,90 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The title case text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
+      
         
-<span class="param-type">strign</span>
 
 
-    </div>
-    
-</div>
+  
 
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-                <div class="member">
-
-
-    
+  <span class='name-container'>
+    <a class="link-icon" href="#.upperCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
     <h4 class="name" id=".upperCase">
-        <a class="href-link" href="#.upperCase">#</a>
-        
-            
-                <span class='tag'>static</span>
-            
-        
-        <span class="code-name">
-            
-                upperCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
-            
-        </span>
+      <span class="type-signature">(static) </span>upperCase<span class="signature">(text<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {strign}</span>
     </h4>
-    
+  </span>
 
-    
-    
-    <div class="description">
-        Returns the upper case text from text
-    </div>
-    
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>text</code></td>
   
 
-  <td class="type">
+
+
+  <div class="description">
+    Returns the upper case text from text
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
   
+
+<table class="params">
+  <thead>
+    <tr>
       
-<span class="param-type">string</span>
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
 
 
-  
-  </td>
-
-  
-
-  
-
-  <td class="description last">The text</td>
-</tr>
-
+          
+        </td>
 
         
-        </tbody>
-    </table>
-</div>
+
+        
+
+        <td class="description last">
+          The text
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
 
 
 
@@ -1751,43 +1496,46 @@
 
 <dl class="details">
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
+  
 
-    
-    
+  
 
-    
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line96">line 96</a>
+        </li>
+      </ul>
+    </dd>
+  
 
-    
+  
 
-    
-        <p class="tag-source">
-            <a href="string_index.ts.html" class="button">View Source</a>
-            <span>
-                <a href="string_index.ts.html">string/index.ts</a>, <a href="string_index.ts.html#line96">line 96</a>
-            </span>
-        </p>
-    
+  
+
+  
 </dl>
 
 
@@ -1803,73 +1551,30 @@
 
 
 
-
-
-
-
-    <div class='columns method-parameter'>
-        <div class="column is-2"><label>Returns:</label></div>
-        <div class="column is-10">
-            
-                    
-
-<div class="columns">
-    
-    <div class='param-desc column is-7'>The upper case text</div>
-    
-    
-    <div class='column is-5 has-text-left'>
-        <label>Type: </label>
-        
-<span class="param-type">strign</span>
-
-
-    </div>
-    
-</div>
-
-                
-        </div>
-    </div>
-
-
-
-
-</div>
-            
-            </div>
-        </div>
+      
     
 
     
 
     
-</article>
-
+  </article>
 </section>
 
 
 
 
-            </div>
-            
-            <footer class="footer">
-                <div class="content has-text-centered">
-                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a></p>
-                    <p class="sidebar-created-by">
-                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
-                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
-                    </p>
-                </div>
-            </footer>
-            
-        </div>
-        <div id="side-nav" class="side-nav">
-        </div>
-    </div>
-<script src="scripts/app.min.js"></script>
-<script>PR.prettyPrint();</script>
-<script src="scripts/linenumber.js"> </script>
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
 
 </body>
 </html>

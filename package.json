@@ -58,6 +58,7 @@
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.1.0",
     "better-docs": "^2.3.2",
+    "braintree-jsdoc-template": "^3.3.0",
     "codecov": "^3.8.1",
     "eslint": "^7.5.0",
     "eslint-plugin-tsdoc": "^0.2.10",
