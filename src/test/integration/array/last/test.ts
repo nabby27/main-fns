@@ -1,5 +1,5 @@
-import { ArrayUtil } from '../../../app/array/util/array.util.interface';
-import { ArrayFunctions } from '../../../app/array/util/array.function';
+import { Last } from '../../../../app/array/last/util/last.interface';
+import { LastFunction } from '../../../../app/array/last/util/last.function';
 
 export class LastTest {
 
@@ -17,13 +17,13 @@ export class LastTest {
     }
   ];
 
-  constructor(private arrayUtilImpl: ArrayUtil) {}
+  constructor(private lastImpl: Last) {}
 
   runTest(): void {
     describe('Get last item from array', () => {
       this.data.forEach((item) => {
         test('should return last item from array', () => {
-          const result = new ArrayFunctions(this.arrayUtilImpl).last(item.array);
+          const result = new LastFunction(this.lastImpl).last(item.array);
 
           expect(result).toEqual(item.expect);
         });

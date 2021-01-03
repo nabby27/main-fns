@@ -49,12 +49,10 @@
   },
   "dependencies": {
     "date-fns": "^2.16.1",
-    "lodash": "^4.17.20",
     "voca": "^1.4.0"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
-    "@types/lodash": "^4.14.166",
     "@types/node": "^12.19.11",
     "@types/voca": "^1.4.0",
     "@typescript-eslint/eslint-plugin": "^4.11.0",

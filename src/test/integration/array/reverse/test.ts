@@ -1,5 +1,5 @@
-import { ArrayUtil } from '../../../app/array/util/array.util.interface';
-import { ArrayFunctions } from '../../../app/array/util/array.function';
+import { Reverse } from '../../../../app/array/reverse/util/reverse.interface';
+import { ReverseFunction } from '../../../../app/array/reverse/util/reverse.function';
 
 export class ReverseTest {
 
@@ -17,13 +17,13 @@ export class ReverseTest {
     }
   ];
 
-  constructor(private arrayUtilImpl: ArrayUtil) {}
+  constructor(private reverseImpl: Reverse) {}
 
   runTest(): void {
     describe('Get array reversed', () => {
       this.data.forEach((item) => {
         test('should return array reversed', () => {
-          const result = new ArrayFunctions(this.arrayUtilImpl).reverse(item.array);
+          const result = new ReverseFunction(this.reverseImpl).reverse(item.array);
 
           expect(result).toEqual(item.expect);
         });

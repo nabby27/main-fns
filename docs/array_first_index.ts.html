@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>main-fns -  string/index.ts</title>
+  <title>main-fns -  array/first/index.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -89,7 +89,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>string/index.ts</h1>
+                    <h1>array/first/index.ts</h1>
                 </header>
                 
 
@@ -98,112 +98,19 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { StringUtilVoca } from './impl/stringUtilVoca';
-import { StringFunctions } from './util/string.function';
-
-/**
- * @module String
- */
+            <pre class="prettyprint source linenums"><code>import { FirstOwn } from './impl/firstOwn';
+import { FirstFunction } from './util/first.function';
 
 /**
  *
- * Returns the camel case text from text
+ * Returns the first element of the array
  *
- * @param {!string} text - The text
- * @returns {strign} The camel case  text
+ * @template T
+ * @param {!T[]} array - The array
+ * @returns {T} The first element
  */
-export function camelCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).camelCase(text);
-}
-
-/**
- *
- * Returns the capitalized text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The capitalized text
- */
-export function capitalize(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).capitalize(text);
-}
-
-/**
- *
- * Returns the first letters from text
- *
- * @param {!string} text - The text
- * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
- * @returns {strign} The first letters
- */
-export function firstLetters(text: string, numberOfLetters = 1): string {
-  return new StringFunctions(new StringUtilVoca()).firstLetters(text, numberOfLetters);
-}
-
-/**
- *
- * Returns the kebab case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The kebab case text
- */
-export function kebabCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).kebabCase(text);
-}
-
-/**
- *
- * Returns the last letters from text
- *
- * @param {!string} text - The text
- * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
- * @returns {strign} The last letters
- */
-export function lastLetters(text: string, numberOfLetters = 1): string {
-  return new StringFunctions(new StringUtilVoca()).lastLetters(text, numberOfLetters);
-}
-
-/**
- *
- * Returns the lower case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The lower case text
- */
-export function lowerCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).lowerCase(text);
-}
-
-/**
- *
- * Returns the snake case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The snake case text
- */
-export function snakeCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).snakeCase(text);
-}
-
-/**
- *
- * Returns the title case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The title case text
- */
-export function titleCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).titleCase(text);
-}
-
-/**
- *
- * Returns the upper case text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The upper case text
- */
-export function upperCase(text: string): string {
-  return new StringFunctions(new StringUtilVoca()).upperCase(text);
+export function first&lt;T>(array: T[]): T {
+  return new FirstFunction(new FirstOwn()).first(array);
 }
 </code></pre>
         </article>
