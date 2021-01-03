@@ -5,9 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v0.3.1...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.0.0...HEAD)
 
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## [v1.0.0](https://github.com/nabby27/main-fns/releases/tag/v1.0.0) - 2021-01-03
+
 ### Changed
 - [Date] setEndTime to endOfDay (why? By having the name 'set' it implied that there was some side effect)
 - [Date] setInitTime to startOfDay (why? By having the name 'set' it implied that there was some side effect)
@@ -16,11 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Math] divide functions to import only function on use
 - [String] divide functions to import only function on use
 - [Array] implementation [lodas](https://github.com/lodash/lodash) to own implementation
-
-### Deprecated
-### Removed
-### Fixed
-### Security
+- ES2015 to ESNext
 
 ## [v0.3.1](https://github.com/nabby27/main-fns/releases/tag/v0.3.1) - 2021-01-02
 
