@@ -11,10 +11,11 @@
 
 Javascript utility library created with TypeScript
 
-Documentation on [https://nabby27.github.io/main-fns/](https://nabby27.github.io/main-fns/)
+## Documentation
+Feel free to investigate the [main-fns documentation](https://nabby27.github.io/main-fns/), it is structured by modules and created using JSDoc.
 
 ## Why main-fns?
-It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the most current libraries of the moment and it will be updated for you.
+It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the best implementation of the moment and it will be updated for you.
 
 ## Installation
 
@@ -27,15 +28,23 @@ npm i main-fns
 ## Some examples
 
 ```ts
-import { addDays, dateToString } from 'main-fns'
+import { addDays, camelCase, max } from 'main-fns'
 
 addDays(1, new Date(1996, 5, 26)) // new Date(1996, 5, 27)
 
-dateToString('yyyy-MM-dd', new Date(1996, 5, 27)) // '1996-06-27'
+camelCase('hello world') // helloWorld
+
+max(3, 4, 5, 2) // 5
 ```
 
-Feel free to investigate the [main-fns API](https://nabby27.github.io/main-fns/), it is structured by modules and created using JSDoc.
-
-## How to contribute
+## How to contribute?
 
 See de [CONTRIBUTING](./.github/CONTRIBUTING.md) page
+
+## What changes does it have?
+
+Detailed changes for each release are documented in the [CHANGELOG](./CHANGELOG.md) page or in [release notes](https://github.com/nabby27/main-fns/releases).
+
+## License
+
+See de [LICENSE](./LICENSE) page

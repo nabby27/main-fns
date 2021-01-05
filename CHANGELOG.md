@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Update [README](./README.md)
+- Update [CONTRIBUTING](./.github/CONTRIBUTING.md)
+- Update [HOW_TO_DEVELOP](./.github/HOW_TO_DEVELOP.md)
+- Update [ISSUE_TEMPLATE](./.github/ISSUE_TEMPLATE.md)
+- Update [PULL_REQUEST_TEMPLATE](./.github/PULL_REQUEST_TEMPLATE.md)
+
 ### Deprecated
 ### Removed
 ### Fixed
@@ -17,13 +23,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v1.0.0](https://github.com/nabby27/main-fns/releases/tag/v1.0.0) - 2021-01-03
 
 ### Changed
-- [Date] setEndTime to endOfDay (why? By having the name 'set' it implied that there was some side effect)
-- [Date] setInitTime to startOfDay (why? By having the name 'set' it implied that there was some side effect)
-- [Array] divide functions to import only function on use
-- [Date] divide functions to import only function on use
-- [Math] divide functions to import only function on use
-- [String] divide functions to import only function on use
-- [Array] implementation [lodas](https://github.com/lodash/lodash) to own implementation
+- **date module:** setEndTime to endOfDay (why? By having the name 'set' it implied that there was some side effect)
+- **date module:** setInitTime to startOfDay (why? By having the name 'set' it implied that there was some side effect)
+- **array module:** divide functions to import only function on use
+- **date module:** divide functions to import only function on use
+- **math module:** divide functions to import only function on use
+- **string module:** divide functions to import only function on use
+- **array module:** implementation [lodas](https://github.com/lodash/lodash) to own implementation
 - ES2015 to ESNext
 
 ## [v0.3.1](https://github.com/nabby27/main-fns/releases/tag/v0.3.1) - 2021-01-02
@@ -34,19 +40,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.3.0](https://github.com/nabby27/main-fns/releases/tag/v0.3.0) - 2021-01-02
 
 ### Added
-- [String] module
-- [String] camelCase function
-- [String] capitalize function
-- [String] firstLetters function
-- [String] kebabCase function
-- [String] lastLetters function
-- [String] lowerCase function
-- [String] snakeCase function
-- [String] titleCase function
-- [String] upperCase function
+- **string module**
+- **string module:** camelCase function
+- **string module:** capitalize function
+- **string module:** firstLetters function
+- **string module:** kebabCase function
+- **string module:** lastLetters function
+- **string module:** lowerCase function
+- **string module:** snakeCase function
+- **string module:** titleCase function
+- **string module:** upperCase function
 
 ### Changed
-- Update docs
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ### Removed
 - Unnecessary dependencies
@@ -54,20 +60,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.2.1](https://github.com/nabby27/main-fns/releases/tag/v0.2.1) - 2021-01-02
 
 ### Changed
-- Update docs
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ## [v0.2.0](https://github.com/nabby27/main-fns/releases/tag/v0.2.0) - 2021-01-02
 
 ### Added
-- [Math] mean function
-- [Math] median function
-- [Math] mode function
-- [Math] multiply function
-- [Array] orderBy function
+- **math module:** mean function
+- **math module:** median function
+- **math module:** mode function
+- **math module:** multiply function
+- **array module:** orderBy function
 
 ### Changed
-- [Math] implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
-- Update docs with JSDocs
+- **math module:** implementation [compute.io](https://github.com/compute-io/compute.io) to own implementation
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ### Removed
 - Unit test folder
@@ -75,17 +81,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.1.2](https://github.com/nabby27/main-fns/releases/tag/v0.1.2) - 2020-12-30
 
 ### Added
-- [Math] max function
-- [Math] sum function
+- **math module:** max function
+- **math module:** sum function
 
 ### Changed
-- [Math] implementation [math.js](https://github.com/josdejong/mathjs) to [compute.io](https://github.com/compute-io/compute.io)
+- **math module:** implementation [math.js](https://github.com/josdejong/mathjs) to [compute.io](https://github.com/compute-io/compute.io)
 
 ## [v0.1.1](https://github.com/nabby27/main-fns/releases/tag/v0.1.1) - 2020-12-29
 
 ### Added
-- [Math] module
-- [Math] min function
+- **math module:** module
+- **math module:** min function
 
 ### Removed
 - build to cjs
@@ -97,15 +103,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Build project to esm (e.s. modules) and cjs (commonjs)
-- Codecov
-- [Array] module
-- [Array] first function
-- [Array] last function
-- [Array] reverse function
+- [Codecov](https://codecov.io/gh/nabby27/main-fns)
+- **array module:** module
+- **array module:** first function
+- **array module:** last function
+- **array module:** reverse function
 
 ### Changed
-- Update README
-- Update docs with JSDocs
+- Update [README](./README.md)
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ## [v0.0.14](https://github.com/nabby27/main-fns/releases/tag/v0.0.14) - 2020-12-24
 
@@ -115,8 +121,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.0.13](https://github.com/nabby27/main-fns/releases/tag/v0.0.13) - 2020-12-24
 
 ### Changed
-- Update README
-- Update docs with JSDocs
+- Update [README](./README.md)
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ## [0.0.12](https://github.com/nabby27/main-fns/releases/tag/v0.0.12) - 2020-12-23
 
@@ -125,9 +131,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Issue template
 - Contributing page
 - Code of conduct page
+
 ### Changed
-- Update README
-- Update docs with JSDocs
+- Update [README](./README.md)
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ## [0.0.11](https://github.com/nabby27/main-fns/releases/tag/v0.0.11) - 2020-12-21
 
@@ -138,17 +145,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Update dev dependencies
-- Update README
-- Update docs with JSDocs
+- Update [README](./README.md)
+- Update [documentation](https://nabby27.github.io/main-fns/)
+
 ### Fixed
 - Run test on pull request
 
 ## [0.0.9](https://github.com/nabby27/main-fns/releases/tag/v0.0.9) - 2020-12-21
 
 ### Changed
-- Update docs with JSDocs
-- Update README
+- Update [documentation](https://nabby27.github.io/main-fns/)
+- Update [README](./README.md)
 - Update dev dependencies
+
 ### Fixed
 - Run test on npm update version
 - Eslint commands
@@ -156,18 +165,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.8](https://github.com/nabby27/main-fns/releases/tag/v0.0.8) - 2020-12-21
 
 ### Changed
-- Update docs with JSDocs
+- Update [documentation](https://nabby27.github.io/main-fns/)
 - Update make commands to develop
+
 ### Removed
 - Unnecessary dev dependencies
 
 ## [0.0.7](https://github.com/nabby27/main-fns/releases/tag/v0.0.7) - 2020-12-21
 
 ### Added
-- LICENSE file
+- [LICENSE](./LICENSE) file
+
 ### Changed
 - Github Actions workflow to deploy
-- Update README
+- Update [README](./README.md)
 
 ## [0.0.6](https://github.com/nabby27/main-fns/releases/tag/v0.0.6) - 2020-12-20
 
@@ -183,7 +194,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.4](https://github.com/nabby27/main-fns/releases/tag/v0.0.4) - 2020-12-20
 
 ### Changed
-- Update docs with JSDocs
+- Update [documentation](https://nabby27.github.io/main-fns/)
 - Update dependencies
 
 ## [0.0.3](https://github.com/nabby27/main-fns/releases/tag/v0.0.3) - 2020-12-20
@@ -198,6 +209,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - JSDoc to documentation on Github Pages
 - Implement all test
 - CI with Github Actions
+
 ### Changed
 - Rename project
 

@@ -14,11 +14,10 @@ Fixes # (issue)
 
 # Checklist:
 
-- [ ] My code follows the style guidelines of this project
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added unit tests that prove my fix is effective or that my feature works
-- [ ] I have added integration tests that prove my fix is effective or that my feature works
-- [ ] I have added e2e tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] I generate JSDoc documentation (if needed)
+- [ ] I have made corresponding changes to the CHANGELOG
+- [ ] I have added unit tests (if needed) that prove my fix is effective or my feature works
+- [ ] I have added integration tests (if needed) that prove my fix is effective or my feature works
+- [ ] I have added e2e tests that prove my fix is effective or my feature works
+- [ ] Linter pass locally with my changes
+- [ ] New and existing tests pass locally with my changes

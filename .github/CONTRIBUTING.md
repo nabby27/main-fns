@@ -16,7 +16,7 @@ To see how to build the project and how to develop it visit the [HOW_TO_DEVELOP]
 ## Responsibilities
 
 * Make sure that the code that enters the main branch passes the tests, the linter and the documentation has been generated (if necessary)
-* If an external library is used, make sure to abstract through interfaces, as is done in the case of the dates module.
+* If an external library is used, make sure to abstract through interfaces.
 
 ## How to submit a contribution.
 

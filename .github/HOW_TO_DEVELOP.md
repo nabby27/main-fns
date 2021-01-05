@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This project is built with docker-compose and make. You can run the commands directly with npm but **it is highly recommended to use make with docker-compose** because you make sure to run it with the same version. Make raises the container with docker-compose, executes the task and removes the container, in this way the local machine is clean once you execute the commands.
+This project is built with docker-compose and make. You can run the commands directly with npm but **it is highly recommended to use make with docker-compose** because you make sure to run it with the same version. Make raises the container with docker-compose, executes the task and removes the container, in this way the local machine is clean once you execute the commands, you can check the [Makefile](../Makefile) file to see what commands you can run.
 
 ## Example commands
 
