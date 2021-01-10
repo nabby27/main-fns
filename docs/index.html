@@ -73,7 +73,7 @@
 
     
 
-    <h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
+    <h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#pascalCase">pascalCase</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
   </nav>
 
   <div id="main">
@@ -96,26 +96,34 @@
 <a href="https://www.npmjs.com/package/main-fns"><img src="https://img.shields.io/npm/v/main-fns.svg?style=flat&amp;label=version" alt="Version"></a>
 <a href="https://github.com/nabby27/main-fns/actions?query=workflow%3A%22Test+lint+and+deploy%22"><img src="https://img.shields.io/github/workflow/status/nabby27/main-fns/Test%20lint%20and%20deploy/main?label=test" alt="Build Status"></a>
 <a href="https://codecov.io/gh/nabby27/main-fns/branch/main"><img src="https://img.shields.io/codecov/c/github/nabby27/main-fns/main" alt="Codecov branch"></a>
+<img src="https://badgen.net/bundlephobia/tree-shaking/main-fns/" alt="tree shaking">
+<img src="https://badgen.net/bundlephobia/minzip/main-fns" alt="minzip">
 <img src="https://img.shields.io/npm/dw/main-fns" alt="npm">
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=M57SG9J5RQ6DJ&amp;currency_code=EUR&amp;source=url"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal"></a></p>
 <p>Javascript utility library created with TypeScript</p>
-<p>Documentation on <a href="https://nabby27.github.io/main-fns/">https://nabby27.github.io/main-fns/</a></p>
+<h2>Documentation</h2>
+<p>Feel free to investigate the <a href="https://nabby27.github.io/main-fns/">main-fns documentation</a>, it is structured by modules and created using JSDoc.</p>
 <h2>Why main-fns?</h2>
-<p>It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the most current libraries of the moment and it will be updated for you.</p>
+<p>It is quite tedious to be aware of all the dependencies and keep their changes. The idea of main-fns is that you only worry about this library. Main-fns will have all the main functions that are used in a common way such as the handling of dates, texts, arrays, numbers... Internally main-fns will use the best implementation of the moment and it will be updated for you.</p>
 <h2>Installation</h2>
 <p>Using npm:</p>
 <pre class="prettyprint source lang-sh"><code>npm i main-fns
 </code></pre>
 <h2>Some examples</h2>
-<pre class="prettyprint source lang-ts"><code>import { addDays, dateToString } from 'main-fns'
+<pre class="prettyprint source lang-ts"><code>import { addDays, camelCase, max } from 'main-fns'
 
 addDays(1, new Date(1996, 5, 26)) // new Date(1996, 5, 27)
 
-dateToString('yyyy-MM-dd', new Date(1996, 5, 27)) // '1996-06-27'
+camelCase('hello world') // helloWorld
+
+max(3, 4, 5, 2) // 5
 </code></pre>
-<p>Feel free to investigate the <a href="https://nabby27.github.io/main-fns/">main-fns API</a>, it is structured by modules and created using JSDoc.</p>
-<h2>How to contribute</h2>
+<h2>How to contribute?</h2>
 <p>See de <a href="./.github/CONTRIBUTING.md">CONTRIBUTING</a> page</p>
+<h2>What changes does it have?</h2>
+<p>Detailed changes for each release are documented in the <a href="./CHANGELOG.md">CHANGELOG</a> page or in <a href="https://github.com/nabby27/main-fns/releases">release notes</a>.</p>
+<h2>License</h2>
+<p>See de <a href="./LICENSE">LICENSE</a> page</p>
     </article>
   </section>
 

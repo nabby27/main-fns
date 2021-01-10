@@ -3,10 +3,14 @@ import { KebabCaseFunction } from './util/kebabCase.function';
 
 /**
  *
- * Returns the kebab case text from text
+ * Returns the kebabCase text from text
  *
  * @param {!string} text - The text
- * @returns {strign} The kebab case text
+ * @returns {strign} The kebabCase text
+ *
+ * @example
+ * const text = 'Hello world'
+ * console.log(kebabCase(text)) // 'hello-world'
  */
 export function kebabCase(text: string): string {
   return new KebabCaseFunction(new KebabCaseOwn()).execute(text);

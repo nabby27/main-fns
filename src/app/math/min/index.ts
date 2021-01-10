@@ -7,6 +7,10 @@ import { MinFunction } from './util/min.function';
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The smallest number
+ *
+ * @example
+ * const numbers = [3, 1, 5]
+ * console.log(min(numbers)) // 1
  */
 export function min(...numbers: number[]): number {
   return new MinFunction(new MinOwn()).min(numbers);

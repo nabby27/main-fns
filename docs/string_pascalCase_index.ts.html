@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/camelCase/index.ts - Documentation
+      string/pascalCase/index.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,7 +81,7 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/camelCase/index.ts
+        string/pascalCase/index.ts
       </h1>
     
 
@@ -90,22 +90,22 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { CamelCaseOwn } from './impl/camelCaseOwn';
-import { CamelCaseFunction } from './util/camelCase.function';
+    <pre class="prettyprint source linenums"><code>import { PascalCaseOwn } from './impl/pascalCaseOwn';
+import { PascalCaseFunction } from './util/pascalCase.function';
 
 /**
  *
- * Returns the camelCase text from text
+ * Returns the pascalCase text from text
  *
  * @param {!string} text - The text
- * @returns {strign} The camelCase  text
+ * @returns {strign} The pascalCase text
  *
  * @example
  * const text = 'Hello world'
- * console.log(camelCase(text)) // 'helloWorld'
+ * console.log(pascalCase(text)) // 'HelloWorld'
  */
-export function camelCase(text: string): string {
-  return new CamelCaseFunction(new CamelCaseOwn()).execute(text);
+export function pascalCase(text: string): string {
+  return new PascalCaseFunction(new PascalCaseOwn()).execute(text);
 }
 </code></pre>
   </article>

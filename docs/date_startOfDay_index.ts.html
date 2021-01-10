@@ -75,7 +75,7 @@
 
     
 
-    <h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
+    <h3 id="global-nav">Global</h3><ul><li><a href="global.html#addDays">addDays</a></li><li><a href="global.html#addMonths">addMonths</a></li><li><a href="global.html#addYears">addYears</a></li><li><a href="global.html#camelCase">camelCase</a></li><li><a href="global.html#capitalize">capitalize</a></li><li><a href="global.html#dateToString">dateToString</a></li><li><a href="global.html#endOfDay">endOfDay</a></li><li><a href="global.html#first">first</a></li><li><a href="global.html#firstLetters">firstLetters</a></li><li><a href="global.html#isAfter">isAfter</a></li><li><a href="global.html#isBefore">isBefore</a></li><li><a href="global.html#kebabCase">kebabCase</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#lastLetters">lastLetters</a></li><li><a href="global.html#lowerCase">lowerCase</a></li><li><a href="global.html#max">max</a></li><li><a href="global.html#mean">mean</a></li><li><a href="global.html#median">median</a></li><li><a href="global.html#min">min</a></li><li><a href="global.html#mode">mode</a></li><li><a href="global.html#multiply">multiply</a></li><li><a href="global.html#orderBy">orderBy</a></li><li><a href="global.html#pascalCase">pascalCase</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#snakeCase">snakeCase</a></li><li><a href="global.html#startOfDay">startOfDay</a></li><li><a href="global.html#subtractDays">subtractDays</a></li><li><a href="global.html#subtractMonths">subtractMonths</a></li><li><a href="global.html#subtractYears">subtractYears</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#titleCase">titleCase</a></li><li><a href="global.html#upperCase">upperCase</a></li></ul>
   </nav>
 
   <div id="main">
@@ -95,12 +95,16 @@ import { StartOfDayFunction } from './util/startOfDay.function';
 
 /**
  *
- * Get the date you pass with time to 00:00:00:000.00
+ * Get the date you pass with time to 00:00:00:000
  *
- * @param {!Date} date - The date
- * @returns {!Date} - The date with init time
+ * @param {Date} [date=new Date()] - The date
+ * @returns {!Date} - The date with init time, by default is `new Date()`
+ *
+ * @example
+ * const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
+ * console.log(endOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)
  */
-export function startOfDay(date: Date): Date {
+export function startOfDay(date: Date = new Date()): Date {
   return new StartOfDayFunction(new StartOfDayDateFns()).startOfDay(date);
 }
 </code></pre>

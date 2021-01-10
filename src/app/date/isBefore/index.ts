@@ -8,6 +8,12 @@ import { IsBeforeFunction } from './util/isBefore.function';
  * @param {!Date} date - The date
  * @param {!Date} dateToCompare - The date to compare
  * @returns {boolean} True if date is before the dateToCompare
+ *
+ * @example
+ * const myDate = new Date(1996, 05, 27)
+ * const otherDate = new Date(2001, 02, 01)
+ * console.log(isAfter(myDate, otherDate)) // true
+ * console.log(isAfter(otherDate, myDate)) // false
  */
 export function isBefore(
   date: Date,

@@ -13,6 +13,10 @@ import { DateToStringFunction } from './util/dateToString.function';
  * @returns {string} The date converted on string format
  *
  * @see {@link DateStringFormat}
+ *
+ * @example
+ * const myDate = new Date(1996, 05, 27)
+ * console.log(dateToString('dd-MM-yyyy', myDate)) // '27-06-1996'
  */
 export function dateToString(
   stringFormat: DateStringFormat,

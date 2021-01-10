@@ -7,6 +7,10 @@ import { MedianFunction } from './util/median.function';
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The median
+ *
+ * @example
+ * const numbers = [3, 1, 5]
+ * console.log(median(numbers)) // 3
  */
 export function median(...numbers: number[]): number {
   return new MedianFunction(new MedianOwn()).median(numbers);

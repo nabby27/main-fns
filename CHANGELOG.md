@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **string module:** pascalCase function
+- **string module:** examples on JSDoc
+- **array module:** examples on JSDoc
+- **date module:** examples on JSDoc
+- **math module:** examples on JSDoc
 
 ### Changed
 - Update [README](./README.md)

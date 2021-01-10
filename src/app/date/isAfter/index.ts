@@ -8,6 +8,12 @@ import { IsAfterFunction } from './util/isAfter.function';
  * @param {!Date} date - The date
  * @param {!Date} dateToCompare - The date to compare
  * @returns {boolean} True if date is after the dateToCompare
+ *
+ * @example
+ * const myDate = new Date(1996, 05, 27)
+ * const otherDate = new Date(2001, 02, 01)
+ * console.log(isAfter(myDate, otherDate)) // false
+ * console.log(isAfter(otherDate, myDate)) // true
  */
 export function isAfter(
   date: Date,
