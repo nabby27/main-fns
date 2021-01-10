@@ -33,10 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update [PULL_REQUEST_TEMPLATE](./.github/PULL_REQUEST_TEMPLATE.md)
 - **string module:** implementation [voca](https://vocajs.com/) to own implementation
 
-### Deprecated
 ### Removed
-### Fixed
-### Security
+- voca dependence
 
 ## [v1.0.0](https://github.com/nabby27/main-fns/releases/tag/v1.0.0) - 2021-01-03
 
