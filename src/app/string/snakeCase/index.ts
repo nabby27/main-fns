@@ -1,4 +1,4 @@
-import { SnakeCaseVoca } from './impl/snakeCaseVoca';
+import { SnakeCaseOwn } from './impl/snakeCaseOwn';
 import { SnakeCaseFunction } from './util/snakeCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { SnakeCaseFunction } from './util/snakeCase.function';
  * @returns {strign} The snake case text
  */
 export function snakeCase(text: string): string {
-  return new SnakeCaseFunction(new SnakeCaseVoca()).snakeCase(text);
+  return new SnakeCaseFunction(new SnakeCaseOwn()).execute(text);
 }

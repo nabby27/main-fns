@@ -1,4 +1,4 @@
-import { KebabCaseVoca } from './impl/kebabCaseVoca';
+import { KebabCaseOwn } from './impl/kebabCaseOwn';
 import { KebabCaseFunction } from './util/kebabCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { KebabCaseFunction } from './util/kebabCase.function';
  * @returns {strign} The kebab case text
  */
 export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseVoca()).kebabCase(text);
+  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
 }

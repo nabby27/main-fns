@@ -1,12 +1,11 @@
 import { FirstLetters } from '../util/firstLetters.interface';
-import * as voca from 'voca';
 
-export class FirstLettersVoca implements FirstLetters {
+export class FirstLettersOwn implements FirstLetters {
 
   firstLetters(text: string, numberOfLetters: number): string {
     const textLowerCase = text.toLowerCase();
 
-    return voca.first(textLowerCase, numberOfLetters);
+    return textLowerCase.substring(0, numberOfLetters);
   }
 
 }

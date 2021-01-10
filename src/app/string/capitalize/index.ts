@@ -1,4 +1,4 @@
-import { CapitalizeVoca } from './impl/capitalizeVoca';
+import { CapitalizeOwn } from './impl/capitalizeOwn';
 import { CapitalizeFunction } from './util/capitalize.function';
 
 /**
@@ -9,5 +9,5 @@ import { CapitalizeFunction } from './util/capitalize.function';
  * @returns {strign} The capitalized text
  */
 export function capitalize(text: string): string {
-  return new CapitalizeFunction(new CapitalizeVoca()).capitalize(text);
+  return new CapitalizeFunction(new CapitalizeOwn()).execute(text);
 }

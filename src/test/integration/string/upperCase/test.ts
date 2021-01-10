@@ -23,7 +23,7 @@ export class UpperCaseTest {
     describe('Get upperCase text', () => {
       this.data.forEach((item) => {
         test('should return upperCase text', () => {
-          const result = new UpperCaseFunction(this.upperCaseImpl).upperCase(item.text);
+          const result = new UpperCaseFunction(this.upperCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

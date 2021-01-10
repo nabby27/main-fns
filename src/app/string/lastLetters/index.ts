@@ -1,4 +1,4 @@
-import { LastLettersVoca } from './impl/lastLettersVoca';
+import { LastLettersOwn } from './impl/lastLettersOwn';
 import { LastLettersFunction } from './util/lastLetters.function';
 
 /**
@@ -10,5 +10,5 @@ import { LastLettersFunction } from './util/lastLetters.function';
  * @returns {strign} The last letters
  */
 export function lastLetters(text: string, numberOfLetters = 1): string {
-  return new LastLettersFunction(new LastLettersVoca()).lastLetters(text, numberOfLetters);
+  return new LastLettersFunction(new LastLettersOwn()).execute(text, numberOfLetters);
 }

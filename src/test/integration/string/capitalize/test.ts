@@ -23,7 +23,7 @@ export class CapitalizeTest {
     describe('Get capitalized text', () => {
       this.data.forEach((item) => {
         test('should return capitalized text', () => {
-          const result = new CapitalizeFunction(this.capitalizeImpl).capitalize(item.text);
+          const result = new CapitalizeFunction(this.capitalizeImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

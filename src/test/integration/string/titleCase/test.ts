@@ -23,7 +23,7 @@ export class TitleCaseTest {
     describe('Get titleCase text', () => {
       this.data.forEach((item) => {
         test('should return titleCase text', () => {
-          const result = new TitleCaseFunction(this.titleCaseImpl).titleCase(item.text);
+          const result = new TitleCaseFunction(this.titleCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

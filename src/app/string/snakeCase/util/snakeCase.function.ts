@@ -4,7 +4,7 @@ export class SnakeCaseFunction {
 
   constructor(private snakeCaseImpl: SnakeCase) { }
 
-  snakeCase(text: string): string {
+  execute(text: string): string {
     return this.snakeCaseImpl.snakeCase(text);
   }
 

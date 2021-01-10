@@ -23,7 +23,7 @@ export class SnakeCaseTest {
     describe('Get snakeCase text', () => {
       this.data.forEach((item) => {
         test('should return snakeCase text', () => {
-          const result = new SnakeCaseFunction(this.snakeCaseImpl).snakeCase(item.text);
+          const result = new SnakeCaseFunction(this.snakeCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

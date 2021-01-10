@@ -4,7 +4,7 @@ export class UpperCaseFunction {
 
   constructor(private upperCaseImpl: UpperCase) { }
 
-  upperCase(text: string): string {
+  execute(text: string): string {
     return this.upperCaseImpl.upperCase(text);
   }
 

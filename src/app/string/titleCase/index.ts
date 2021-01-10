@@ -1,4 +1,4 @@
-import { TitleCaseVoca } from './impl/titleCaseVoca';
+import { TitleCaseOwn } from './impl/titleCaseOwn';
 import { TitleCaseFunction } from './util/titleCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { TitleCaseFunction } from './util/titleCase.function';
  * @returns {strign} The title case text
  */
 export function titleCase(text: string): string {
-  return new TitleCaseFunction(new TitleCaseVoca()).titleCase(text);
+  return new TitleCaseFunction(new TitleCaseOwn()).execute(text);
 }

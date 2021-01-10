@@ -1,4 +1,4 @@
-import { LowerCaseVoca } from './impl/lowerCaseVoca';
+import { LowerCaseOwn } from './impl/lowerCaseOwn';
 import { LowerCaseFunction } from './util/lowerCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { LowerCaseFunction } from './util/lowerCase.function';
  * @returns {strign} The lower case text
  */
 export function lowerCase(text: string): string {
-  return new LowerCaseFunction(new LowerCaseVoca()).lowerCase(text);
+  return new LowerCaseFunction(new LowerCaseOwn()).execute(text);
 }

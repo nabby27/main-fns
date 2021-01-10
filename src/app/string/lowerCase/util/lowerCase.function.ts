@@ -4,7 +4,7 @@ export class LowerCaseFunction {
 
   constructor(private lowerCaseImpl: LowerCase) { }
 
-  lowerCase(text: string): string {
+  execute(text: string): string {
     return this.lowerCaseImpl.lowerCase(text);
   }
 

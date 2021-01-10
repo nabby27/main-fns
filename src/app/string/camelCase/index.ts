@@ -1,4 +1,4 @@
-import { CamelCaseVoca } from './impl/camelCaseVoca';
+import { CamelCaseOwn } from './impl/camelCaseOwn';
 import { CamelCaseFunction } from './util/camelCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { CamelCaseFunction } from './util/camelCase.function';
  * @returns {strign} The camel case  text
  */
 export function camelCase(text: string): string {
-  return new CamelCaseFunction(new CamelCaseVoca()).camelCase(text);
+  return new CamelCaseFunction(new CamelCaseOwn()).execute(text);
 }

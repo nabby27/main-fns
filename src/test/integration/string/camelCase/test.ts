@@ -23,7 +23,7 @@ export class CamelCaseTest {
     describe('Get camelCase text', () => {
       this.data.forEach((item) => {
         test('should return camelCase text', () => {
-          const result = new CamelCaseFunction(this.camelCaseImpl).camelCase(item.text);
+          const result = new CamelCaseFunction(this.camelCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

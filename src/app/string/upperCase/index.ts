@@ -1,4 +1,4 @@
-import { UpperCaseVoca } from './impl/upperCaseVoca';
+import { UpperCaseOwn } from './impl/upperCaseOwn';
 import { UpperCaseFunction } from './util/upperCase.function';
 
 /**
@@ -9,5 +9,5 @@ import { UpperCaseFunction } from './util/upperCase.function';
  * @returns {strign} The upper case text
  */
 export function upperCase(text: string): string {
-  return new UpperCaseFunction(new UpperCaseVoca()).upperCase(text);
+  return new UpperCaseFunction(new UpperCaseOwn()).execute(text);
 }

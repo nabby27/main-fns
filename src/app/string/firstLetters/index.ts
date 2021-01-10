@@ -1,4 +1,4 @@
-import { FirstLettersVoca } from './impl/firstLettersVoca';
+import { FirstLettersOwn } from './impl/firstLettersOwn';
 import { FirstLettersFunction } from './util/firstLetters.function';
 
 /**
@@ -10,5 +10,5 @@ import { FirstLettersFunction } from './util/firstLetters.function';
  * @returns {strign} The first letters
  */
 export function firstLetters(text: string, numberOfLetters = 1): string {
-  return new FirstLettersFunction(new FirstLettersVoca()).firstLetters(text, numberOfLetters);
+  return new FirstLettersFunction(new FirstLettersOwn()).execute(text, numberOfLetters);
 }

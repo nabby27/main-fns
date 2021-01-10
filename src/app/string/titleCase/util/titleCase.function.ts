@@ -4,7 +4,7 @@ export class TitleCaseFunction {
 
   constructor(private titleCaseImpl: TitleCase) { }
 
-  titleCase(text: string): string {
+  execute(text: string): string {
     return this.titleCaseImpl.titleCase(text);
   }
 

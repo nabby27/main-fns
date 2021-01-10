@@ -23,7 +23,7 @@ export class LowerCaseTest {
     describe('Get lowerCase text', () => {
       this.data.forEach((item) => {
         test('should return lowerCase text', () => {
-          const result = new LowerCaseFunction(this.lowerCaseImpl).lowerCase(item.text);
+          const result = new LowerCaseFunction(this.lowerCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

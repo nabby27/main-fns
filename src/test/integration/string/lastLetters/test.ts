@@ -26,7 +26,7 @@ export class LastLettersTest {
     describe('Get last letters', () => {
       this.data.forEach((item) => {
         test('should return last letters', () => {
-          const result = new LastLettersFunction(this.lastLettersImpl).lastLetters(item.text, item.numberOfLetters);
+          const result = new LastLettersFunction(this.lastLettersImpl).execute(item.text, item.numberOfLetters);
 
           expect(result).toEqual(item.expect);
         });

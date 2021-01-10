@@ -26,7 +26,7 @@ export class FirstLettersTest {
     describe('Get first letters', () => {
       this.data.forEach((item) => {
         test('should return first letters', () => {
-          const result = new FirstLettersFunction(this.firstLettersImpl).firstLetters(item.text, item.numberOfLetters);
+          const result = new FirstLettersFunction(this.firstLettersImpl).execute(item.text, item.numberOfLetters);
 
           expect(result).toEqual(item.expect);
         });

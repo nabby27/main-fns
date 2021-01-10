@@ -1,12 +1,11 @@
 import { Capitalize } from '../util/capitalize.interface';
-import * as voca from 'voca';
 
-export class CapitalizeVoca implements Capitalize {
+export class CapitalizeOwn implements Capitalize {
 
   capitalize(text: string): string {
     const textLowerCase = text.toLowerCase();
 
-    return voca.capitalize(textLowerCase);
+    return textLowerCase.charAt(0).toUpperCase() + textLowerCase.slice(1);
   }
 
 }

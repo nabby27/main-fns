@@ -23,7 +23,7 @@ export class KebabCaseTest {
     describe('Get kebabCase text', () => {
       this.data.forEach((item) => {
         test('should return kebabCase text', () => {
-          const result = new KebabCaseFunction(this.kebabCaseImpl).kebabCase(item.text);
+          const result = new KebabCaseFunction(this.kebabCaseImpl).execute(item.text);
 
           expect(result).toEqual(item.expect);
         });

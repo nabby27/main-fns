@@ -4,7 +4,7 @@ export class CapitalizeFunction {
 
   constructor(private capitalizeImpl: Capitalize) { }
 
-  capitalize(text: string): string {
+  execute(text: string): string {
     return this.capitalizeImpl.capitalize(text);
   }
 
