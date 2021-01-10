@@ -39,12 +39,12 @@ max(3, 4, 5, 2) // 5
 
 ## How to contribute?
 
-See de [CONTRIBUTING](./.github/CONTRIBUTING.md) page
+See de [CONTRIBUTING](https://github.com/nabby27/main-fns/blob/main/.github/CONTRIBUTING.md) page
 
 ## What changes does it have?
 
-Detailed changes for each release are documented in the [CHANGELOG](./CHANGELOG.md) page or in [release notes](https://github.com/nabby27/main-fns/releases).
+Detailed changes for each release are documented in the [CHANGELOG](https://github.com/nabby27/main-fns/blob/main/CHANGELOG.md) page or in [release notes](https://github.com/nabby27/main-fns/releases).
 
 ## License
 
-See de [LICENSE](./LICENSE) page
+See de [LICENSE](https://github.com/nabby27/main-fns/blob/main/LICENSE) page
