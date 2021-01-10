@@ -1,9 +1,9 @@
 import { subtractMonths } from '../../../app';
 import { mockDate } from './mocks/currentDateMock';
 
-const currentDayMock = 10;
+const currentDayMock = 27;
 const currentMonthMock = 5;
-const currentYearMock = 2020;
+const currentYearMock = 1996;
 const currentDateMock = new Date(currentYearMock, currentMonthMock, currentDayMock);
 
 const expectsDates: {
