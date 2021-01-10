@@ -5,14 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.0.0...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.1.0...HEAD)
 
 ### Added
-- **string module:** pascalCase function
-- **string module:** examples on JSDoc
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## [v1.1.0](https://github.com/nabby27/main-fns/releases/tag/v1.1.0) - 2021-01-10
+
+### Added
 - **array module:** examples on JSDoc
 - **date module:** examples on JSDoc
+- **date module:** endOfDay with optional date (by defualt is current date)
+- **date module:** startOfDay with optional date (by defualt is current date)
 - **math module:** examples on JSDoc
+- **string module:** examples on JSDoc
+- **string module:** pascalCase function
 
 ### Changed
 - Update [README](./README.md)
