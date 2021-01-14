@@ -1,4 +1,4 @@
-import { AddDaysDateFns } from './impl/addDaysDateFns';
+import { AddDaysOwn } from './impl/addDaysOwn';
 import { AddDaysFunction } from './util/addDays.function';
 
 /**
@@ -14,5 +14,5 @@ import { AddDaysFunction } from './util/addDays.function';
  * console.log(addDays(1, myDate)) // Date(1996, 05, 27)
  */
 export function addDays(daysToAdd: number, date: Date = new Date()): Date {
-  return new AddDaysFunction(new AddDaysDateFns()).addDays(daysToAdd, date);
+  return new AddDaysFunction(new AddDaysOwn()).addDays(daysToAdd, date);
 }

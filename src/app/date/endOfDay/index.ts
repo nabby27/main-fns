@@ -1,4 +1,4 @@
-import { EndOfDayDateFns } from './impl/endOfDayDateFns';
+import { EndOfDayOwn } from './impl/endOfDayOwn';
 import { EndOfDayFunction } from './util/endOfDay.function';
 
 /**
@@ -13,5 +13,5 @@ import { EndOfDayFunction } from './util/endOfDay.function';
  * console.log(endOfDay(myDate)) // Date(1996, 05, 27, 23, 59, 59, 999)
  */
 export function endOfDay(date: Date = new Date()): Date {
-  return new EndOfDayFunction(new EndOfDayDateFns()).endOfDay(date);
+  return new EndOfDayFunction(new EndOfDayOwn()).endOfDay(date);
 }

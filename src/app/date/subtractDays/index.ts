@@ -1,4 +1,4 @@
-import { SubtractDaysDateFns } from './impl/subtractDaysDateFns';
+import { SubtractDaysOwn } from './impl/subtractDaysOwn';
 import { SubtractDaysFunction } from './util/subtractDays.function';
 
 /**
@@ -14,5 +14,5 @@ import { SubtractDaysFunction } from './util/subtractDays.function';
  * console.log(subtractDays(1, myDate)) // Date(1996, 05, 27)
  */
 export function subtractDays(daysToSubtract: number, date: Date = new Date()): Date {
-  return new SubtractDaysFunction(new SubtractDaysDateFns()).subtractDays(daysToSubtract, date);
+  return new SubtractDaysFunction(new SubtractDaysOwn()).subtractDays(daysToSubtract, date);
 }

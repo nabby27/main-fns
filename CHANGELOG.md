@@ -9,8 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- **date module:** implementation [date-fns](https://date-fns.org/) to own implementation
+
 ### Deprecated
 ### Removed
+- moment dependence
+
 ### Fixed
 ### Security
 

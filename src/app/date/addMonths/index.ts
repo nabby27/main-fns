@@ -1,4 +1,4 @@
-import { AddMonthsDateFns } from './impl/addMonthsDateFns';
+import { AddMonthsOwn } from './impl/addMonthsOwn';
 import { AddMonthsFunction } from './util/addMonths.function';
 
 /**
@@ -14,5 +14,5 @@ import { AddMonthsFunction } from './util/addMonths.function';
  * console.log(addMonths(1, myDate)) // Date(1996, 05, 27)
  */
 export function addMonths(monthsToAdd: number, date: Date = new Date()): Date {
-  return new AddMonthsFunction(new AddMonthsDateFns()).addMonths(monthsToAdd, date);
+  return new AddMonthsFunction(new AddMonthsOwn()).addMonths(monthsToAdd, date);
 }

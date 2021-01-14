@@ -1,4 +1,4 @@
-import { IsAfterDateFns } from './impl/isAfterDateFns';
+import { IsAfterOwn } from './impl/isAfterOwn';
 import { IsAfterFunction } from './util/isAfter.function';
 
 /**
@@ -19,7 +19,7 @@ export function isAfter(
   date: Date,
   dateToCompare: Date
 ): boolean {
-  return new IsAfterFunction(new IsAfterDateFns()).isAfter(
+  return new IsAfterFunction(new IsAfterOwn()).isAfter(
     date,
     dateToCompare
   );

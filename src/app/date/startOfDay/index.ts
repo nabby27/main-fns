@@ -1,4 +1,4 @@
-import { StartOfDayDateFns } from './impl/startOfDayDateFns';
+import { StartOfDayOwn } from './impl/startOfDayOwn';
 import { StartOfDayFunction } from './util/startOfDay.function';
 
 /**
@@ -13,5 +13,5 @@ import { StartOfDayFunction } from './util/startOfDay.function';
  * console.log(endOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)
  */
 export function startOfDay(date: Date = new Date()): Date {
-  return new StartOfDayFunction(new StartOfDayDateFns()).startOfDay(date);
+  return new StartOfDayFunction(new StartOfDayOwn()).startOfDay(date);
 }

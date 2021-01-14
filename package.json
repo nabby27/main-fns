@@ -47,9 +47,7 @@
   "engines": {
     "node": ">= 14.0.0"
   },
-  "dependencies": {
-    "date-fns": "^2.16.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^12.19.11",

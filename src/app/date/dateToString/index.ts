@@ -1,5 +1,5 @@
 import { DateStringFormat } from '../types/dateStringFormat';
-import { DateToStringDateFns } from './impl/dateToStringDateFns';
+import { DateToStringOwn } from './impl/dateToStringOwn';
 import { DateToStringFunction } from './util/dateToString.function';
 
 /** @typedef {import('../types/dateStringFormat').DateStringFormat} DateStringFormat */
@@ -22,7 +22,7 @@ export function dateToString(
   stringFormat: DateStringFormat,
   date: Date = new Date()
 ): string {
-  return new DateToStringFunction(new DateToStringDateFns()).dateToString(
+  return new DateToStringFunction(new DateToStringOwn()).dateToString(
     stringFormat,
     date
   );

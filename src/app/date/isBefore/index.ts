@@ -1,4 +1,4 @@
-import { IsBeforeDateFns } from './impl/isBeforeDateFns';
+import { IsBeforeOwn } from './impl/isBeforeOwn';
 import { IsBeforeFunction } from './util/isBefore.function';
 
 /**
@@ -19,7 +19,7 @@ export function isBefore(
   date: Date,
   dateToCompare: Date
 ): boolean {
-  return new IsBeforeFunction(new IsBeforeDateFns()).isBefore(
+  return new IsBeforeFunction(new IsBeforeOwn()).isBefore(
     date,
     dateToCompare
   );

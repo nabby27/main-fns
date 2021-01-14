@@ -1,4 +1,4 @@
-import { AddYearsDateFns } from './impl/addYearsDateFns';
+import { AddYearsOwn } from './impl/addYearsOwn';
 import { AddYearsFunction } from './util/addYears.function';
 
 /**
@@ -14,5 +14,5 @@ import { AddYearsFunction } from './util/addYears.function';
  * console.log(addYears(1, myDate)) // Date(1996, 05, 27)
  */
 export function addYears(yearsToAdd: number, date: Date = new Date()): Date {
-  return new AddYearsFunction(new AddYearsDateFns()).addYears(yearsToAdd, date);
+  return new AddYearsFunction(new AddYearsOwn()).addYears(yearsToAdd, date);
 }

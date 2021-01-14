@@ -1,4 +1,4 @@
-import { SubtractYearsDateFns } from './impl/subtractYearsDateFns';
+import { SubtractYearsOwn } from './impl/subtractYearsOwn';
 import { SubtractYearsFunction } from './util/subtractYears.function';
 
 /**
@@ -14,7 +14,7 @@ import { SubtractYearsFunction } from './util/subtractYears.function';
  * console.log(subtractYears(1, myDate)) // Date(1996, 05, 27)
  */
 export function subtractYears(yearsToSubtract: number, date: Date = new Date()): Date {
-  return new SubtractYearsFunction(new SubtractYearsDateFns()).subtractYears(
+  return new SubtractYearsFunction(new SubtractYearsOwn()).subtractYears(
     yearsToSubtract,
     date
   );
