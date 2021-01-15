@@ -1,4 +1,4 @@
-name: Test lint and deploy
+name: TestAndDeploy
 
 on: 
   push:
