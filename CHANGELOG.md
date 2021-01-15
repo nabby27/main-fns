@@ -8,17 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.2.0...HEAD)
 
 ### Added
-- new DateStringFormat yyyy/MM/dd
-- new DateStringFormat dd/MM/yyyy
-
 ### Changed
-- **date module:** implementation [date-fns](https://date-fns.org/) to own implementation
-- choose issue template
-
 ### Deprecated
 ### Removed
-- date-fns dependence
-
 ### Fixed
 ### Security
 
@@ -31,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **date module:** implementation [date-fns](https://date-fns.org/) to own implementation
 - choose issue template
+- Update [documentation](https://nabby27.github.io/main-fns/)
 
 ### Removed
 - date-fns dependence
