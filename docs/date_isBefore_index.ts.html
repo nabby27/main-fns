@@ -90,7 +90,7 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { IsBeforeDateFns } from './impl/isBeforeDateFns';
+    <pre class="prettyprint source linenums"><code>import { IsBeforeOwn } from './impl/isBeforeOwn';
 import { IsBeforeFunction } from './util/isBefore.function';
 
 /**
@@ -111,7 +111,7 @@ export function isBefore(
   date: Date,
   dateToCompare: Date
 ): boolean {
-  return new IsBeforeFunction(new IsBeforeDateFns()).isBefore(
+  return new IsBeforeFunction(new IsBeforeOwn()).isBefore(
     date,
     dateToCompare
   );
