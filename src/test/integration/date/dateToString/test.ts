@@ -32,6 +32,26 @@ export class DateToStringTest {
       stringFormat: 'dd-MM-yyyy',
       date: new Date(2020, 10, 13),
       expect: '13-11-2020'
+    },
+    {
+      stringFormat: 'yyyy/MM/dd',
+      date: new Date(),
+      expect: `${this.currentYear}/${('0' + (this.currentMonth + 1)).slice(-2)}/${('0' + this.currentDay).slice(-2)}`
+    },
+    {
+      stringFormat: 'yyyy/MM/dd',
+      date: new Date(2020, 10, 13),
+      expect: '2020/11/13'
+    },
+    {
+      stringFormat: 'dd/MM/yyyy',
+      date: new Date(),
+      expect: `${('0' + this.currentDay).slice(-2)}/${('0' + (this.currentMonth + 1)).slice(-2)}/${this.currentYear}`
+    },
+    {
+      stringFormat: 'dd/MM/yyyy',
+      date: new Date(2020, 10, 13),
+      expect: '13/11/2020'
     }
   ];
 

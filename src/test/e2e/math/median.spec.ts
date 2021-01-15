@@ -5,6 +5,10 @@ const data: {
   expect: number;
 }[] = [
   {
+    array: [],
+    expect: 0
+  },
+  {
     array: [3, 1, 2],
     expect: 2
   },
