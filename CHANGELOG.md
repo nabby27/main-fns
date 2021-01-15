@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.1.0...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.2.0...HEAD)
 
 ### Added
 - new DateStringFormat yyyy/MM/dd
@@ -21,6 +21,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 ### Security
+
+## [v1.2.0](https://github.com/nabby27/main-fns/releases/tag/v1.2.0) - 2021-01-15
+
+### Added
+- new DateStringFormat yyyy/MM/dd
+- new DateStringFormat dd/MM/yyyy
+
+### Changed
+- **date module:** implementation [date-fns](https://date-fns.org/) to own implementation
+- choose issue template
+
+### Removed
+- date-fns dependence
 
 ## [v1.1.0](https://github.com/nabby27/main-fns/releases/tag/v1.1.0) - 2021-01-10
 
