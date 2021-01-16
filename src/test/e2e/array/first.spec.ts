@@ -6,7 +6,7 @@ const data: {
 }[] = [
   {
     array: [3, 2, 1],
-    expect: 2
+    expect: 3
   },
   {
     array: ['a', 'b', 'c'],
