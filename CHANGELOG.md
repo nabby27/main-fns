@@ -22,11 +22,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **date module:** implementation [date-fns](https://date-fns.org/) to own implementation
-- choose issue template
+- Choose issue template
 - Update [documentation](https://nabby27.github.io/main-fns/)
+- Separate workflows for CI
 
 ### Removed
-- date-fns dependence
+- [date-fns](https://date-fns.org/) dependence
 
 ## [v1.1.0](https://github.com/nabby27/main-fns/releases/tag/v1.1.0) - 2021-01-10
 
