@@ -8,7 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.2.0...HEAD)
 
 ### Added
+- **date module:** relativeTime function
+- **date module:** Locale type
+
 ### Changed
+- Update [README](./README.md)
+- Update [documentation](https://nabby27.github.io/main-fns/)
+
 ### Deprecated
 ### Removed
 ### Fixed
