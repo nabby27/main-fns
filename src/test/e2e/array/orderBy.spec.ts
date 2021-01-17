@@ -1,9 +1,9 @@
 import { orderBy } from '../../../app';
 
 const data: {
-  array: {id, name}[];
+  array: {id: number, name: string}[];
   key: string;
-  expect: {id, name}[];
+  expect: {id: number, name: string}[];
 }[] = [
   {
     array: [

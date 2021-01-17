@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ES2015",
+    "outDir": "./dist",
+    "lib": ["ESNext", "ES2020"],
     "sourceMap": false,
     "allowJs": false,
     "moduleResolution": "Node",

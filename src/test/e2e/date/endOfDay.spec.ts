@@ -1,5 +1,5 @@
 import { endOfDay } from '../../../app';
-import { mockDate } from './mocks/currentDateMock';
+import { mockDate } from '../../mocks/currentDateMock';
 
 const currentDayMock = 27;
 const currentMonthMock = 5;

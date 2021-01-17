@@ -5,6 +5,7 @@ export * from './dateToString';
 export * from './endOfDay';
 export * from './isAfter';
 export * from './isBefore';
+export * from './relativeTime';
 export * from './startOfDay';
 export * from './subtractDays';
 export * from './subtractMonths';

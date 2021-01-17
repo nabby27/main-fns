@@ -27,7 +27,7 @@
     "url": "https://github.com/nabby27/main-fns"
   },
   "scripts": {
-    "build": "rm -rf ./dist && tsc --p tsconfig.browser.json",
+    "build": "rm -rf ./dist && tsc",
     "docs": "jsdoc -c jsdoc.json",
     "eslint:check": "npx eslint './src/**'",
     "eslint:fix": "npx eslint './src/**' --fix",
