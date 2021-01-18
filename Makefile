@@ -14,12 +14,12 @@ install: up
 
 build: up
 	@docker-compose exec $(CONTAINER_NAME) npm run build || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node dist
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
 	${MAKE} stop
 
 docs: up
 	@docker-compose exec $(CONTAINER_NAME) npm run docs || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node docs
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
 	${MAKE} stop
 
 eslint-check: up
@@ -40,12 +40,12 @@ test-watch: up
 
 test-watch-coverage: up
 	@docker-compose exec $(CONTAINER_NAME) npm run test:watch:coverage || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node coverage
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
 	$(MAKE) stop
 
 test-coverage: up
 	@docker-compose exec $(CONTAINER_NAME) npm run test:coverage || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node coverage
+	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
 	$(MAKE) stop
 
 test-all: up
