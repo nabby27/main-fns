@@ -12,9 +12,9 @@ import { RelativeTimeFunction } from './util/relativeTime.function';
  *
  * @example
  *
- * // if current date is new Date(1996, 05, 26)
+ * // if current date is new Date(1996, 05, 27)
  *
- * const myDate = new Date(1996, 05, 25)
+ * const myDate = new Date(1996, 05, 26)
  * console.log(relativeTime(myDate)) // 'yesterday'
  */
 export function relativeTime(date: Date, locale: Locale = 'en-US'): string {
