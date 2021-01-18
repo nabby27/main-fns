@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/lastLetters/index.ts - Documentation
+      date/relativeTime/index.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,7 +81,7 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/lastLetters/index.ts
+        date/relativeTime/index.ts
       </h1>
     
 
@@ -90,23 +90,27 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { LastLettersOwn } from './impl/lastLettersOwn';
-import { LastLettersFunction } from './util/lastLetters.function';
+    <pre class="prettyprint source linenums"><code>import { Locale } from '../types/locale';
+import { RelativeTimeOwn } from './impl/relativeTimeOwn';
+import { RelativeTimeFunction } from './util/relativeTime.function';
 
 /**
  *
- * Returns the last letters from text
+ * Returns the relative time from date
  *
- * @param {!string} text - The text
- * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`
- * @returns {strign} The last letters
+ * @param {!Date} date - The date to compare relative time
+ * @param {Locale} [locale='en-US'] - The locale to return string, by default is `'en-US'`
+ * @returns {string} The relative time on locale format
  *
  * @example
- * const text = 'Hello world'
- * console.log(lastLetters(text, 3)) // 'rld'
+ *
+ * // if current date is new Date(1996, 05, 27)
+ *
+ * const myDate = new Date(1996, 05, 26)
+ * console.log(relativeTime(myDate)) // 'yesterday'
  */
-export function lastLetters(text: string, numberOfLetters = 1): string {
-  return new LastLettersFunction(new LastLettersOwn()).execute(text, numberOfLetters);
+export function relativeTime(date: Date, locale: Locale = 'en-US'): string {
+  return new RelativeTimeFunction(new RelativeTimeOwn()).relativeTime(date, locale);
 }
 </code></pre>
   </article>
