@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/kebabCase/index.ts - Documentation
+      object/index.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,7 +81,7 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/kebabCase/index.ts
+        object/index.ts
       </h1>
     
 
@@ -90,26 +90,10 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { KebabCaseOwn } from './impl/kebabCaseOwn';
-import { KebabCaseFunction } from './util/kebabCase.function';
+    <pre class="prettyprint source linenums"><code>/** @module Object */
 
-/**
- *
- * @memberof module:String
- * @function kebabCase
- *
- * @description Returns the kebabCase text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The kebabCase text
- *
- * @example
- * const text = 'Hello world'
- * console.log(kebabCase(text)) // 'hello-world'
- */
-export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
-}
+export * from './clone';
+export * from './isEqual';
 </code></pre>
   </article>
 </section>

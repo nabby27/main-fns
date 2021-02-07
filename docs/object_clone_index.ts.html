@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/kebabCase/index.ts - Documentation
+      object/clone/index.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,7 +81,7 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/kebabCase/index.ts
+        object/clone/index.ts
       </h1>
     
 
@@ -90,25 +90,35 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { KebabCaseOwn } from './impl/kebabCaseOwn';
-import { KebabCaseFunction } from './util/kebabCase.function';
+    <pre class="prettyprint source linenums"><code>import { CloneOwn } from './impl/cloneOwn';
+import { CloneFunction } from './util/clone.function';
 
 /**
  *
- * @memberof module:String
- * @function kebabCase
+ * @memberof module:Object
+ * @function clone
  *
- * @description Returns the kebabCase text from text
+ * @description Returns deep copy from object
  *
- * @param {!string} text - The text
- * @returns {strign} The kebabCase text
+ * @param {!T} object - The object
+ * @returns {T} The cloned object
  *
  * @example
- * const text = 'Hello world'
- * console.log(kebabCase(text)) // 'hello-world'
+ * const userInfo = {
+ *   user: {
+ *     name: 'Iván',
+ *     alias: 'nabby27'
+ *   },
+ *   github: 'https://github.com/nabby27'
+ * }
+ *
+ * const userInfoCloned = clone(userInfo);
+ *
+ * console.log(userInfoCloned === userInfo); // false
+ * console.log(userInfoCloned.name); // 'Iván'
  */
-export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
+export function clone&lt;T>(object: T): T {
+  return new CloneFunction(new CloneOwn()).execute(object);
 }
 </code></pre>
   </article>

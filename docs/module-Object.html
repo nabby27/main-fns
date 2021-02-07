@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/kebabCase/index.ts - Documentation
+      Object - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,40 +79,399 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/kebabCase/index.ts
+        Object
       </h1>
     
 
     
-      
 
 <section>
-  <article>
-    <pre class="prettyprint source linenums"><code>import { KebabCaseOwn } from './impl/kebabCaseOwn';
-import { KebabCaseFunction } from './util/kebabCase.function';
+  <header>
+    
+      
+  </header>
 
-/**
- *
- * @memberof module:String
- * @function kebabCase
- *
- * @description Returns the kebabCase text from text
- *
- * @param {!string} text - The text
- * @returns {strign} The kebabCase text
- *
- * @example
- * const text = 'Hello world'
- * console.log(kebabCase(text)) // 'hello-world'
- */
-export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
+  <article>
+    <div class="container-overview">
+      
+        
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.clone">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".clone">
+      <span class="type-signature">(static) </span>clone<span class="signature">(object<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {T}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns deep copy from object
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>object</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      T
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The object
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="object_clone_index.ts.html">object/clone/index.ts</a>, <a href="object_clone_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#clone-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="clone-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const userInfo = {
+  user: {
+    name: 'Iván',
+    alias: 'nabby27'
+  },
+  github: 'https://github.com/nabby27'
 }
-</code></pre>
+
+const userInfoCloned = clone(userInfo);
+
+console.log(userInfoCloned === userInfo); // false
+console.log(userInfoCloned.name); // 'Iván'</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.isEqual">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".isEqual">
+      <span class="type-signature">(static) </span>isEqual<span class="signature">(object<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {T}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns deep copy from object
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>object</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      T
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The object
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="object_isEqual_index.ts.html">object/isEqual/index.ts</a>, <a href="object_isEqual_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#isEqual-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="isEqual-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const userInfo = {
+  user: {
+    name: 'Iván',
+    alias: 'nabby27'
+  },
+  github: 'https://github.com/nabby27'
+}
+
+const userInfo2 = {
+  user: {
+    name: 'Example',
+    alias: 'ex123'
+  },
+  github: ''
+}
+
+console.log(isEqual(userInfo, userInfo2)); // false</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+
+    
   </article>
 </section>
 
-    
+
 
 
   </div>

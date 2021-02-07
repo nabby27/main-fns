@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      string/kebabCase/index.ts - Documentation
+      object/isEqual/index.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -81,7 +81,7 @@
   <div id="main">
     
       <h1 class="page-title">
-        string/kebabCase/index.ts
+        object/isEqual/index.ts
       </h1>
     
 
@@ -90,25 +90,40 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { KebabCaseOwn } from './impl/kebabCaseOwn';
-import { KebabCaseFunction } from './util/kebabCase.function';
+    <pre class="prettyprint source linenums"><code>import { IsEqualLodash } from './impl/isEqualLodash';
+import { IsEqualFunction } from './util/isEqual.function';
 
 /**
  *
- * @memberof module:String
- * @function kebabCase
+ * @memberof module:Object
+ * @function isEqual
  *
- * @description Returns the kebabCase text from text
+ * @description Returns deep copy from object
  *
- * @param {!string} text - The text
- * @returns {strign} The kebabCase text
+ * @param {!T} object - The object
+ * @returns {T} The cloned object
  *
  * @example
- * const text = 'Hello world'
- * console.log(kebabCase(text)) // 'hello-world'
+ * const userInfo = {
+ *   user: {
+ *     name: 'Iván',
+ *     alias: 'nabby27'
+ *   },
+ *   github: 'https://github.com/nabby27'
+ * }
+ *
+ * const userInfo2 = {
+ *   user: {
+ *     name: 'Example',
+ *     alias: 'ex123'
+ *   },
+ *   github: ''
+ * }
+ *
+ * console.log(isEqual(userInfo, userInfo2)); // false
  */
-export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
+export function isEqual&lt;T>(object: T, otherObject: T): boolean {
+  return new IsEqualFunction(new IsEqualLodash()).execute(object, otherObject);
 }
 </code></pre>
   </article>
