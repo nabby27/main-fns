@@ -299,7 +299,7 @@ console.log(userInfoCloned.name); // 'Iván'</code></pre>
       </svg>
     </a>
     <h4 class="name" id=".isEqual">
-      <span class="type-signature">(static) </span>isEqual<span class="signature">(object<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {T}</span>
+      <span class="type-signature">(static) </span>isEqual<span class="signature">(object<span class="signature-attributes">non-null</span>, otherObject<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {boolean}</span>
     </h4>
   </span>
 
@@ -308,7 +308,7 @@ console.log(userInfoCloned.name); // 'Iván'</code></pre>
 
 
   <div class="description">
-    Returns deep copy from object
+    Returns if objects are deep equal
   </div>
 
 
@@ -363,6 +363,35 @@ console.log(userInfoCloned.name); // 'Iván'</code></pre>
 
         <td class="description last">
           The object
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>otherObject</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      T
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The object to compare
           
         </td>
       </tr>
