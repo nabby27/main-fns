@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Date - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
+    
+
+    <h3>Modules</h3><ul><li id="Array-nav"><a href="module-Array.html">Array</a><ul class='methods'><li data-type="method" id="Array-first-nav"><a href="module-Array.html#.first">first</a></li><li data-type="method" id="Array-last-nav"><a href="module-Array.html#.last">last</a></li><li data-type="method" id="Array-orderBy-nav"><a href="module-Array.html#.orderBy">orderBy</a></li><li data-type="method" id="Array-reverse-nav"><a href="module-Array.html#.reverse">reverse</a></li></ul></li><li id="Date-nav"><a href="module-Date.html">Date</a><ul class='methods'><li data-type="method" id="Date-addDays-nav"><a href="module-Date.html#.addDays">addDays</a></li><li data-type="method" id="Date-addMonths-nav"><a href="module-Date.html#.addMonths">addMonths</a></li><li data-type="method" id="Date-addYears-nav"><a href="module-Date.html#.addYears">addYears</a></li><li data-type="method" id="Date-dateToString-nav"><a href="module-Date.html#.dateToString">dateToString</a></li><li data-type="method" id="Date-endOfDay-nav"><a href="module-Date.html#.endOfDay">endOfDay</a></li><li data-type="method" id="Date-isAfter-nav"><a href="module-Date.html#.isAfter">isAfter</a></li><li data-type="method" id="Date-isBefore-nav"><a href="module-Date.html#.isBefore">isBefore</a></li><li data-type="method" id="Date-relativeTime-nav"><a href="module-Date.html#.relativeTime">relativeTime</a></li><li data-type="method" id="Date-startOfDay-nav"><a href="module-Date.html#.startOfDay">startOfDay</a></li><li data-type="method" id="Date-subtractDays-nav"><a href="module-Date.html#.subtractDays">subtractDays</a></li><li data-type="method" id="Date-subtractMonths-nav"><a href="module-Date.html#.subtractMonths">subtractMonths</a></li><li data-type="method" id="Date-subtractYears-nav"><a href="module-Date.html#.subtractYears">subtractYears</a></li></ul></li><li id="Math-nav"><a href="module-Math.html">Math</a><ul class='methods'><li data-type="method" id="Math-max-nav"><a href="module-Math.html#.max">max</a></li><li data-type="method" id="Math-mean-nav"><a href="module-Math.html#.mean">mean</a></li><li data-type="method" id="Math-median-nav"><a href="module-Math.html#.median">median</a></li><li data-type="method" id="Math-min-nav"><a href="module-Math.html#.min">min</a></li><li data-type="method" id="Math-mode-nav"><a href="module-Math.html#.mode">mode</a></li><li data-type="method" id="Math-multiply-nav"><a href="module-Math.html#.multiply">multiply</a></li><li data-type="method" id="Math-sum-nav"><a href="module-Math.html#.sum">sum</a></li></ul></li><li id="String-nav"><a href="module-String.html">String</a><ul class='methods'><li data-type="method" id="String-camelCase-nav"><a href="module-String.html#.camelCase">camelCase</a></li><li data-type="method" id="String-capitalize-nav"><a href="module-String.html#.capitalize">capitalize</a></li><li data-type="method" id="String-firstLetters-nav"><a href="module-String.html#.firstLetters">firstLetters</a></li><li data-type="method" id="String-kebabCase-nav"><a href="module-String.html#.kebabCase">kebabCase</a></li><li data-type="method" id="String-lastLetters-nav"><a href="module-String.html#.lastLetters">lastLetters</a></li><li data-type="method" id="String-lowerCase-nav"><a href="module-String.html#.lowerCase">lowerCase</a></li><li data-type="method" id="String-pascalCase-nav"><a href="module-String.html#.pascalCase">pascalCase</a></li><li data-type="method" id="String-snakeCase-nav"><a href="module-String.html#.snakeCase">snakeCase</a></li><li data-type="method" id="String-titleCase-nav"><a href="module-String.html#.titleCase">titleCase</a></li><li data-type="method" id="String-upperCase-nav"><a href="module-String.html#.upperCase">upperCase</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        Date
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.addDays">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".addDays">
+      <span class="type-signature">(static) </span>addDays<span class="signature">(daysToAdd<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the sum of the days, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>daysToAdd</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of days to increase
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which days are added, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_addDays_index.ts.html">date/addDays/index.ts</a>, <a href="date_addDays_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addDays-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addDays-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 26)
+console.log(addDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.addMonths">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".addMonths">
+      <span class="type-signature">(static) </span>addMonths<span class="signature">(monthsToAdd<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the sum of the months, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>monthsToAdd</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of months to increase
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which months are added, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_addMonths_index.ts.html">date/addMonths/index.ts</a>, <a href="date_addMonths_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addMonths-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addMonths-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 04, 27)
+console.log(addMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.addYears">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".addYears">
+      <span class="type-signature">(static) </span>addYears<span class="signature">(yearsToAdd<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the sum of the years, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>yearsToAdd</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of years to increase
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which years are added, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_addYears_index.ts.html">date/addYears/index.ts</a>, <a href="date_addYears_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#addYears-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="addYears-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1995, 05, 27)
+console.log(addYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.dateToString">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".dateToString">
+      <span class="type-signature">(static) </span>dateToString<span class="signature">(stringFormat<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Return the date value as string format, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>stringFormat</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      DateStringFormat
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The format of string for date, DateStringFormat for more information.
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to transform on string, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_dateToString_index.ts.html">date/dateToString/index.ts</a>, <a href="date_dateToString_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            DateStringFormat
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#dateToString-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="dateToString-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
+console.log(dateToString('dd-MM-yyyy', myDate)) // '27-06-1996'</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.endOfDay">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".endOfDay">
+      <span class="type-signature">(static) </span>endOfDay<span class="signature">(date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; (non-null) {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Get the date you pass with time to 23:59:59:999
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_endOfDay_index.ts.html">date/endOfDay/index.ts</a>, <a href="date_endOfDay_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#endOfDay-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="endOfDay-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
+console.log(endOfDay(myDate)) // Date(1996, 05, 27, 23, 59, 59, 999)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.isAfter">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".isAfter">
+      <span class="type-signature">(static) </span>isAfter<span class="signature">(date<span class="signature-attributes">non-null</span>, dateToCompare<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {boolean}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Check if the date is after the dateToCompare
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The date
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>dateToCompare</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The date to compare
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_isAfter_index.ts.html">date/isAfter/index.ts</a>, <a href="date_isAfter_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#isAfter-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="isAfter-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
+const otherDate = new Date(2001, 02, 01)
+console.log(isAfter(myDate, otherDate)) // false
+console.log(isAfter(otherDate, myDate)) // true</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.isBefore">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".isBefore">
+      <span class="type-signature">(static) </span>isBefore<span class="signature">(date<span class="signature-attributes">non-null</span>, dateToCompare<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {boolean}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Check if the date is before the dateToCompare
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The date
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>dateToCompare</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          The date to compare
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_isBefore_index.ts.html">date/isBefore/index.ts</a>, <a href="date_isBefore_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#isBefore-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="isBefore-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
+const otherDate = new Date(2001, 02, 01)
+console.log(isAfter(myDate, otherDate)) // true
+console.log(isAfter(otherDate, myDate)) // false</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.relativeTime">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".relativeTime">
+      <span class="type-signature">(static) </span>relativeTime<span class="signature">(date<span class="signature-attributes">non-null</span>, locale<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the relative time from date
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to compare relative time
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>locale</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Locale
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              'en-US'
+            
+          </td>
+        
+
+        <td class="description last">
+          The locale to return string, by default is `'en-US'`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_relativeTime_index.ts.html">date/relativeTime/index.ts</a>, <a href="date_relativeTime_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#relativeTime-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="relativeTime-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>// if current date is new Date(1996, 05, 27)
+
+const myDate = new Date(1996, 05, 26)
+console.log(relativeTime(myDate)) // 'yesterday'</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.startOfDay">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".startOfDay">
+      <span class="type-signature">(static) </span>startOfDay<span class="signature">(date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; (non-null) {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Get the date you pass with time to 00:00:00:000
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_startOfDay_index.ts.html">date/startOfDay/index.ts</a>, <a href="date_startOfDay_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#startOfDay-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="startOfDay-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
+console.log(endOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.subtractDays">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".subtractDays">
+      <span class="type-signature">(static) </span>subtractDays<span class="signature">(daysToSubtract<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the subtract of the days, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>daysToSubtract</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of days to subtract
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which days are subtracted, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_subtractDays_index.ts.html">date/subtractDays/index.ts</a>, <a href="date_subtractDays_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#subtractDays-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="subtractDays-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 28)
+console.log(subtractDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.subtractMonths">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".subtractMonths">
+      <span class="type-signature">(static) </span>subtractMonths<span class="signature">(monthsToSubtract<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the subtract of the months, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>monthsToSubtract</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of months to subtract
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which the months are subtracted, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_subtractMonths_index.ts.html">date/subtractMonths/index.ts</a>, <a href="date_subtractMonths_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#subtractMonths-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="subtractMonths-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1996, 06, 27)
+console.log(subtractMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.subtractYears">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".subtractYears">
+      <span class="type-signature">(static) </span>subtractYears<span class="signature">(yearsToSubtract<span class="signature-attributes">non-null</span>, date<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Date}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    Returns the date with the subtract of the years, by default the date is `new Date()`
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>yearsToSubtract</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          The number of years to subtract
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>date</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Date
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              new Date()
+            
+          </td>
+        
+
+        <td class="description last">
+          The date to which the years are subtracted, by default is `new Date()`
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="date_subtractYears_index.ts.html">date/subtractYears/index.ts</a>, <a href="date_subtractYears_index.ts.html#line4">line 4</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#subtractYears-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="subtractYears-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const myDate = new Date(1997, 05, 27)
+console.log(subtractYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

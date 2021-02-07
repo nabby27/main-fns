@@ -3,7 +3,10 @@ import { UpperCaseFunction } from './util/upperCase.function';
 
 /**
  *
- * Returns the upperCase text from text
+ * @memberof module:String
+ * @function upperCase
+ *
+ * @description Returns the upperCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The upperCase text

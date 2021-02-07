@@ -3,7 +3,10 @@ import { MinFunction } from './util/min.function';
 
 /**
  *
- * Returns the smallest number from numbers
+ * @memberof module:Math
+ * @function min
+ *
+ * @description Returns the smallest number from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The smallest number

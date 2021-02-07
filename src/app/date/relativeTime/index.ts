@@ -4,7 +4,10 @@ import { RelativeTimeFunction } from './util/relativeTime.function';
 
 /**
  *
- * Returns the relative time from date
+ * @memberof module:Date
+ * @function relativeTime
+ *
+ * @description Returns the relative time from date
  *
  * @param {!Date} date - The date to compare relative time
  * @param {Locale} [locale='en-US'] - The locale to return string, by default is `'en-US'`

@@ -3,7 +3,10 @@ import { SubtractMonthsFunction } from './util/subtractMonths.function';
 
 /**
  *
- * Returns the date with the subtract of the months, by default the date is `new Date()`
+ * @memberof module:Date
+ * @function subtractMonths
+ *
+ * @description Returns the date with the subtract of the months, by default the date is `new Date()`
  *
  * @param {!number} monthsToSubtract - The number of months to subtract
  * @param {Date} [date=new Date()] - The date to which the months are subtracted, by default is `new Date()`

@@ -3,7 +3,10 @@ import { AddYearsFunction } from './util/addYears.function';
 
 /**
  *
- * Returns the date with the sum of the years, by default the date is `new Date()`
+ * @memberof module:Date
+ * @function addYears
+ *
+ * @description Returns the date with the sum of the years, by default the date is `new Date()`
  *
  * @param {!number} yearsToAdd - The number of years to increase
  * @param {Date} [date=new Date()] - The date to which years are added, by default is `new Date()`

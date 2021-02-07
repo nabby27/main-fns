@@ -3,7 +3,10 @@ import { StartOfDayFunction } from './util/startOfDay.function';
 
 /**
  *
- * Get the date you pass with time to 00:00:00:000
+ * @memberof module:Date
+ * @function startOfDay
+ *
+ * @description Get the date you pass with time to 00:00:00:000
  *
  * @param {Date} [date=new Date()] - The date
  * @returns {!Date} - The date with init time, by default is `new Date()`

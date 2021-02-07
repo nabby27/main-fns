@@ -1,3 +1,5 @@
+/** @module Math */
+
 export * from './max';
 export * from './mean';
 export * from './median';

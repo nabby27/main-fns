@@ -3,7 +3,10 @@ import { SnakeCaseFunction } from './util/snakeCase.function';
 
 /**
  *
- * Returns the snakeCase text from text
+ * @memberof module:String
+ * @function snakeCase
+ *
+ * @description Returns the snakeCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The snakeCase text

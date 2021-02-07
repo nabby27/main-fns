@@ -3,7 +3,10 @@ import { AddMonthsFunction } from './util/addMonths.function';
 
 /**
  *
- * Returns the date with the sum of the months, by default the date is `new Date()`
+ * @memberof module:Date
+ * @function addMonths
+ *
+ * @description Returns the date with the sum of the months, by default the date is `new Date()`
  *
  * @param {!number} monthsToAdd - The number of months to increase
  * @param {Date} [date=new Date()] - The date to which months are added, by default is `new Date()`

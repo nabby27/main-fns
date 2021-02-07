@@ -3,7 +3,10 @@ import { ReverseFunction } from './util/reverse.function';
 
 /**
  *
- * Returns the array reversed
+ * @memberof module:Array
+ * @function reverse
+ *
+ * @description Returns the array reversed
  *
  * @template T
  * @param {!T[]} array - The array

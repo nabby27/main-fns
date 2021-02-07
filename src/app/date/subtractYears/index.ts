@@ -3,7 +3,10 @@ import { SubtractYearsFunction } from './util/subtractYears.function';
 
 /**
  *
- * Returns the date with the subtract of the years, by default the date is `new Date()`
+ * @memberof module:Date
+ * @function subtractYears
+ *
+ * @description Returns the date with the subtract of the years, by default the date is `new Date()`
  *
  * @param {!number} yearsToSubtract - The number of years to subtract
  * @param {Date} [date=new Date()] - The date to which the years are subtracted, by default is `new Date()`

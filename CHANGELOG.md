@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Show functions grouped by modules in [documentation](https://nabby27.github.io/main-fns/)
+
 ### Deprecated
 ### Removed
 ### Fixed

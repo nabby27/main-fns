@@ -3,7 +3,10 @@ import { LowerCaseFunction } from './util/lowerCase.function';
 
 /**
  *
- * Returns the lowerCase text from text
+ * @memberof module:String
+ * @function lowerCase
+ *
+ * @description Returns the lowerCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The lowerCase text

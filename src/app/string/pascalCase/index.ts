@@ -3,7 +3,10 @@ import { PascalCaseFunction } from './util/pascalCase.function';
 
 /**
  *
- * Returns the pascalCase text from text
+ * @memberof module:String
+ * @function pascalCase
+ *
+ * @description Returns the pascalCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The pascalCase text

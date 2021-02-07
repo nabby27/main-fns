@@ -3,7 +3,10 @@ import { SumFunction } from './util/sum.function';
 
 /**
  *
- * Returns the sum from numbers
+ * @memberof module:Math
+ * @function sum
+ *
+ * @description Returns the sum from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The sum

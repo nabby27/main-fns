@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc",
-    "docs": "jsdoc -c jsdoc.json",
+    "docs": "jsdoc -c jsdoc.json -r",
     "eslint:check": "npx eslint './src/**'",
     "eslint:fix": "npx eslint './src/**' --fix",
     "test": "jest",

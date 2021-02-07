@@ -2,11 +2,12 @@ import { DateStringFormat } from '../types/dateStringFormat';
 import { DateToStringOwn } from './impl/dateToStringOwn';
 import { DateToStringFunction } from './util/dateToString.function';
 
-/** @typedef {import('../types/dateStringFormat').DateStringFormat} DateStringFormat */
-
 /**
  *
- * Return the date value as string format, by default the date is `new Date()`
+ * @memberof module:Date
+ * @function dateToString
+ *
+ * @description Return the date value as string format, by default the date is `new Date()`
  *
  * @param {!DateStringFormat} stringFormat - The format of string for date, {@link DateStringFormat} for more information.
  * @param {Date} [date=new Date()] - The date to transform on string, by default is `new Date()`

@@ -3,7 +3,10 @@ import { OrderByFunction } from './util/orderBy.function';
 
 /**
  *
- * Returns the the array ordered by key
+ * @memberof module:Array
+ * @function orderBy
+ *
+ * @description Returns the the array ordered by key
  *
  * @template T
  * @param {!string} key - The key

@@ -3,7 +3,10 @@ import { FirstFunction } from './util/first.function';
 
 /**
  *
- * Returns the first element of the array
+ * @memberof module:Array
+ * @function first
+ *
+ * @description Returns the first element of the array
  *
  * @template T
  * @param {!T[]} array - The array

@@ -3,7 +3,10 @@ import { KebabCaseFunction } from './util/kebabCase.function';
 
 /**
  *
- * Returns the kebabCase text from text
+ * @memberof module:String
+ * @function kebabCase
+ *
+ * @description Returns the kebabCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The kebabCase text

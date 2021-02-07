@@ -3,7 +3,10 @@ import { MedianFunction } from './util/median.function';
 
 /**
  *
- * Returns the median from numbers
+ * @memberof module:Math
+ * @function median
+ *
+ * @description Returns the median from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The median

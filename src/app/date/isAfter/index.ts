@@ -3,7 +3,10 @@ import { IsAfterFunction } from './util/isAfter.function';
 
 /**
  *
- * Check if the date is after the dateToCompare
+ * @memberof module:Date
+ * @function isAfter
+ *
+ * @description Check if the date is after the dateToCompare
  *
  * @param {!Date} date - The date
  * @param {!Date} dateToCompare - The date to compare

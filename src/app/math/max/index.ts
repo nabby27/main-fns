@@ -3,7 +3,10 @@ import { MaxFunction } from './util/max.function';
 
 /**
  *
- * Returns the biggest number from numbers
+ * @memberof module:Math
+ * @function max
+ *
+ * @description Returns the biggest number from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The biggest number

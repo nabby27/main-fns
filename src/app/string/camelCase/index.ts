@@ -3,7 +3,10 @@ import { CamelCaseFunction } from './util/camelCase.function';
 
 /**
  *
- * Returns the camelCase text from text
+ * @memberof module:String
+ * @function camelCase
+ *
+ * @description Returns the camelCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The camelCase  text

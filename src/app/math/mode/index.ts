@@ -3,7 +3,10 @@ import { ModeFunction } from './util/mode.function';
 
 /**
  *
- * Returns the mode from numbers
+ * @memberof module:Math
+ * @function mode
+ *
+ * @description Returns the mode from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The mode

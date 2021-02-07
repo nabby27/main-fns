@@ -2,8 +2,10 @@ import { LastOwn } from './impl/lastOwn';
 import { LastFunction } from './util/last.function';
 
 /**
+ * @memberof module:Array
+ * @function last
  *
- * Returns the last element of the array
+ * @description Returns the last element of the array
  *
  * @template T
  * @param {!T[]} array - The array

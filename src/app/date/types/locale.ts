@@ -1,8 +1,11 @@
 /**
- * String locale.
+ *
+ * @memberof module:Date
+ * @typedef {'en-US' | 'es-ES'} Locale
+ *
+ * @description String locale.
  *
  * @name Locale
- * @typedef {'en-US' | 'es-ES'} Locale
  * @alias Locale
  */
 export type Locale =

@@ -3,7 +3,10 @@ import { MultiplyFunction } from './util/multiply.function';
 
 /**
  *
- * Returns the product from numbers
+ * @memberof module:Math
+ * @function multiply
+ *
+ * @description Returns the product from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The product

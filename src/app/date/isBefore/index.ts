@@ -3,7 +3,10 @@ import { IsBeforeFunction } from './util/isBefore.function';
 
 /**
  *
- * Check if the date is before the dateToCompare
+ * @memberof module:Date
+ * @function isBefore
+ *
+ * @description Check if the date is before the dateToCompare
  *
  * @param {!Date} date - The date
  * @param {!Date} dateToCompare - The date to compare

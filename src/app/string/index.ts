@@ -1,3 +1,5 @@
+/** @module String */
+
 export * from './camelCase';
 export * from './capitalize';
 export * from './firstLetters';

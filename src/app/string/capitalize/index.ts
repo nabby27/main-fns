@@ -3,7 +3,10 @@ import { CapitalizeFunction } from './util/capitalize.function';
 
 /**
  *
- * Returns the capitalized text from text
+ * @memberof module:String
+ * @function capitalize
+ *
+ * @description Returns the capitalized text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The capitalized text

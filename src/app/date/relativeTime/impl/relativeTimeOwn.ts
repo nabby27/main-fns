@@ -1,8 +1,6 @@
 import { Locale } from '../../types/locale';
 import { RelativeTime } from '../util/relativeTime.interface';
 
-export type timeUnits = 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second';
-
 export class RelativeTimeOwn implements RelativeTime {
 
   private unitsInMilliseconds: {unit: Intl.RelativeTimeFormatUnit, inMilliseconds: number}[] = [

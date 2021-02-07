@@ -3,7 +3,10 @@ import { TitleCaseFunction } from './util/titleCase.function';
 
 /**
  *
- * Returns the titleCase text from text
+ * @memberof module:String
+ * @function titleCase
+ *
+ * @description Returns the titleCase text from text
  *
  * @param {!string} text - The text
  * @returns {strign} The titleCase text

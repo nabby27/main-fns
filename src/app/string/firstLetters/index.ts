@@ -3,7 +3,10 @@ import { FirstLettersFunction } from './util/firstLetters.function';
 
 /**
  *
- * Returns the first letters from text
+ * @memberof module:String
+ * @function firstLetters
+ *
+ * @description Returns the first letters from text
  *
  * @param {!string} text - The text
  * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`

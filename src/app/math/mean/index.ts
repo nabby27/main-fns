@@ -3,7 +3,10 @@ import { MeanFunction } from './util/mean.function';
 
 /**
  *
- * Returns the mean from numbers
+ * @memberof module:Math
+ * @function mean
+ *
+ * @description Returns the mean from numbers
  *
  * @param {!number[]} numbers - The numbers
  * @returns {number} The mean

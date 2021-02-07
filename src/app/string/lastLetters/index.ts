@@ -3,7 +3,10 @@ import { LastLettersFunction } from './util/lastLetters.function';
 
 /**
  *
- * Returns the last letters from text
+ * @memberof module:String
+ * @function lastLetters
+ *
+ * @description Returns the last letters from text
  *
  * @param {!string} text - The text
  * @param {number} [numberOfLetters=1] - The number of letters, by default is `1`

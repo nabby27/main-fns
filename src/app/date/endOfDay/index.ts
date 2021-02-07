@@ -3,7 +3,10 @@ import { EndOfDayFunction } from './util/endOfDay.function';
 
 /**
  *
- * Get the date you pass with time to 23:59:59:999
+ * @memberof module:Date
+ * @function endOfDay
+ *
+ * @description Get the date you pass with time to 23:59:59:999
  *
  * @param {Date} [date=new Date()] - The date
  * @returns {!Date} - The date with end time, by default is `new Date()`
