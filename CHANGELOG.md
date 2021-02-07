@@ -5,16 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.3.0...HEAD)
+## [Unreleased](https://github.com/nabby27/main-fns/compare/v1.4.0...HEAD)
 
 ### Added
 ### Changed
-- Show functions grouped by modules in [documentation](https://nabby27.github.io/main-fns/)
-
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [v1.4.0](https://github.com/nabby27/main-fns/releases/tag/v1.4.0) - 2021-02-07
+
+### Added
+- **object module**
+- **object module:** clone function
+- **object module:** isEqual function
+- [lodash](https://lodash.com/) dependence
+
+### Changed
+- Show functions grouped by modules in [documentation](https://nabby27.github.io/main-fns/)
 
 ## [v1.3.0](https://github.com/nabby27/main-fns/releases/tag/v1.3.0) - 2021-01-18
 
