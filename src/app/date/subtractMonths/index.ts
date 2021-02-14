@@ -17,8 +17,8 @@ import { SubtractMonthsFunction } from './util/subtractMonths.function';
  * console.log(subtractMonths(1, myDate)) // Date(1996, 05, 27)
  */
 export function subtractMonths(monthsToSubtract: number, date: Date = new Date()): Date {
-  return new SubtractMonthsFunction(new SubtractMonthsOwn()).subtractMonths(
-    monthsToSubtract,
-    date
-  );
+    return new SubtractMonthsFunction(new SubtractMonthsOwn()).subtractMonths(
+        monthsToSubtract,
+        date
+    );
 }

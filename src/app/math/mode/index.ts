@@ -16,5 +16,5 @@ import { ModeFunction } from './util/mode.function';
  * console.log(mode(numbers)) // [1]
  */
 export function mode(...numbers: number[]): number[] {
-  return new ModeFunction(new ModeOwn()).mode(numbers);
+    return new ModeFunction(new ModeOwn()).mode(numbers);
 }

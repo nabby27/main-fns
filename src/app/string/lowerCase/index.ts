@@ -16,5 +16,5 @@ import { LowerCaseFunction } from './util/lowerCase.function';
  * console.log(lowerCase(text)) // 'hello world'
  */
 export function lowerCase(text: string): string {
-  return new LowerCaseFunction(new LowerCaseOwn()).execute(text);
+    return new LowerCaseFunction(new LowerCaseOwn()).execute(text);
 }

@@ -19,11 +19,11 @@ import { IsAfterFunction } from './util/isAfter.function';
  * console.log(isAfter(otherDate, myDate)) // true
  */
 export function isAfter(
-  date: Date,
-  dateToCompare: Date
+    date: Date,
+    dateToCompare: Date
 ): boolean {
-  return new IsAfterFunction(new IsAfterOwn()).isAfter(
-    date,
-    dateToCompare
-  );
+    return new IsAfterFunction(new IsAfterOwn()).isAfter(
+        date,
+        dateToCompare
+    );
 }

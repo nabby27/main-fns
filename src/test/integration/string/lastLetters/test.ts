@@ -8,30 +8,30 @@ export class LastLettersTest {
     numberOfLetters: number,
     expect: string;
   }[] = [
-    {
-      text: 'hello',
-      numberOfLetters: 1,
-      expect: 'o'
-    },
-    {
-      text: 'bYE',
-      numberOfLetters: 2,
-      expect: 'ye'
-    }
+      {
+          text: 'hello',
+          numberOfLetters: 1,
+          expect: 'o'
+      },
+      {
+          text: 'bYE',
+          numberOfLetters: 2,
+          expect: 'ye'
+      }
   ];
 
   constructor(private lastLettersImpl: LastLetters) {}
 
   runTest(): void {
-    describe('Get last letters', () => {
-      this.data.forEach((item) => {
-        test('should return last letters', () => {
-          const result = new LastLettersFunction(this.lastLettersImpl).execute(item.text, item.numberOfLetters);
+      describe('Get last letters', () => {
+          this.data.forEach((item) => {
+              test('should return last letters', () => {
+                  const result = new LastLettersFunction(this.lastLettersImpl).execute(item.text, item.numberOfLetters);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

@@ -7,28 +7,28 @@ export class PascalCaseTest {
     text: string;
     expect: string;
   }[] = [
-    {
-      text: 'HELLO world',
-      expect: 'HelloWorld'
-    },
-    {
-      text: 'good bye',
-      expect: 'GoodBye'
-    }
+      {
+          text: 'HELLO world',
+          expect: 'HelloWorld'
+      },
+      {
+          text: 'good bye',
+          expect: 'GoodBye'
+      }
   ];
 
   constructor(private pascalCaseImpl: PascalCase) {}
 
   runTest(): void {
-    describe('Get pascalCase text', () => {
-      this.data.forEach((item) => {
-        test('should return pascalCase text', () => {
-          const result = new PascalCaseFunction(this.pascalCaseImpl).execute(item.text);
+      describe('Get pascalCase text', () => {
+          this.data.forEach((item) => {
+              test('should return pascalCase text', () => {
+                  const result = new PascalCaseFunction(this.pascalCaseImpl).execute(item.text);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

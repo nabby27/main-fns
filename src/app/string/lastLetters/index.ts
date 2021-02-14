@@ -17,5 +17,5 @@ import { LastLettersFunction } from './util/lastLetters.function';
  * console.log(lastLetters(text, 3)) // 'rld'
  */
 export function lastLetters(text: string, numberOfLetters = 1): string {
-  return new LastLettersFunction(new LastLettersOwn()).execute(text, numberOfLetters);
+    return new LastLettersFunction(new LastLettersOwn()).execute(text, numberOfLetters);
 }

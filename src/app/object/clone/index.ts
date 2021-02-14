@@ -26,5 +26,5 @@ import { CloneFunction } from './util/clone.function';
  * console.log(userInfoCloned.name); // 'Iván'
  */
 export function clone<T>(object: T): T {
-  return new CloneFunction(new CloneOwn()).execute(object);
+    return new CloneFunction(new CloneOwn()).execute(object);
 }

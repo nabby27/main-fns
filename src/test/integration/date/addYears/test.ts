@@ -12,30 +12,30 @@ export class AddYearsTest {
     date: Date;
     expect: Date;
   }[] = [
-    {
-      numberOfYearsToAdd: 3,
-      date: new Date(2020, 10, 13),
-      expect: new Date(2023, 10, 13)
-    }
+      {
+          numberOfYearsToAdd: 3,
+          date: new Date(2020, 10, 13),
+          expect: new Date(2023, 10, 13)
+      }
   ];
 
   constructor(private addYearsImpl: AddYears) {}
 
   runTest(): void {
-    describe('Get date with added years', () => {
-      this.expectsDates.forEach((expectDate) => {
-        test('should return date with added years', () => {
-          const result = new AddYearsFunction(this.addYearsImpl).addYears(
-            expectDate.numberOfYearsToAdd,
-            expectDate.date
-          );
+      describe('Get date with added years', () => {
+          this.expectsDates.forEach((expectDate) => {
+              test('should return date with added years', () => {
+                  const result = new AddYearsFunction(this.addYearsImpl).addYears(
+                      expectDate.numberOfYearsToAdd,
+                      expectDate.date
+                  );
 
-          expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
-          expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
-          expect(result.getDate()).toEqual(expectDate.expect.getDate());
-        });
+                  expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
+                  expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
+                  expect(result.getDate()).toEqual(expectDate.expect.getDate());
+              });
+          });
       });
-    });
   }
 
 }

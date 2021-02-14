@@ -22,5 +22,5 @@ import { OrderByFunction } from './util/orderBy.function';
  * console.log(orderBy('id', users)) // [{ id: 2, name: 'Nabby'}, { id: 3, name: 'Ivan'}]
  */
 export function orderBy<T>(key: string, array: T[]): T[] {
-  return new OrderByFunction(new OrderByOwn()).orderBy(key, array);
+    return new OrderByFunction(new OrderByOwn()).orderBy(key, array);
 }

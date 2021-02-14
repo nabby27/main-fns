@@ -16,5 +16,5 @@ import { MedianFunction } from './util/median.function';
  * console.log(median(numbers)) // 3
  */
 export function median(...numbers: number[]): number {
-  return new MedianFunction(new MedianOwn()).median(numbers);
+    return new MedianFunction(new MedianOwn()).median(numbers);
 }

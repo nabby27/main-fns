@@ -16,5 +16,5 @@ import { TitleCaseFunction } from './util/titleCase.function';
  * console.log(titleCase(text)) // 'Hello World'
  */
 export function titleCase(text: string): string {
-  return new TitleCaseFunction(new TitleCaseOwn()).execute(text);
+    return new TitleCaseFunction(new TitleCaseOwn()).execute(text);
 }

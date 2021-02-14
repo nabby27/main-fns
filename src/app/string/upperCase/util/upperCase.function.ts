@@ -2,10 +2,10 @@ import { UpperCase } from './upperCase.interface';
 
 export class UpperCaseFunction {
 
-  constructor(private upperCaseImpl: UpperCase) { }
+    constructor(private upperCaseImpl: UpperCase) { }
 
-  execute(text: string): string {
-    return this.upperCaseImpl.upperCase(text);
-  }
+    execute(text: string): string {
+        return this.upperCaseImpl.upperCase(text);
+    }
 
 }

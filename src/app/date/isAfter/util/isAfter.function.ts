@@ -2,10 +2,10 @@ import { IsAfter } from './isAfter.interface';
 
 export class IsAfterFunction {
 
-  constructor(private isAfterImpl: IsAfter) { }
+    constructor(private isAfterImpl: IsAfter) { }
 
-  isAfter(date: Date, dateToCompare: Date): boolean {
-    return this.isAfterImpl.isAfter(date, dateToCompare);
-  }
+    isAfter(date: Date, dateToCompare: Date): boolean {
+        return this.isAfterImpl.isAfter(date, dateToCompare);
+    }
 
 }

@@ -7,28 +7,28 @@ export class KebabCaseTest {
     text: string;
     expect: string;
   }[] = [
-    {
-      text: 'hello world',
-      expect: 'hello-world'
-    },
-    {
-      text: 'Good Bye',
-      expect: 'good-bye'
-    }
+      {
+          text: 'hello world',
+          expect: 'hello-world'
+      },
+      {
+          text: 'Good Bye',
+          expect: 'good-bye'
+      }
   ];
 
   constructor(private kebabCaseImpl: KebabCase) {}
 
   runTest(): void {
-    describe('Get kebabCase text', () => {
-      this.data.forEach((item) => {
-        test('should return kebabCase text', () => {
-          const result = new KebabCaseFunction(this.kebabCaseImpl).execute(item.text);
+      describe('Get kebabCase text', () => {
+          this.data.forEach((item) => {
+              test('should return kebabCase text', () => {
+                  const result = new KebabCaseFunction(this.kebabCaseImpl).execute(item.text);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

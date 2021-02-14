@@ -16,5 +16,5 @@ import { CapitalizeFunction } from './util/capitalize.function';
  * console.log(capitalize(text)) // 'Hello'
  */
 export function capitalize(text: string): string {
-  return new CapitalizeFunction(new CapitalizeOwn()).execute(text);
+    return new CapitalizeFunction(new CapitalizeOwn()).execute(text);
 }

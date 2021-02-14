@@ -17,5 +17,5 @@ import { FirstFunction } from './util/first.function';
  * console.log(first(numbers)) // 3
  */
 export function first<T>(array: T[]): T {
-  return new FirstFunction(new FirstOwn()).first(array);
+    return new FirstFunction(new FirstOwn()).first(array);
 }

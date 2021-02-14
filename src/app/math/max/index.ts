@@ -16,5 +16,5 @@ import { MaxFunction } from './util/max.function';
  * console.log(max(numbers)) // 5
  */
 export function max(...numbers: number[]): number {
-  return new MaxFunction(new MaxOwn()).max(numbers);
+    return new MaxFunction(new MaxOwn()).max(numbers);
 }

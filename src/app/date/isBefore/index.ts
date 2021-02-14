@@ -19,11 +19,11 @@ import { IsBeforeFunction } from './util/isBefore.function';
  * console.log(isAfter(otherDate, myDate)) // false
  */
 export function isBefore(
-  date: Date,
-  dateToCompare: Date
+    date: Date,
+    dateToCompare: Date
 ): boolean {
-  return new IsBeforeFunction(new IsBeforeOwn()).isBefore(
-    date,
-    dateToCompare
-  );
+    return new IsBeforeFunction(new IsBeforeOwn()).isBefore(
+        date,
+        dateToCompare
+    );
 }

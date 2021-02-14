@@ -7,28 +7,28 @@ export class TitleCaseTest {
     text: string;
     expect: string;
   }[] = [
-    {
-      text: 'HELLO world',
-      expect: 'Hello World'
-    },
-    {
-      text: 'good bye',
-      expect: 'Good Bye'
-    }
+      {
+          text: 'HELLO world',
+          expect: 'Hello World'
+      },
+      {
+          text: 'good bye',
+          expect: 'Good Bye'
+      }
   ];
 
   constructor(private titleCaseImpl: TitleCase) {}
 
   runTest(): void {
-    describe('Get titleCase text', () => {
-      this.data.forEach((item) => {
-        test('should return titleCase text', () => {
-          const result = new TitleCaseFunction(this.titleCaseImpl).execute(item.text);
+      describe('Get titleCase text', () => {
+          this.data.forEach((item) => {
+              test('should return titleCase text', () => {
+                  const result = new TitleCaseFunction(this.titleCaseImpl).execute(item.text);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

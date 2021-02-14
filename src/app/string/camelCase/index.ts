@@ -16,5 +16,5 @@ import { CamelCaseFunction } from './util/camelCase.function';
  * console.log(camelCase(text)) // 'helloWorld'
  */
 export function camelCase(text: string): string {
-  return new CamelCaseFunction(new CamelCaseOwn()).execute(text);
+    return new CamelCaseFunction(new CamelCaseOwn()).execute(text);
 }

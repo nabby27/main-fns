@@ -9,25 +9,25 @@ const expectsDates: {
   date?: Date;
   expect: Date;
 }[] = [
-  {
-    numberOfYearsToAdd: 3,
-    expect: new Date(currentYear + 3, currentMonth, currentDay)
-  },
-  {
-    numberOfYearsToAdd: 3,
-    date: new Date(2020, 10, 13),
-    expect: new Date(2023, 10, 13)
-  }
+    {
+        numberOfYearsToAdd: 3,
+        expect: new Date(currentYear + 3, currentMonth, currentDay)
+    },
+    {
+        numberOfYearsToAdd: 3,
+        date: new Date(2020, 10, 13),
+        expect: new Date(2023, 10, 13)
+    }
 ];
 
 describe('Get date with added years', () => {
-  expectsDates.forEach((expectDate) => {
-    test('should return date with added years', () => {
-      const result = addYears(expectDate.numberOfYearsToAdd, expectDate.date);
+    expectsDates.forEach((expectDate) => {
+        test('should return date with added years', () => {
+            const result = addYears(expectDate.numberOfYearsToAdd, expectDate.date);
 
-      expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
-      expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
-      expect(result.getDate()).toEqual(expectDate.expect.getDate());
+            expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
+            expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
+            expect(result.getDate()).toEqual(expectDate.expect.getDate());
+        });
     });
-  });
 });

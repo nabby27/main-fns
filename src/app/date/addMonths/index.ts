@@ -17,5 +17,5 @@ import { AddMonthsFunction } from './util/addMonths.function';
  * console.log(addMonths(1, myDate)) // Date(1996, 05, 27)
  */
 export function addMonths(monthsToAdd: number, date: Date = new Date()): Date {
-  return new AddMonthsFunction(new AddMonthsOwn()).addMonths(monthsToAdd, date);
+    return new AddMonthsFunction(new AddMonthsOwn()).addMonths(monthsToAdd, date);
 }

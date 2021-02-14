@@ -8,30 +8,30 @@ export class FirstLettersTest {
     numberOfLetters: number,
     expect: string;
   }[] = [
-    {
-      text: 'hello',
-      numberOfLetters: 1,
-      expect: 'h'
-    },
-    {
-      text: 'bYE',
-      numberOfLetters: 2,
-      expect: 'by'
-    }
+      {
+          text: 'hello',
+          numberOfLetters: 1,
+          expect: 'h'
+      },
+      {
+          text: 'bYE',
+          numberOfLetters: 2,
+          expect: 'by'
+      }
   ];
 
   constructor(private firstLettersImpl: FirstLetters) {}
 
   runTest(): void {
-    describe('Get first letters', () => {
-      this.data.forEach((item) => {
-        test('should return first letters', () => {
-          const result = new FirstLettersFunction(this.firstLettersImpl).execute(item.text, item.numberOfLetters);
+      describe('Get first letters', () => {
+          this.data.forEach((item) => {
+              test('should return first letters', () => {
+                  const result = new FirstLettersFunction(this.firstLettersImpl).execute(item.text, item.numberOfLetters);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

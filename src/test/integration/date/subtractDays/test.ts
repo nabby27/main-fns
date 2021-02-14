@@ -12,32 +12,32 @@ export class SubtractDaysTest {
     date: Date;
     expect: Date;
   }[] = [
-    {
-      numberOfDaysTosubtract: 3,
-      date: new Date(2020, 10, 13),
-      expect: new Date(2020, 10, 10)
-    },
-    {
-      numberOfDaysTosubtract: 2,
-      date: new Date(2020, 11, 2),
-      expect: new Date(2020, 10, 30)
-    }
+      {
+          numberOfDaysTosubtract: 3,
+          date: new Date(2020, 10, 13),
+          expect: new Date(2020, 10, 10)
+      },
+      {
+          numberOfDaysTosubtract: 2,
+          date: new Date(2020, 11, 2),
+          expect: new Date(2020, 10, 30)
+      }
   ];
 
   constructor(private subtractDaysImpl: SubtractDays) { }
 
   runTest(): void {
-    describe('Get current date with subtracted days', () => {
-      this.expectsDates.forEach((expectDate) => {
-        test('should return date with subtracted days', () => {
-          const result = new SubtractDaysFunction(this.subtractDaysImpl).subtractDays(expectDate.numberOfDaysTosubtract, expectDate.date);
+      describe('Get current date with subtracted days', () => {
+          this.expectsDates.forEach((expectDate) => {
+              test('should return date with subtracted days', () => {
+                  const result = new SubtractDaysFunction(this.subtractDaysImpl).subtractDays(expectDate.numberOfDaysTosubtract, expectDate.date);
 
-          expect(result.getDate()).toEqual(expectDate.expect.getDate());
-          expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
-          expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
-        });
+                  expect(result.getDate()).toEqual(expectDate.expect.getDate());
+                  expect(result.getMonth()).toEqual(expectDate.expect.getMonth());
+                  expect(result.getFullYear()).toEqual(expectDate.expect.getFullYear());
+              });
+          });
       });
-    });
   }
 
 }

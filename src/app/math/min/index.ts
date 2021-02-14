@@ -16,5 +16,5 @@ import { MinFunction } from './util/min.function';
  * console.log(min(numbers)) // 1
  */
 export function min(...numbers: number[]): number {
-  return new MinFunction(new MinOwn()).min(numbers);
+    return new MinFunction(new MinOwn()).min(numbers);
 }

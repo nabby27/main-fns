@@ -7,28 +7,28 @@ export class CapitalizeTest {
     text: string;
     expect: string;
   }[] = [
-    {
-      text: 'hello',
-      expect: 'Hello'
-    },
-    {
-      text: 'bYE',
-      expect: 'Bye'
-    }
+      {
+          text: 'hello',
+          expect: 'Hello'
+      },
+      {
+          text: 'bYE',
+          expect: 'Bye'
+      }
   ];
 
   constructor(private capitalizeImpl: Capitalize) {}
 
   runTest(): void {
-    describe('Get capitalized text', () => {
-      this.data.forEach((item) => {
-        test('should return capitalized text', () => {
-          const result = new CapitalizeFunction(this.capitalizeImpl).execute(item.text);
+      describe('Get capitalized text', () => {
+          this.data.forEach((item) => {
+              test('should return capitalized text', () => {
+                  const result = new CapitalizeFunction(this.capitalizeImpl).execute(item.text);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

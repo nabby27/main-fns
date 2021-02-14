@@ -7,32 +7,32 @@ export class ModeTest {
     array: number[];
     expect: number[];
   }[] = [
-    {
-      array: [3, 1, 1],
-      expect: [1]
-    },
-    {
-      array: [4, 2, 2, 5],
-      expect: [2]
-    },
-    {
-      array: [4, 2, 2, 5, 4, 3, 3],
-      expect: [2, 3, 4]
-    }
+      {
+          array: [3, 1, 1],
+          expect: [1]
+      },
+      {
+          array: [4, 2, 2, 5],
+          expect: [2]
+      },
+      {
+          array: [4, 2, 2, 5, 4, 3, 3],
+          expect: [2, 3, 4]
+      }
   ];
 
   constructor(private modeImpl: Mode) {}
 
   runTest(): void {
-    describe('Get mode from array', () => {
-      this.data.forEach((item) => {
-        test('should return mode from array', () => {
-          const result = new ModeFunction(this.modeImpl).mode(item.array);
+      describe('Get mode from array', () => {
+          this.data.forEach((item) => {
+              test('should return mode from array', () => {
+                  const result = new ModeFunction(this.modeImpl).mode(item.array);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

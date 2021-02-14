@@ -7,28 +7,28 @@ export class UpperCaseTest {
     text: string;
     expect: string;
   }[] = [
-    {
-      text: 'HELLO world',
-      expect: 'HELLO WORLD'
-    },
-    {
-      text: 'good bye',
-      expect: 'GOOD BYE'
-    }
+      {
+          text: 'HELLO world',
+          expect: 'HELLO WORLD'
+      },
+      {
+          text: 'good bye',
+          expect: 'GOOD BYE'
+      }
   ];
 
   constructor(private upperCaseImpl: UpperCase) {}
 
   runTest(): void {
-    describe('Get upperCase text', () => {
-      this.data.forEach((item) => {
-        test('should return upperCase text', () => {
-          const result = new UpperCaseFunction(this.upperCaseImpl).execute(item.text);
+      describe('Get upperCase text', () => {
+          this.data.forEach((item) => {
+              test('should return upperCase text', () => {
+                  const result = new UpperCaseFunction(this.upperCaseImpl).execute(item.text);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

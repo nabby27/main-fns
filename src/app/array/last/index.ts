@@ -16,5 +16,5 @@ import { LastFunction } from './util/last.function';
  * console.log(last(numbers)) // 5
  */
 export function last<T>(array: T[]): T {
-  return new LastFunction(new LastOwn()).last(array);
+    return new LastFunction(new LastOwn()).last(array);
 }

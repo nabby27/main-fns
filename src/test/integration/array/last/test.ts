@@ -7,28 +7,28 @@ export class LastTest {
     array: unknown[];
     expect: unknown;
   }[] = [
-    {
-      array: [3, 2, 1],
-      expect: 1
-    },
-    {
-      array: ['a', 'b', 'c'],
-      expect: 'c'
-    }
+      {
+          array: [3, 2, 1],
+          expect: 1
+      },
+      {
+          array: ['a', 'b', 'c'],
+          expect: 'c'
+      }
   ];
 
   constructor(private lastImpl: Last) {}
 
   runTest(): void {
-    describe('Get last item from array', () => {
-      this.data.forEach((item) => {
-        test('should return last item from array', () => {
-          const result = new LastFunction(this.lastImpl).last(item.array);
+      describe('Get last item from array', () => {
+          this.data.forEach((item) => {
+              test('should return last item from array', () => {
+                  const result = new LastFunction(this.lastImpl).last(item.array);
 
-          expect(result).toEqual(item.expect);
-        });
+                  expect(result).toEqual(item.expect);
+              });
+          });
       });
-    });
   }
 
 }

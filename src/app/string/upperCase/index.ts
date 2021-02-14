@@ -16,5 +16,5 @@ import { UpperCaseFunction } from './util/upperCase.function';
  * console.log(upperCase(text)) // 'HELLO WORLD'
  */
 export function upperCase(text: string): string {
-  return new UpperCaseFunction(new UpperCaseOwn()).execute(text);
+    return new UpperCaseFunction(new UpperCaseOwn()).execute(text);
 }

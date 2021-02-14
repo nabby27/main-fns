@@ -17,5 +17,5 @@ import { ReverseFunction } from './util/reverse.function';
  * console.log(reverse(numbers)) // [5, 1, 3]
  */
 export function reverse<T>(array: T[]): T[] {
-  return new ReverseFunction(new ReverseOwn()).reverse(array);
+    return new ReverseFunction(new ReverseOwn()).reverse(array);
 }

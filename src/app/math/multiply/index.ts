@@ -16,5 +16,5 @@ import { MultiplyFunction } from './util/multiply.function';
  * console.log(multiply(numbers)) // 15
  */
 export function multiply(...numbers: number[]): number {
-  return new MultiplyFunction(new MultiplyOwn()).multiply(numbers);
+    return new MultiplyFunction(new MultiplyOwn()).multiply(numbers);
 }

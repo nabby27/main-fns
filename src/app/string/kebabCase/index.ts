@@ -16,5 +16,5 @@ import { KebabCaseFunction } from './util/kebabCase.function';
  * console.log(kebabCase(text)) // 'hello-world'
  */
 export function kebabCase(text: string): string {
-  return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
+    return new KebabCaseFunction(new KebabCaseOwn()).execute(text);
 }

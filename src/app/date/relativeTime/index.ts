@@ -21,5 +21,5 @@ import { RelativeTimeFunction } from './util/relativeTime.function';
  * console.log(relativeTime(myDate)) // 'yesterday'
  */
 export function relativeTime(date: Date, locale: Locale = 'en-US'): string {
-  return new RelativeTimeFunction(new RelativeTimeOwn()).relativeTime(date, locale);
+    return new RelativeTimeFunction(new RelativeTimeOwn()).relativeTime(date, locale);
 }

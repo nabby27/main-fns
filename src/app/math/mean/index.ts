@@ -16,5 +16,5 @@ import { MeanFunction } from './util/mean.function';
  * console.log(mean(numbers)) // 4.5
  */
 export function mean(...numbers: number[]): number {
-  return new MeanFunction(new MeanOwn()).mean(numbers);
+    return new MeanFunction(new MeanOwn()).mean(numbers);
 }

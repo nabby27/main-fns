@@ -16,5 +16,5 @@ import { SnakeCaseFunction } from './util/snakeCase.function';
  * console.log(snakeCase(text)) // 'hello_world'
  */
 export function snakeCase(text: string): string {
-  return new SnakeCaseFunction(new SnakeCaseOwn()).execute(text);
+    return new SnakeCaseFunction(new SnakeCaseOwn()).execute(text);
 }

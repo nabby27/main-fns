@@ -16,5 +16,5 @@ import { PascalCaseFunction } from './util/pascalCase.function';
  * console.log(pascalCase(text)) // 'HelloWorld'
  */
 export function pascalCase(text: string): string {
-  return new PascalCaseFunction(new PascalCaseOwn()).execute(text);
+    return new PascalCaseFunction(new PascalCaseOwn()).execute(text);
 }

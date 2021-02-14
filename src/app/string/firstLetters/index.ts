@@ -17,5 +17,5 @@ import { FirstLettersFunction } from './util/firstLetters.function';
  * console.log(firstLetters(text, 3)) // 'Hel'
  */
 export function firstLetters(text: string, numberOfLetters = 1): string {
-  return new FirstLettersFunction(new FirstLettersOwn()).execute(text, numberOfLetters);
+    return new FirstLettersFunction(new FirstLettersOwn()).execute(text, numberOfLetters);
 }
