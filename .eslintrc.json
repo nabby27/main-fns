@@ -70,13 +70,7 @@
             "property"
         ],
         "no-extra-parens": [
-            "error",
-            "all",
-            {
-                "returnAssign": false,
-                "nestedBinaryExpressions": false,
-                "enforceForArrowConditionals": false
-            }
+            0
         ],
         "space-before-blocks": [
             2,

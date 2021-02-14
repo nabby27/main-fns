@@ -1,4 +1,4 @@
-import { IsEqualLodash } from './impl/isEqualLodash';
+import { IsEqualOwn } from './impl/isEqualOwn';
 import { IsEqualFunction } from './util/isEqual.function';
 
 /**
@@ -32,5 +32,5 @@ import { IsEqualFunction } from './util/isEqual.function';
  * console.log(isEqual(userInfo, userInfo2)); // false
  */
 export function isEqual<T>(object: T, otherObject: T): boolean {
-  return new IsEqualFunction(new IsEqualLodash()).execute(object, otherObject);
+  return new IsEqualFunction(new IsEqualOwn()).execute(object, otherObject);
 }
