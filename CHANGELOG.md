@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **object module:** implementation [lodash](https://lodash.com/) to own implementation
+- 4 spaces to indent instead of 2
 
 ### Deprecated
 
