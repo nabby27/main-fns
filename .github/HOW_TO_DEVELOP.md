@@ -21,17 +21,15 @@ make test
 - with docker-compose
 
 ```sh
-docker-compose up -d
-docker-compose exec main-fns npm run test
-dokcer-compose down
+docker-compose run --rm main-fns npm run test
 ```
 
 ## Make commands
 
 ```sh
 make install # install all project dependencies
-make install ARGS="date-fns" # install new dependencie
-make install ARGS="-D typescript" # install new dev dependencies
+make install deps="date-fns" # install new dependencie
+make install deps="-D typescript" # install new dev dependencies
 ```
 
 ```sh
@@ -43,21 +41,18 @@ make docs # generate documentation page from JSDoc
 ```
 
 ```sh
-make eslint-check # run eslint check
-make eslint-fix # run eslint fix
+make lint/check # run lint check
+make lint/fix # run lint fix
 ```
 
 ```sh
-make test # run the tests at the moment
-make test-watch # run the test with watch all files
-make test-coverage # run the test coverage
-make test-all # run eslint check and the test coverage
+make test # run the test at the moment with coverage
+make test/watch # run the test with coverage and watch all files
+make test/all # run lint check and the test
 ```
 
 ```sh
-make version-patch # run test all, build and docs before update the patch version
-make version-minor # run test all, build and docs before update the minor version
-make version-major # run test all, build and docs before update the major version
+make version/patch # run lint, test, build and docs before update the patch version
+make version/minor # run lint, test, build and docs before update the minor version
+make version/major # run lint, test, build and docs before update the major version
 ```
-
-> If you execute the command `make test-watch` make sure to exit with the `q` of the jest watch options and not with `Ctrl C`, because this would finish the `make` task without destroying the docker container.

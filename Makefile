@@ -1,66 +1,42 @@
-.PHONY: up stop build install test test-watch test-watch-coverage test-coverage test-all eslint-check eslint-fix version-patch version-minor version-major
-
+CURRENT_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
+SHELL = /bin/sh
 CONTAINER_NAME=main-fns
 
-up:
-	@docker-compose up -d
+.DEFAULT_GOAL := test
 
-stop:
-	@docker-compose down
+install:
+	@docker-compose run --rm $(CONTAINER_NAME) npm install $(deps)
 
-install: up
-	@docker-compose exec $(CONTAINER_NAME) npm install $(ARGS) || $(MAKE) stop
-	${MAKE} stop
+build: install
+	@docker-compose run --rm $(CONTAINER_NAME) npm run build
+	@docker-compose run --rm $(CONTAINER_NAME) chown -R node:node .
 
-build: up
-	@docker-compose exec $(CONTAINER_NAME) npm run build || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
-	${MAKE} stop
+.PHONY: docs
+docs:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run docs
+	@docker-compose run --rm $(CONTAINER_NAME) chown -R node:node .
 
-docs: up
-	@docker-compose exec $(CONTAINER_NAME) npm run docs || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
-	${MAKE} stop
-
-eslint-check: up
-	@docker-compose exec $(CONTAINER_NAME) npm run eslint:check || $(MAKE) stop
-	${MAKE} stop
+lint/check:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run lint:check
 	
-eslint-fix: up
-	@docker-compose exec $(CONTAINER_NAME) npm run eslint:fix || $(MAKE) stop
-	${MAKE} stop
+lint/fix:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run lint:fix
 
-test: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test || $(MAKE) stop
-	${MAKE} stop
+test:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run test 
+	@docker-compose run --rm $(CONTAINER_NAME) chown -R node:node .
 
-test-watch: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test:watch || $(MAKE) stop
-	$(MAKE) stop
+test/watch:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run test:watch
+	@docker-compose run --rm $(CONTAINER_NAME) chown -R node:node .
 
-test-watch-coverage: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test:watch:coverage || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
-	$(MAKE) stop
+test/all: test lint/check
 
-test-coverage: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test:coverage || $(MAKE) stop
-	@docker-compose exec $(CONTAINER_NAME) chown -R node:node .
-	$(MAKE) stop
+version/patch:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
 
-test-all: up
-	@docker-compose exec $(CONTAINER_NAME) npm run test:all || $(MAKE) stop
-	$(MAKE) stop
+version/minor:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
 
-version-patch: up
-	@docker-compose exec $(CONTAINER_NAME) npm run version:patch || $(MAKE) stop
-	${MAKE} stop
-
-version-minor: up
-	@docker-compose exec $(CONTAINER_NAME) npm run version:minor || $(MAKE) stop
-	${MAKE} stop
-
-version-major: up
-	@docker-compose exec $(CONTAINER_NAME) npm run version:major || $(MAKE) stop
-	${MAKE} stop
-
+version/major:
+	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
