@@ -14,6 +14,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 - *object module:* implementation link:https://lodash.com/[lodash] to own implementation
 - 4 spaces to indent instead of 2
 - refactor link:./Makefile[Makefile]
+- changes md to adoc
 
 === Deprecated
 
