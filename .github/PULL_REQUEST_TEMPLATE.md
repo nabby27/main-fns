@@ -1,21 +1,19 @@
-== Description
+# Description
 
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-Fixes # (issue) +
-Fixes # (issue) +
 Fixes # (issue)
 
-== Type of change
+## Type of change
 
-[options="interactive"]
+<!-- Please delete all that are not relevant. -->
+
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-== Checklist:
+# Checklist:
 
-[options="interactive"]
 - [ ] I generate JSDoc documentation (if needed)
 - [ ] I have made corresponding changes to the CHANGELOG
 - [ ] I have added unit tests (if needed) that prove my fix is effective or my feature works
