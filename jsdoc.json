@@ -29,7 +29,7 @@
     },
     "opts": {
         "encoding": "utf8",
-        "readme": "README.adoc",
+        "readme": "README.md",
         "template": "node_modules/braintree-jsdoc-template",
         "recurse": true,
         "verbose": true,

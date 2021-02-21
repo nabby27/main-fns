@@ -22,7 +22,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Fixed
 
-- badge on link:./README.adoc[README]
+- badge on link:./README.md[README]
 
 === Security
 
@@ -48,7 +48,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:https://nabby27.github.io/main-fns/[documentation]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v1.2.0[v1.2.0] - 2021-01-15
@@ -83,11 +83,11 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:./.github/CONTRIBUTING.adoc[CONTRIBUTING]
 - Update link:./.github/HOW_TO_DEVELOP.adoc[HOW_TO_DEVELOP]
-- Update link:./.github/ISSUE_TEMPLATE.adoc[ISSUE_TEMPLATE]
-- Update link:./.github/PULL_REQUEST_TEMPLATE.adoc[PULL_REQUEST_TEMPLATE]
+- Update link:./.github/ISSUE_TEMPLATE.md[ISSUE_TEMPLATE]
+- Update link:./.github/PULL_REQUEST_TEMPLATE.md[PULL_REQUEST_TEMPLATE]
 - *string module:* implementation link:https://vocajs.com/[voca] to own implementation
 
 === Removed
@@ -200,7 +200,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:https://nabby27.github.io/main-fns/[documentation]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v0.0.14[v0.0.14] - 2020-12-24
@@ -213,7 +213,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:https://nabby27.github.io/main-fns/[documentation]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v0.0.12[0.0.12] - 2020-12-23
@@ -227,7 +227,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:https://nabby27.github.io/main-fns/[documentation]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v0.0.11[0.0.11] - 2020-12-21
@@ -241,7 +241,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 === Changed
 
 - Update dev dependencies
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update link:https://nabby27.github.io/main-fns/[documentation]
 
 === Fixed
@@ -253,7 +253,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 === Changed
 
 - Update link:https://nabby27.github.io/main-fns/[documentation]
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 - Update dev dependencies
 
 === Fixed
@@ -281,7 +281,7 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 === Changed
 
 - Github Actions workflow to deploy
-- Update link:./README.adoc[README]
+- Update link:./README.md[README]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v0.0.6[0.0.6] - 2020-12-20
 
