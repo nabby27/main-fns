@@ -112,13 +112,13 @@ import { DateToStringFunction } from './util/dateToString.function';
  * console.log(dateToString('dd-MM-yyyy', myDate)) // '27-06-1996'
  */
 export function dateToString(
-  stringFormat: DateStringFormat,
-  date: Date = new Date()
+    stringFormat: DateStringFormat,
+    date: Date = new Date()
 ): string {
-  return new DateToStringFunction(new DateToStringOwn()).dateToString(
-    stringFormat,
-    date
-  );
+    return new DateToStringFunction(new DateToStringOwn()).dateToString(
+        stringFormat,
+        date
+    );
 }
 </code></pre>
   </article>

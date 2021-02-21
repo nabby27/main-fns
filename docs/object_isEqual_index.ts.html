@@ -90,7 +90,7 @@
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import { IsEqualLodash } from './impl/isEqualLodash';
+    <pre class="prettyprint source linenums"><code>import { IsEqualOwn } from './impl/isEqualOwn';
 import { IsEqualFunction } from './util/isEqual.function';
 
 /**
@@ -124,7 +124,7 @@ import { IsEqualFunction } from './util/isEqual.function';
  * console.log(isEqual(userInfo, userInfo2)); // false
  */
 export function isEqual&lt;T>(object: T, otherObject: T): boolean {
-  return new IsEqualFunction(new IsEqualLodash()).execute(object, otherObject);
+    return new IsEqualFunction(new IsEqualOwn()).execute(object, otherObject);
 }
 </code></pre>
   </article>
