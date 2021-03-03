@@ -11,6 +11,8 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Changed
 
+- Update dependencies 
+
 === Deprecated
 
 === Removed
@@ -25,12 +27,12 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 - *object module:* implementation link:https://lodash.com/[lodash] to own implementation
 - 4 spaces to indent instead of 2
-- refactor link:./Makefile[Makefile]
-- changes md to adoc
+- Refactor link:./Makefile[Makefile]
+- Changes md to adoc
 
 === Fixed
 
-- badge on link:./README.md[README]
+- Badge on link:./README.md[README]
 
 == link:https://github.com/nabby27/main-fns/releases/tag/v1.4.0[v1.4.0] - 2021-02-07
 
@@ -61,8 +63,8 @@ and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Ve
 
 === Added
 
-- new DateStringFormat +yyyy/MM/dd+
-- new DateStringFormat +dd/MM/yyyy+
+- New DateStringFormat +yyyy/MM/dd+
+- New DateStringFormat +dd/MM/yyyy+
 
 === Changed
 
