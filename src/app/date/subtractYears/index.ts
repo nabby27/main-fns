@@ -13,8 +13,10 @@ import { SubtractYearsFunction } from './util/subtractYears.function';
  * @returns {Date} The date with subtracted years
  *
  * @example
- * const myDate = new Date(1997, 05, 27)
- * console.log(subtractYears(1, myDate)) // Date(1996, 05, 27)
+ * import { subtractYears } from 'main-fns';
+ *
+ * const myDate = new Date(1997, 05, 27);
+ * console.log(subtractYears(1, myDate)); // Date(1996, 05, 27)
  */
 export function subtractYears(yearsToSubtract: number, date: Date = new Date()): Date {
     return new SubtractYearsFunction(new SubtractYearsOwn()).subtractYears(

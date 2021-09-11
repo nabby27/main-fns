@@ -13,8 +13,10 @@ import { SubtractDaysFunction } from './util/subtractDays.function';
  * @returns {Date} The date with subtracted days
  *
  * @example
- * const myDate = new Date(1996, 05, 28)
- * console.log(subtractDays(1, myDate)) // Date(1996, 05, 27)
+ * import { subtractDays } from 'main-fns';
+ *
+ * const myDate = new Date(1996, 05, 28);
+ * console.log(subtractDays(1, myDate)); // Date(1996, 05, 27)
  */
 export function subtractDays(daysToSubtract: number, date: Date = new Date()): Date {
     return new SubtractDaysFunction(new SubtractDaysOwn()).subtractDays(daysToSubtract, date);

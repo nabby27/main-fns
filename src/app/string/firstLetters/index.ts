@@ -13,8 +13,10 @@ import { FirstLettersFunction } from './util/firstLetters.function';
  * @returns {strign} The first letters
  *
  * @example
- * const text = 'Hello world'
- * console.log(firstLetters(text, 3)) // 'Hel'
+ * import { firstLetters } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(firstLetters(text, 3)); // 'Hel'
  */
 export function firstLetters(text: string, numberOfLetters = 1): string {
     return new FirstLettersFunction(new FirstLettersOwn()).execute(text, numberOfLetters);

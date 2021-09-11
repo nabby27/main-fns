@@ -13,8 +13,10 @@ import { AddDaysFunction } from './util/addDays.function';
  * @returns {Date} The date with the days added
  *
  * @example
- * const myDate = new Date(1996, 05, 26)
- * console.log(addDays(1, myDate)) // Date(1996, 05, 27)
+ * import { addDays } from 'main-fns';
+ *
+ * const myDate = new Date(1996, 05, 26);
+ * console.log(addDays(1, myDate)); // Date(1996, 05, 27)
  */
 export function addDays(daysToAdd: number, date: Date = new Date()): Date {
     return new AddDaysFunction(new AddDaysOwn()).addDays(daysToAdd, date);

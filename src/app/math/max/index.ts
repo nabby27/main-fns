@@ -12,8 +12,10 @@ import { MaxFunction } from './util/max.function';
  * @returns {number} The biggest number
  *
  * @example
- * const numbers = [3, 1, 5]
- * console.log(max(numbers)) // 5
+ * import { max } from 'main-fns';
+ *
+ * const numbers = [3, 1, 5];
+ * console.log(max(numbers)); // 5
  */
 export function max(...numbers: number[]): number {
     return new MaxFunction(new MaxOwn()).max(numbers);

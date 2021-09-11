@@ -13,13 +13,15 @@ import { IsEqualFunction } from './util/isEqual.function';
  * @returns {boolean} The cloned object
  *
  * @example
+ * import { isEqual } from 'main-fns';
+ *
  * const userInfo = {
  *   user: {
  *     name: 'Iván',
  *     alias: 'nabby27'
  *   },
  *   github: 'https://github.com/nabby27'
- * }
+ * };
  *
  * const userInfo2 = {
  *   user: {
@@ -27,7 +29,7 @@ import { IsEqualFunction } from './util/isEqual.function';
  *     alias: 'ex123'
  *   },
  *   github: ''
- * }
+ * };
  *
  * console.log(isEqual(userInfo, userInfo2)); // false
  */

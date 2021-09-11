@@ -14,11 +14,11 @@ import { RelativeTimeFunction } from './util/relativeTime.function';
  * @returns {string} The relative time on locale format
  *
  * @example
+ * import { relativeTime } from 'main-fns';
  *
  * // if current date is new Date(1996, 05, 27)
- *
- * const myDate = new Date(1996, 05, 26)
- * console.log(relativeTime(myDate)) // 'yesterday'
+ * const myDate = new Date(1996, 05, 26);
+ * console.log(relativeTime(myDate)); // 'yesterday'
  */
 export function relativeTime(date: Date, locale: Locale = 'en-US'): string {
     return new RelativeTimeFunction(new RelativeTimeOwn()).relativeTime(date, locale);

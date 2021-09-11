@@ -12,8 +12,10 @@ import { KebabCaseFunction } from './util/kebabCase.function';
  * @returns {strign} The kebabCase text
  *
  * @example
- * const text = 'Hello world'
- * console.log(kebabCase(text)) // 'hello-world'
+ * import { kebabCase } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(kebabCase(text)); // 'hello-world'
  */
 export function kebabCase(text: string): string {
     return new KebabCaseFunction(new KebabCaseOwn()).execute(text);

@@ -13,8 +13,10 @@ import { AddYearsFunction } from './util/addYears.function';
  * @returns {Date} The date with the years added
  *
  * @example
- * const myDate = new Date(1995, 05, 27)
- * console.log(addYears(1, myDate)) // Date(1996, 05, 27)
+ * import { addYears } from 'main-fns';
+ *
+ * const myDate = new Date(1995, 05, 27);
+ * console.log(addYears(1, myDate)); // Date(1996, 05, 27)
  */
 export function addYears(yearsToAdd: number, date: Date = new Date()): Date {
     return new AddYearsFunction(new AddYearsOwn()).addYears(yearsToAdd, date);

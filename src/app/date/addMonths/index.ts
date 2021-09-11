@@ -13,6 +13,8 @@ import { AddMonthsFunction } from './util/addMonths.function';
  * @returns {Date} The date with the months added
  *
  * @example
+ * import { addMonths } from 'main-fns';
+ *
  * const myDate = new Date(1996, 04, 27)
  * console.log(addMonths(1, myDate)) // Date(1996, 05, 27)
  */

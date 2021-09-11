@@ -12,8 +12,10 @@ import { SumFunction } from './util/sum.function';
  * @returns {number} The sum
  *
  * @example
- * const numbers = [3, 1, 5]
- * console.log(sum(numbers)) // 9
+ * import { sum } from 'main-fns';
+ *
+ * const numbers = [3, 1, 5];
+ * console.log(sum(numbers)); // 9
  */
 export function sum(...numbers: number[]): number {
     return new SumFunction(new SumOwn()).sum(numbers);

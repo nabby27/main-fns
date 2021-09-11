@@ -12,8 +12,10 @@ import { ModeFunction } from './util/mode.function';
  * @returns {number} The mode
  *
  * @example
- * const numbers = [3, 1, 5, 1]
- * console.log(mode(numbers)) // [1]
+ * import { mode } from 'main-fns';
+ *
+ * const numbers = [3, 1, 5, 1];
+ * console.log(mode(numbers)); // [1]
  */
 export function mode(...numbers: number[]): number[] {
     return new ModeFunction(new ModeOwn()).mode(numbers);

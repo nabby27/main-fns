@@ -12,8 +12,10 @@ import { SnakeCaseFunction } from './util/snakeCase.function';
  * @returns {strign} The snakeCase text
  *
  * @example
- * const text = 'Hello world'
- * console.log(snakeCase(text)) // 'hello_world'
+ * import { snakeCase } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(snakeCase(text)); // 'hello_world'
  */
 export function snakeCase(text: string): string {
     return new SnakeCaseFunction(new SnakeCaseOwn()).execute(text);

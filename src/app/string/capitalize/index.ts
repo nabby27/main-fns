@@ -12,8 +12,10 @@ import { CapitalizeFunction } from './util/capitalize.function';
  * @returns {strign} The capitalized text
  *
  * @example
- * const text = 'hello'
- * console.log(capitalize(text)) // 'Hello'
+ * import { capitalize } from 'main-fns';
+ *
+ * const text = 'hello';
+ * console.log(capitalize(text)); // 'Hello'
  */
 export function capitalize(text: string): string {
     return new CapitalizeFunction(new CapitalizeOwn()).execute(text);

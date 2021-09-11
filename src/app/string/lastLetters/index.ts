@@ -13,8 +13,10 @@ import { LastLettersFunction } from './util/lastLetters.function';
  * @returns {strign} The last letters
  *
  * @example
- * const text = 'Hello world'
- * console.log(lastLetters(text, 3)) // 'rld'
+ * import { lastLetters } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(lastLetters(text, 3)); // 'rld'
  */
 export function lastLetters(text: string, numberOfLetters = 1): string {
     return new LastLettersFunction(new LastLettersOwn()).execute(text, numberOfLetters);

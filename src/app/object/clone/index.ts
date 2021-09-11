@@ -12,13 +12,15 @@ import { CloneFunction } from './util/clone.function';
  * @returns {T} The cloned object
  *
  * @example
+ * import { clone } from 'main-fns';
+ *
  * const userInfo = {
  *   user: {
  *     name: 'Iván',
  *     alias: 'nabby27'
  *   },
  *   github: 'https://github.com/nabby27'
- * }
+ * };
  *
  * const userInfoCloned = clone(userInfo);
  *

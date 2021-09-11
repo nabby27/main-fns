@@ -12,8 +12,10 @@ import { TitleCaseFunction } from './util/titleCase.function';
  * @returns {strign} The titleCase text
  *
  * @example
- * const text = 'Hello world'
- * console.log(titleCase(text)) // 'Hello World'
+ * import { titleCase } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(titleCase(text)); // 'Hello World'
  */
 export function titleCase(text: string): string {
     return new TitleCaseFunction(new TitleCaseOwn()).execute(text);

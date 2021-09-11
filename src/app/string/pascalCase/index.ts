@@ -12,8 +12,10 @@ import { PascalCaseFunction } from './util/pascalCase.function';
  * @returns {strign} The pascalCase text
  *
  * @example
- * const text = 'Hello world'
- * console.log(pascalCase(text)) // 'HelloWorld'
+ * import { pascalCase } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(pascalCase(text)); // 'HelloWorld'
  */
 export function pascalCase(text: string): string {
     return new PascalCaseFunction(new PascalCaseOwn()).execute(text);

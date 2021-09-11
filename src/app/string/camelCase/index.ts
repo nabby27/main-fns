@@ -12,8 +12,10 @@ import { CamelCaseFunction } from './util/camelCase.function';
  * @returns {strign} The camelCase  text
  *
  * @example
- * const text = 'Hello world'
- * console.log(camelCase(text)) // 'helloWorld'
+ * import { camelCase } from 'main-fns';
+ *
+ * const text = 'Hello world';
+ * console.log(camelCase(text)); // 'helloWorld'
  */
 export function camelCase(text: string): string {
     return new CamelCaseFunction(new CamelCaseOwn()).execute(text);

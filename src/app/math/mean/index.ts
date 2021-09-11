@@ -12,8 +12,10 @@ import { MeanFunction } from './util/mean.function';
  * @returns {number} The mean
  *
  * @example
- * const numbers = [3, 1, 5]
- * console.log(mean(numbers)) // 4.5
+ * import { mean } from 'main-fns';
+ *
+ * const numbers = [3, 1, 5];
+ * console.log(mean(numbers)); // 4.5
  */
 export function mean(...numbers: number[]): number {
     return new MeanFunction(new MeanOwn()).mean(numbers);
