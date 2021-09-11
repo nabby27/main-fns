@@ -18,7 +18,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      
+        with:
+          ref: main
+
       - uses: actions/setup-node@v1
         with:
           node-version: 14
@@ -36,3 +38,4 @@ jobs:
       - if: steps.publish.outputs.type != 'none'
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
+m
