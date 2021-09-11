@@ -5,13 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on link:https://keepachangelog.com/en/1.0.0/[Keep a Changelog],
 and this project adheres to link:https://semver.org/spec/v2.0.0.html[Semantic Versioning].
 
-== link:https://github.com/nabby27/main-fns/compare/v1.4.3...HEAD[Unreleased]
+== link:https://github.com/nabby27/main-fns/compare/v1.4.4...HEAD[Unreleased]
 
 === Added
 
 === Changed
 
+=== Deprecated
+
+=== Removed
+
+=== Fixed
+
+=== Security
+
+== link:https://github.com/nabby27/main-fns/releases/tag/v1.4.4[v1.4.4] - 2021-09-11
+=== Added
+
+=== Changed
+
 - Update dependencies 
+- Update link:https://nabby27.github.io/main-fns/[documentation]
 
 === Deprecated
 
