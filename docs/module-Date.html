@@ -330,8 +330,10 @@
     <h5 id="addDays-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 26)
-console.log(addDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
+  <pre class="prettyprint"><code>import { addDays } from 'main-fns';
+
+const myDate = new Date(1996, 05, 26);
+console.log(addDays(1, myDate)); // Date(1996, 05, 27)</code></pre>
 
 
   </div>
@@ -552,7 +554,9 @@ console.log(addDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
     <h5 id="addMonths-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 04, 27)
+  <pre class="prettyprint"><code>import { addMonths } from 'main-fns';
+
+const myDate = new Date(1996, 04, 27)
 console.log(addMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
 
 
@@ -774,8 +778,10 @@ console.log(addMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
     <h5 id="addYears-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1995, 05, 27)
-console.log(addYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
+  <pre class="prettyprint"><code>import { addYears } from 'main-fns';
+
+const myDate = new Date(1995, 05, 27);
+console.log(addYears(1, myDate)); // Date(1996, 05, 27)</code></pre>
 
 
   </div>
@@ -1007,8 +1013,10 @@ console.log(addYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
     <h5 id="dateToString-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
-console.log(dateToString('dd-MM-yyyy', myDate)) // '27-06-1996'</code></pre>
+  <pre class="prettyprint"><code>import { dateToString } from 'main-fns';
+
+const myDate = new Date(1996, 05, 27);
+console.log(dateToString('dd-MM-yyyy', myDate)); // '27-06-1996'</code></pre>
 
 
   </div>
@@ -1188,8 +1196,10 @@ console.log(dateToString('dd-MM-yyyy', myDate)) // '27-06-1996'</code></pre>
     <h5 id="endOfDay-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
-console.log(endOfDay(myDate)) // Date(1996, 05, 27, 23, 59, 59, 999)</code></pre>
+  <pre class="prettyprint"><code>import { endOfDay } from 'main-fns';
+
+const myDate = new Date(1996, 05, 27, 22, 10, 10, 345);
+console.log(endOfDay(myDate)); // Date(1996, 05, 27, 23, 59, 59, 999)</code></pre>
 
 
   </div>
@@ -1378,10 +1388,12 @@ console.log(endOfDay(myDate)) // Date(1996, 05, 27, 23, 59, 59, 999)</code></pre
     <h5 id="isAfter-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
-const otherDate = new Date(2001, 02, 01)
-console.log(isAfter(myDate, otherDate)) // false
-console.log(isAfter(otherDate, myDate)) // true</code></pre>
+  <pre class="prettyprint"><code>import { isAfter } from 'main-fns';
+
+const myDate = new Date(1996, 05, 27);
+const otherDate = new Date(2001, 02, 01);
+console.log(isAfter(myDate, otherDate)); // false
+console.log(isAfter(otherDate, myDate)); // true</code></pre>
 
 
   </div>
@@ -1570,10 +1582,12 @@ console.log(isAfter(otherDate, myDate)) // true</code></pre>
     <h5 id="isBefore-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27)
-const otherDate = new Date(2001, 02, 01)
-console.log(isAfter(myDate, otherDate)) // true
-console.log(isAfter(otherDate, myDate)) // false</code></pre>
+  <pre class="prettyprint"><code>import { isBefore } from 'main-fns';
+
+const myDate = new Date(1996, 05, 27);
+const otherDate = new Date(2001, 02, 01);
+console.log(isBefore(myDate, otherDate)); // true
+console.log(isBefore(otherDate, myDate)); // false</code></pre>
 
 
   </div>
@@ -1794,10 +1808,11 @@ console.log(isAfter(otherDate, myDate)) // false</code></pre>
     <h5 id="relativeTime-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>// if current date is new Date(1996, 05, 27)
+  <pre class="prettyprint"><code>import { relativeTime } from 'main-fns';
 
-const myDate = new Date(1996, 05, 26)
-console.log(relativeTime(myDate)) // 'yesterday'</code></pre>
+// if current date is new Date(1996, 05, 27)
+const myDate = new Date(1996, 05, 26);
+console.log(relativeTime(myDate)); // 'yesterday'</code></pre>
 
 
   </div>
@@ -1977,8 +1992,10 @@ console.log(relativeTime(myDate)) // 'yesterday'</code></pre>
     <h5 id="startOfDay-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
-console.log(endOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)</code></pre>
+  <pre class="prettyprint"><code>import { startOfDay } from 'main-fns';
+
+const myDate = new Date(1996, 05, 27, 22, 10, 10, 345)
+console.log(startOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)</code></pre>
 
 
   </div>
@@ -2199,8 +2216,10 @@ console.log(endOfDay(myDate)) // Date(1996, 05, 27, 00, 00, 00, 000)</code></pre
     <h5 id="subtractDays-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 05, 28)
-console.log(subtractDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
+  <pre class="prettyprint"><code>import { subtractDays } from 'main-fns';
+
+const myDate = new Date(1996, 05, 28);
+console.log(subtractDays(1, myDate)); // Date(1996, 05, 27)</code></pre>
 
 
   </div>
@@ -2421,8 +2440,10 @@ console.log(subtractDays(1, myDate)) // Date(1996, 05, 27)</code></pre>
     <h5 id="subtractMonths-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1996, 06, 27)
-console.log(subtractMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
+  <pre class="prettyprint"><code>import { subtractMonths } from 'main-fns';
+
+const myDate = new Date(1996, 06, 27);
+console.log(subtractMonths(1, myDate)); // Date(1996, 05, 27)</code></pre>
 
 
   </div>
@@ -2643,8 +2664,10 @@ console.log(subtractMonths(1, myDate)) // Date(1996, 05, 27)</code></pre>
     <h5 id="subtractYears-examples">Example</h5>
     
 
-  <pre class="prettyprint"><code>const myDate = new Date(1997, 05, 27)
-console.log(subtractYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
+  <pre class="prettyprint"><code>import { subtractYears } from 'main-fns';
+
+const myDate = new Date(1997, 05, 27);
+console.log(subtractYears(1, myDate)); // Date(1996, 05, 27)</code></pre>
 
 
   </div>
@@ -2667,7 +2690,7 @@ console.log(subtractYears(1, myDate)) // Date(1996, 05, 27)</code></pre>
   <br class="clear">
 
   <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a>
   </footer>
 
   <script src="scripts/linenumber.js"></script>
