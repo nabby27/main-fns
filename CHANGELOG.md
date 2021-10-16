@@ -99,8 +99,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update [README](./README.md)
-- Update [CONTRIBUTING](./.github/CONTRIBUTING.adoc)
-- Update [HOW_TO_DEVELOP](./.github/HOW_TO_DEVELOP.adoc)
+- Update [CONTRIBUTING](./.github/CONTRIBUTING.md)
+- Update [HOW_TO_DEVELOP](./.github/HOW_TO_DEVELOP.md)
 - Update [ISSUE_TEMPLATE](./.github/ISSUE_TEMPLATE.md)
 - Update [PULL_REQUEST_TEMPLATE](./.github/PULL_REQUEST_TEMPLATE.md)
 - **string module:** implementation [voca](https://vocajs.com/) to own implementation

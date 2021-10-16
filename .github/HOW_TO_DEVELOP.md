@@ -1,35 +1,32 @@
-= How to develop
+# How to develop
 
-== Requirements for development
+## Requirements for development
 
 - make (optional but highly recommended)
 - docker
 - docker-compose
 
-== Introduction
+## Introduction
 
-This project is built with docker-compose and make. You can run the commands directly with npm but **it is highly recommended to use make with docker-compose** because you make sure to run it with the same version. Make raises the container with docker-compose, executes the task and removes the container, in this way the local machine is clean once you execute the commands, you can check the link:../Makefile[Makefile] file to see what commands you can run.
+This project is built with docker-compose and make. You can run the commands directly with npm but **it is highly recommended to use make with docker-compose** because you make sure to run it with the same version. Make raises the container with docker-compose, executes the task and removes the container, in this way the local machine is clean once you execute the commands, you can check the [Makefile](../Makefile) file to see what commands you can run.
 
-== Example commands
+## Example commands
 
 - with make
 
-[source, shell]
-----
+```shell
 make test
-----
+```
 
 - with docker-compose
 
-[source, shell]
-----
+```shell
 docker-compose run --rm main-fns npm run test
-----
+```
 
-== Make commands
+## Make commands
 
-[source, shell]
-----
+```shell
 make install # install all project dependencies
 make install deps="date-fns" # install new dependencie
 make install deps="-D typescript" # install new dev dependencies
@@ -48,4 +45,4 @@ make test/all # run lint check and the test
 make version/patch # run lint, test, build and docs before update the patch version
 make version/minor # run lint, test, build and docs before update the minor version
 make version/major # run lint, test, build and docs before update the major version
-----
+```
