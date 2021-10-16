@@ -3,7 +3,7 @@
         "browser": true,
         "node": true
     },
-    "parser":  "@typescript-eslint/parser",
+    "parser": "@typescript-eslint/parser",
     "plugins": [
         "@typescript-eslint/eslint-plugin",
         "eslint-plugin-tsdoc"

@@ -30,7 +30,7 @@ test/watch:
 	@docker-compose run --rm $(CONTAINER_NAME) npm run test:watch
 	@docker-compose run --rm $(CONTAINER_NAME) chown -R node:node .
 
-test/all: test lint/check
+test/all: lint/check test
 
 version/patch:
 	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Object - Documentation
+      date/isBefore.ts - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -79,432 +81,45 @@
   <div id="main">
     
       <h1 class="page-title">
-        Object
+        date/isBefore.ts
       </h1>
     
 
     
+      
 
 <section>
-  <header>
-    
-      
-  </header>
-
   <article>
-    <div class="container-overview">
-      
-        
-
-        
-      
-    </div>
-
-    
-
-    
-
-    
-
-     
-
-    
-
-    
-
-    
-      <h3 class="subsection-title">Methods</h3>
-
-      
-        
-
-
-  
-
-  <span class='name-container'>
-    <a class="link-icon" href="#.clone">
-      <svg height="20" width="20" style="fill: black;">
-        <use xlink:href="#linkIcon"></use>
-      </svg>
-    </a>
-    <h4 class="name" id=".clone">
-      <span class="type-signature">(static) </span>clone<span class="signature">(object<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {T}</span>
-    </h4>
-  </span>
-
-  
-
-
-
-  <div class="description">
-    Returns deep copy from object
-  </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  
-
-<table class="params">
-  <thead>
-    <tr>
-      
-        <th>Name</th>
-      
-
-      <th>Type</th>
-
-      
-
-      
-
-      <th class="last">Description</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    
-      <tr>
-        
-          <td class="name"><code>object</code></td>
-        
-
-        <td class="type">
-          
-            
-    <span class="param-type">
-      T
-    </span>
-
-    
-
-
-          
-        </td>
-
-        
-
-        
-
-        <td class="description last">
-          The object
-          
-        </td>
-      </tr>
-
-    
-  </tbody>
-</table>
-
-
-
-
-
-<dl class="details">
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source">
-      <ul class="dummy">
-        <li>
-          <a href="object_clone.ts.html">object/clone.ts</a>, <a href="object_clone.ts.html#line2">line 2</a>
-        </li>
-      </ul>
-    </dd>
-  
-
-  
-
-  
-
-  
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="example-container">
-    <a class="link-icon" href="#clone-examples">
-      <svg height="20" width="20" style="fill: black;">
-        <use xlink:href="#linkIcon"></use>
-      </svg>
-    </a>
-    <h5 id="clone-examples">Example</h5>
-    
-
-  <pre class="prettyprint"><code>import { clone } from 'main-fns';
-
-const userInfo = {
-  user: {
-    name: 'Iván',
-    alias: 'nabby27'
-  },
-  github: 'https://github.com/nabby27'
-};
-
-const userInfoCloned = clone(userInfo);
-
-console.log(userInfoCloned === userInfo); // false
-console.log(userInfoCloned.name); // 'Iván'</code></pre>
-
-
-  </div>
-
-
-      
-        
-
-
-  
-
-  <span class='name-container'>
-    <a class="link-icon" href="#.isEqual">
-      <svg height="20" width="20" style="fill: black;">
-        <use xlink:href="#linkIcon"></use>
-      </svg>
-    </a>
-    <h4 class="name" id=".isEqual">
-      <span class="type-signature">(static) </span>isEqual<span class="signature">(object<span class="signature-attributes">non-null</span>, otherObject<span class="signature-attributes">non-null</span>)</span><span class="type-signature"> &rarr; {boolean}</span>
-    </h4>
-  </span>
-
-  
-
-
-
-  <div class="description">
-    Returns if objects are deep equal
-  </div>
-
-
-
-
-
-
-
-  <h5>Parameters:</h5>
-  
-
-<table class="params">
-  <thead>
-    <tr>
-      
-        <th>Name</th>
-      
-
-      <th>Type</th>
-
-      
-
-      
-
-      <th class="last">Description</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    
-      <tr>
-        
-          <td class="name"><code>object</code></td>
-        
-
-        <td class="type">
-          
-            
-    <span class="param-type">
-      T
-    </span>
-
-    
-
-
-          
-        </td>
-
-        
-
-        
-
-        <td class="description last">
-          The object
-          
-        </td>
-      </tr>
-
-    
-      <tr>
-        
-          <td class="name"><code>otherObject</code></td>
-        
-
-        <td class="type">
-          
-            
-    <span class="param-type">
-      T
-    </span>
-
-    
-
-
-          
-        </td>
-
-        
-
-        
-
-        <td class="description last">
-          The object to compare
-          
-        </td>
-      </tr>
-
-    
-  </tbody>
-</table>
-
-
-
-
-
-<dl class="details">
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source">
-      <ul class="dummy">
-        <li>
-          <a href="object_isEqual.ts.html">object/isEqual.ts</a>, <a href="object_isEqual.ts.html#line2">line 2</a>
-        </li>
-      </ul>
-    </dd>
-  
-
-  
-
-  
-
-  
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="example-container">
-    <a class="link-icon" href="#isEqual-examples">
-      <svg height="20" width="20" style="fill: black;">
-        <use xlink:href="#linkIcon"></use>
-      </svg>
-    </a>
-    <h5 id="isEqual-examples">Example</h5>
-    
-
-  <pre class="prettyprint"><code>import { isEqual } from 'main-fns';
-
-const userInfo = {
-  user: {
-    name: 'Iván',
-    alias: 'nabby27'
-  },
-  github: 'https://github.com/nabby27'
-};
-
-const userInfo2 = {
-  user: {
-    name: 'Example',
-    alias: 'ex123'
-  },
-  github: ''
-};
-
-console.log(isEqual(userInfo, userInfo2)); // false</code></pre>
-
-
-  </div>
-
-
-      
-    
-
-    
-
-    
+    <pre class="prettyprint source linenums"><code>/**
+ *
+ * @memberof module:Date
+ * @function isBefore
+ *
+ * @description Check if the date is before the dateToCompare
+ *
+ * @param {!Date} date - The date
+ * @param {!Date} dateToCompare - The date to compare
+ * @returns {boolean} True if date is before the dateToCompare
+ *
+ * @example
+ * import { isBefore } from 'main-fns';
+ *
+ * const myDate = new Date(1996, 05, 27);
+ * const otherDate = new Date(2001, 02, 01);
+ * console.log(isBefore(myDate, otherDate)); // true
+ * console.log(isBefore(otherDate, myDate)); // false
+ */
+export function isBefore(
+    date: Date,
+    dateToCompare: Date
+): boolean {
+    return date.getTime() &lt; dateToCompare.getTime();
+}
+</code></pre>
   </article>
 </section>
 
-
+    
 
 
   </div>
