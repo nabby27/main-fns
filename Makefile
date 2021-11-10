@@ -36,7 +36,7 @@ version/patch:
 	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
 
 version/minor:
-	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
+	@docker-compose run --rm $(CONTAINER_NAME) npm run version:minor
 
 version/major:
-	@docker-compose run --rm $(CONTAINER_NAME) npm run version:patch
+	@docker-compose run --rm $(CONTAINER_NAME) npm run version:major
